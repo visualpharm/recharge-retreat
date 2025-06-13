@@ -3,6 +3,37 @@ import { MapPin, Compass, TreePine, Droplets } from "lucide-react"
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '9 Hectares of Pristine Dunes & Private Beach | Recharge Retreat',
+  description: 'Explore our 9 hectares of untouched dunes and private beachfront. Discover the unique ecosystem and natural beauty that surrounds our secluded retreat in Argentina.',
+  openGraph: {
+    title: '9 Hectares of Pristine Dunes & Private Beach | Recharge Retreat',
+    description: 'Immerse yourself in the natural beauty of our private dunes and beachfront. Experience complete seclusion in a protected natural environment.',
+    images: [
+      {
+        url: '/images/land/dunes-panorama.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Panoramic view of the pristine dunes at Recharge Retreat',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://recharge-retreat.com/land',
+  },
+  keywords: [
+    'private dunes Argentina',
+    'beachfront property Faro Querandí',
+    '9 hectare private retreat',
+    'secluded beach Argentina',
+    'dune ecosystem',
+    'private nature reserve',
+    'coastal dunes Argentina',
+    'sustainable land management'
+  ],
+}
 
 export default function LandPage() {
   return (

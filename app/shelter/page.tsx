@@ -4,6 +4,37 @@ import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import CSSMasonryGallery from "@/components/css-masonry-gallery"
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Self-Sufficient Beachfront Shelter | Recharge Retreat Argentina',
+  description: 'Experience sustainable off-grid living in our self-sufficient beachfront shelter. Solar power, rainwater collection, and modern comforts in a private dune setting near Faro Querandí.',
+  openGraph: {
+    title: 'Self-Sufficient Beachfront Shelter | Recharge Retreat Argentina',
+    description: 'Discover our eco-friendly shelter with solar power, rainwater collection, and stunning ocean views. Perfect for a digital detox in nature.',
+    images: [
+      {
+        url: '/images/shelter/cabin-exterior-1.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Self-sufficient beachfront shelter at Recharge Retreat',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://recharge-retreat.com/shelter',
+  },
+  keywords: [
+    'self-sufficient shelter Argentina',
+    'off-grid beach cabin',
+    'sustainable beach house',
+    'solar powered cabin Argentina',
+    'eco-friendly beach retreat',
+    'private beach shelter',
+    'sustainable tourism Argentina',
+    'off-grid living'
+  ],
+}
 
 // Shelter exterior images
 const shelterImages = [

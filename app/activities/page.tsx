@@ -4,6 +4,37 @@ import { Signal, Building2, TreePine, Book, Footprints, Compass } from "lucide-r
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Activities & Digital Detox Experience | Recharge Retreat',
+  description: 'Disconnect to reconnect. Enjoy beach walks, nature exploration, and digital detox activities at our secluded retreat. Perfect for mindfulness and relaxation.',
+  openGraph: {
+    title: 'Activities & Digital Detox Experience | Recharge Retreat',
+    description: 'Experience the art of doing nothing or explore nature. Beach walks, stargazing, and digital detox in a pristine natural setting.',
+    images: [
+      {
+        url: '/images/activities/beach-walk.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Peaceful beach walk at Recharge Retreat',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://recharge-retreat.com/activities',
+  },
+  keywords: [
+    'digital detox Argentina',
+    'beach activities Faro Querandí',
+    'nature retreat activities',
+    'mindfulness retreat Argentina',
+    'off-grid activities',
+    'disconnect to reconnect',
+    'beach meditation',
+    'stargazing Argentina'
+  ],
+}
 
 export default function ActivitiesPage() {
   return (

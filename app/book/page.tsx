@@ -4,6 +4,37 @@ import { Building2, MessageCircle, MapPin } from "lucide-react"
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Book Your Stay | Recharge Retreat - Secluded Beach Cabins',
+  description: 'Reserve your digital detox getaway. Check availability and book your stay at our secluded beachfront cabins near Faro Querandí, Argentina.',
+  openGraph: {
+    title: 'Book Your Stay | Recharge Retreat - Secluded Beach Cabins',
+    description: 'Secure your private beachfront escape. Simple booking process for our self-sufficient cabins in the dunes of Argentina.',
+    images: [
+      {
+        url: '/images/booking/beach-cabin-view.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Book your stay at Recharge Retreat',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://recharge-retreat.com/book',
+  },
+  keywords: [
+    'book beach cabin Argentina',
+    'Faro Querandí accommodation',
+    'private beach rental',
+    'off-grid cabin booking',
+    'digital detox retreat Argentina',
+    'secluded beach house rental',
+    'sustainable tourism booking',
+    'private dune cabin Argentina'
+  ],
+}
 
 export default function BookPage() {
   return (

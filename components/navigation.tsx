@@ -40,6 +40,12 @@ export default function Navigation({ transparent = false }) {
             >
               What You'll Do
             </Link>
+            <Link
+              href="/location"
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+            >
+              Location
+            </Link>
           </nav>
 
           {/* Book button */}
@@ -77,6 +83,13 @@ export default function Navigation({ transparent = false }) {
               onClick={() => setIsMenuOpen(false)}
             >
               What You'll Do
+            </Link>
+            <Link
+              href="/location"
+              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Location
             </Link>
             <Link
               href="/book"

@@ -8,6 +8,27 @@ import Link from "next/link"
 import ImageGallery from "@/components/image-gallery"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Secluded Beachfront Cabins in Argentina | Recharge Retreat',
+  description: 'Experience ultimate privacy in our secluded beachfront cabins. Stunning ocean views, digital detox, and sustainable living near Faro Querandí, Argentina.',
+  openGraph: {
+    title: 'Secluded Beachfront Cabins in Argentina | Recharge Retreat',
+    description: 'Escape to our private beachfront cabins for a digital detox experience in nature. Stunning ocean views, sustainable living, and ultimate privacy await.',
+    images: [
+      {
+        url: '/images/hero/beach-cabin-view.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Secluded beachfront cabin with ocean view at Recharge Retreat',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://recharge-retreat.com',
+  },
+}
 
 export default function Page() {
   return (
@@ -99,62 +120,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ¿Dónde estás? */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <MapPin className="h-7 w-7 text-primary" />
-            <h2 className="text-3xl font-bold">Where Are You?</h2>
-          </div>
 
-          <div className="space-y-6">
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                  <p>
-                    On the <strong>Argentine Atlantic coast</strong>, close (literally steps away) from the{" "}
-                    <strong>Faro Querandí Reserve</strong>
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                  <p>
-                    Surrounded by <strong>natural dunes</strong>, undeveloped
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <Waves className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
-                  <p>
-                    3 km from a <strong>completely empty beach</strong>
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <Building2 className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
-                  <p>
-                    5 km from <strong>Mar de las Pampas</strong>, if you regret the isolation
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Photo Gallery - Remaining Images */}
       <section className="container mx-auto px-4 py-16">
@@ -367,37 +333,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ¿Por qué "Recharge"? */}
-      <section className="container mx-auto px-4 py-16 bg-gradient-to-b from-background to-primary/5">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-10">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-              <div className="text-3xl">🔋</div>
-            </div>
-            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-              Why "Recharge"?
-            </h2>
-          </div>
 
-          <Card className="border-2 border-primary bg-primary/5">
-            <CardContent className="p-8">
-              <h2 className="text-3xl font-bold mb-4">Ready to Recharge?</h2>
-              <p className="text-muted-foreground mb-6">
-                Book your shelter in the dunes and disconnect from everything that drains you.
-              </p>
-              <a
-                href="https://www.airbnb.com/rooms/1150297553735943101?source_impression_id=p3_1749749927_P3mlvFLC4Lgz4bxa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-              >
-                <Building2 className="h-5 w-5" />
-                Book on Airbnb
-              </a>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       {/* ¿Y si no lo aguantás? */}
       <section className="container mx-auto px-4 py-16">
