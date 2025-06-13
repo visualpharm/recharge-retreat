@@ -21,7 +21,7 @@
     "exploreButton": "Explorar el Refugio",
     "zone": {
       "title": "La Zona",
-      "description": "Ubicado en una zona de propiedades costosas — con barrios cerrados, hoteles boutique y propiedades de siete cifras."
+      "description": "Ubicado en una zona de propiedades costosas — con <strong>barrios cerrados, hoteles boutique y propiedades de siete cifras</strong>."
     },
     "ecosystem": {
       "title": "Un Ecosistema Único",
@@ -30,9 +30,64 @@
     "shelter": {
       "title": "El Refugio",
       "notHotel": "No es un hotel. Ni una cabaña.",
-      "description": "Es un refugio autosuficiente, aislado, entre médanos, en una chacra privada de 9 hectáreas cerca del mar.",
+      "description": "Es un <strong>refugio autosuficiente</strong>, aislado, entre médanos, en una <strong>chacra privada de 9 hectáreas</strong> cerca del mar.",
       "collapse": "Un ensayo general para cuando todo colapse",
-      "collapseDescription": "Pero estás solo, rodeado de médanos vírgenes, sin vecinos, sin tráfico, nada. Una experiencia de desconexión completa, como un ensayo para cuando todo colapse."
+      "collapseDescription": "Pero estás <strong>solo</strong>, rodeado de <strong>médanos vírgenes</strong>, sin vecinos, sin tráfico, nada. Una experiencia de desconexión completa, como un ensayo para cuando todo colapse."
+    },
+    "environment": {
+      "title": "El Entorno",
+      "mainProperty": {
+        "title": "Propiedad Principal",
+        "description": "<strong>9 hectáreas privadas de médanos verdes</strong>, cubiertas por solo tres especies nativas que logran sobrevivir allí — y que son sorprendentemente hermosas"
+      },
+      "protectedReserve": {
+        "title": "Reserva Protegida",
+        "description": "Ubicado a pasos de la <strong>Reserva Ecológica Faro Querandí</strong>, zona protegida de alto valor natural"
+      },
+      "totalIsolation": {
+        "title": "Aislamiento Total",
+        "description": "<strong>Rodeado de otras chacras sin desarrollar</strong>: sin vecinos, sin edificios, sin gente hasta donde llega la vista"
+      },
+      "ownReserve": {
+        "title": "Tu Propia Reserva",
+        "description": "Un <strong>sendero perimetral de 1.200 metros entre médanos altos y vistas panorámicas</strong>, para que hagas trekking como si caminaras por tu propia reserva"
+      },
+      "connectivity": {
+        "title": "Conectividad",
+        "description": "Hay <strong>señal de celular</strong>"
+      },
+      "proximity": {
+        "title": "Proximidad", 
+        "description": "Hay <strong>ciudad a 5 km</strong>"
+      }
+    },
+    "whatIf": {
+      "title": "¿Y si no lo aguantás?",
+      "connectivity": {
+        "title": "Conectividad",
+        "description": "Hay <strong>señal de celular</strong>"
+      },
+      "proximity": {
+        "title": "Proximidad",
+        "description": "Hay <strong>ciudad a 5 km</strong>"
+      },
+      "alternative": {
+        "title": "Alternativa",
+        "description": "Te damos <strong>descuento para mudarte a Il Buco</strong>, nuestra villa italiana con <strong>terraza verde</strong> y <strong>WiFi de 500 Mbps</strong>"
+      }
+    },
+    "booking": {
+      "title": "¿Listo para Recargar?",
+      "description": "Reservá tu refugio en los médanos y desconectate de todo lo que te drena.",
+      "airbnbButton": "Reservar en Airbnb"
     }
+  },
+  "footer": {
+    "description": "Refugio autónomo privado en los médanos.<br/>Desconectá. Recargá. Volvé.",
+    "quickLinks": "Enlaces Rápidos",
+    "location": "Ubicación",
+    "copyright": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
   }
 }

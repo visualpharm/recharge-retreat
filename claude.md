@@ -271,3 +271,5 @@ There's the language switcher in the top right corner of the header. The languag
 The default language is Spanish. The / opens Spanish. English is in /en and Portuguese in /pt.
 
 We use IP geolocation to determine the language for the first visit, but it can be changed later. Spanish speaking countries resolve to Spanish, English speaking countries to English, and Portuguese speaking countries to Portuguese. If the country is not recognized or speaks some other language, it defaults to English.
+
+Spanish is argentinian, portuguese is brazilian, and english is american. The text is localized to each language, so it may not be a direct translation.

@@ -6,7 +6,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { Globe, ChevronDown } from 'lucide-react';
 
 const languages = [
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'es', name: 'Español', flag: '🇦🇷' },
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'pt', name: 'Português', flag: '🇧🇷' }
 ];

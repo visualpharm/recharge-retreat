@@ -10,21 +10,21 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Recharge Retreat | Secluded Beachfront Cabins in Argentina',
+    default: 'Recharge Retreat | Refugio Privado en Argentina',
     template: '%s | Recharge Retreat',
   },
-  description: 'Escape to our secluded beachfront cabins in Argentina. Experience ultimate privacy, stunning ocean views, and a digital detox in our sustainable retreat near Faro Querandí.',
+  description: 'Refugio autónomo privado en Argentina. Sin vecinos. 9 hectáreas de médanos verdes y el océano. Experiencia de desconexión total cerca de Faro Querandí.',
   keywords: [
-    'beachfront cabins Argentina',
-    'secluded retreat Argentina',
-    'ocean view cabins',
-    'digital detox Argentina',
-    'private beach cabins',
-    'Faro Querandí accommodation',
-    'sustainable retreat Argentina',
-    'off-grid cabins',
-    'nature retreat',
-    'private beach Argentina'
+    'cabañas frente al mar Argentina',
+    'refugio aislado Argentina', 
+    'cabañas vista al océano',
+    'desconexión digital Argentina',
+    'cabañas playa privada',
+    'alojamiento Faro Querandí',
+    'refugio sustentable Argentina',
+    'cabañas off-grid',
+    'retiro naturaleza',
+    'playa privada Argentina'
   ],
   authors: [{ name: 'Recharge Retreat' }],
   creator: 'Recharge Retreat',
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'es_AR',
     url: 'https://recharge-retreat.com',
     siteName: 'Recharge Retreat',
-    title: 'Recharge Retreat | Secluded Beachfront Cabins in Argentina',
-    description: 'Experience ultimate privacy in our secluded beachfront cabins. Stunning ocean views, digital detox, and sustainable living near Faro Querandí, Argentina.',
+    title: 'Recharge Retreat | Refugio Privado en Argentina',
+    description: 'Refugio autónomo privado. Sin vecinos. 9 hectáreas de médanos verdes y el océano cerca de Faro Querandí, Argentina.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recharge Retreat | Secluded Beachfront Cabins in Argentina',
-    description: 'Escape to our private beachfront cabins for a digital detox experience in nature. Book your secluded retreat today.',
+    title: 'Recharge Retreat | Refugio Privado en Argentina',
+    description: 'Escapá a nuestro refugio privado para una experiencia de desconexión total en la naturaleza. Reservá tu estadía.',
     creator: '@rechargeretreat',
   },
   robots: {
@@ -69,8 +69,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased bg-background text-foreground">
+        {children}
+      </body>
     </html>
   )
 }

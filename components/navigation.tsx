@@ -3,15 +3,14 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useTranslations, useLocale } from "next-intl"
+import { useTranslation } from './translation-provider'
 import { Building2, Menu, X } from "lucide-react"
-import LanguageSwitcher from "./language-switcher"
+import SimpleLanguageSwitcher from "./simple-language-switcher"
 
 export default function Navigation({ transparent = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
-  const locale = useLocale()
-  const t = useTranslations('nav')
+  const { locale, t } = useTranslation()
 
   const isActive = (path: string) => {
     // Remove locale prefix from pathname for comparison
@@ -46,7 +45,7 @@ export default function Navigation({ transparent = false }) {
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              {t('shelter')}
+              {t('nav.shelter')}
             </Link>
             <Link
               href={getLocalizedHref("/land")}
@@ -56,7 +55,7 @@ export default function Navigation({ transparent = false }) {
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              {t('land')}
+              {t('nav.land')}
             </Link>
             <Link
               href={getLocalizedHref("/activities")}
@@ -66,7 +65,7 @@ export default function Navigation({ transparent = false }) {
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              {t('activities')}
+              {t('nav.activities')}
             </Link>
             <Link
               href={getLocalizedHref("/location")}
@@ -76,19 +75,19 @@ export default function Navigation({ transparent = false }) {
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              {t('location')}
+              {t('nav.location')}
             </Link>
           </nav>
 
           {/* Language Switcher and Book button */}
           <div className="hidden md:flex items-center gap-4">
-            <LanguageSwitcher />
+            <SimpleLanguageSwitcher />
             <Link
               href={getLocalizedHref("/book")}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors"
             >
               <Building2 className="h-4 w-4" />
-              {t('book')}
+              {t('nav.book')}
             </Link>
           </div>
         </div>
@@ -105,7 +104,7 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('shelter')}
+              {t('nav.shelter')}
             </Link>
             <Link
               href={getLocalizedHref("/land")}
@@ -116,7 +115,7 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('land')}
+              {t('nav.land')}
             </Link>
             <Link
               href={getLocalizedHref("/activities")}
@@ -127,7 +126,7 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('activities')}
+              {t('nav.activities')}
             </Link>
             <Link
               href={getLocalizedHref("/location")}
@@ -138,12 +137,13 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('location')}
+              {t('nav.location')}
             </Link>
             
             {/* Language Switcher for Mobile */}
+            {/* Language Switcher for Mobile */}
             <div className="flex justify-center py-2">
-              <LanguageSwitcher />
+              <SimpleLanguageSwitcher />
             </div>
             
             <Link
@@ -152,7 +152,7 @@ export default function Navigation({ transparent = false }) {
               onClick={() => setIsMenuOpen(false)}
             >
               <Building2 className="h-4 w-4" />
-              {t('book')}
+              {t('nav.book')}
             </Link>
           </div>
         )}

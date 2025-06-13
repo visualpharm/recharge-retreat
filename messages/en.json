@@ -21,7 +21,7 @@
     "exploreButton": "Explore the Shelter",
     "zone": {
       "title": "The Zone",
-      "description": "Located in an area of expensive properties — with gated communities, boutique hotels and seven-figure homes."
+      "description": "Located in an area of expensive properties — with <strong>gated communities, boutique hotels and seven-figure homes</strong>."
     },
     "ecosystem": {
       "title": "A Unique Ecosystem", 
@@ -30,9 +30,64 @@
     "shelter": {
       "title": "The Shelter",
       "notHotel": "Not a hotel. Not a cabin.",
-      "description": "It's a self-sufficient shelter, isolated, among dunes, on a private 9-hectare property near the sea.",
+      "description": "It's a <strong>self-sufficient shelter</strong>, isolated, among dunes, on a <strong>private 9-hectare property</strong> near the sea.",
       "collapse": "A dry run for when it all collapses",
-      "collapseDescription": "But you are alone, surrounded by pristine dunes, with no neighbors, no traffic, nothing. A complete disconnection experience, like a rehearsal for when everything collapses."
+      "collapseDescription": "But you are <strong>alone</strong>, surrounded by <strong>pristine dunes</strong>, with no neighbors, no traffic, nothing. A complete disconnection experience, like a rehearsal for when everything collapses."
+    },
+    "environment": {
+      "title": "The Environment",
+      "mainProperty": {
+        "title": "Main Property",
+        "description": "<strong>9 private hectares of green dunes</strong>, covered by only three native species that manage to survive there — and which are surprisingly beautiful"
+      },
+      "protectedReserve": {
+        "title": "Protected Reserve",
+        "description": "Located steps away from the <strong>Faro Querandí Ecological Reserve</strong>, a protected area of high natural value"
+      },
+      "totalIsolation": {
+        "title": "Total Isolation",
+        "description": "<strong>Surrounded by other undeveloped farms</strong>: no neighbors, no buildings, no people as far as you can see"
+      },
+      "ownReserve": {
+        "title": "Your Own Reserve",
+        "description": "A <strong>1,200-meter perimeter path between high dunes and panoramic views</strong>, so you can trek as if walking through your own reserve"
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "description": "There is <strong>cell phone signal</strong>"
+      },
+      "proximity": {
+        "title": "Proximity", 
+        "description": "There is a <strong>city 5 km away</strong>"
+      }
+    },
+    "whatIf": {
+      "title": "What If You Can't Handle It?",
+      "connectivity": {
+        "title": "Connectivity",
+        "description": "There is <strong>cell phone signal</strong>"
+      },
+      "proximity": {
+        "title": "Proximity",
+        "description": "There is a <strong>city 5 km away</strong>"
+      },
+      "alternative": {
+        "title": "Alternative",
+        "description": "We give you a <strong>discount to move to Il Buco</strong>, our Italian villa with <strong>green terrace</strong> and <strong>500 Mbps WiFi</strong>"
+      }
+    },
+    "booking": {
+      "title": "Ready to Recharge?",
+      "description": "Book your shelter in the dunes and disconnect from everything that drains you.",
+      "airbnbButton": "Book on Airbnb"
     }
+  },
+  "footer": {
+    "description": "Private autonomous shelter in the dunes.<br/>Disconnect. Recharge. Return.",
+    "quickLinks": "Quick Links",
+    "location": "Location",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

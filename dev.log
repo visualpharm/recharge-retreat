@@ -1,0 +1,344 @@
+
+> my-v0-project@0.1.0 dev
+> next dev --port 3004
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3004
+   - Network:      http://192.168.0.4:3004
+
+ ✓ Starting...
+ ✓ Ready in 1742ms
+ ✓ Compiled /middleware in 270ms (130 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.3s (982 modules)
+ ✓ Compiled in 261ms (388 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ HEAD /es 404 in 2991ms
+ HEAD /en 404 in 34ms
+ ✓ Compiled in 339ms (388 modules)
+ ✓ Compiled in 223ms (388 modules)
+ ✓ Compiled in 294ms (388 modules)
+ ✓ Compiled in 118ms (388 modules)
+ ✓ Compiled in 68ms (388 modules)
+ ✓ Compiled /[locale] in 140ms (573 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ Error: Cannot find module './undefined.json'
+    at <unknown> (.next/server/app/[locale]/page.js:228:12)
+    at async eval (i18n/request.ts:8:15)
+   6 | export default getRequestConfig(async ({ locale }) => {
+   7 |   return {
+>  8 |     messages: (await import(`../messages/${locale}.json`)).default
+     |               ^
+   9 |   };
+  10 | }); {
+  code: 'MODULE_NOT_FOUND',
+  digest: '1902240946'
+}
+ HEAD /es 500 in 280ms
+ ⨯ Error: Cannot find module './undefined.json'
+    at <unknown> (.next/server/app/[locale]/page.js:228:12)
+    at async eval (i18n/request.ts:8:15)
+   6 | export default getRequestConfig(async ({ locale }) => {
+   7 |   return {
+>  8 |     messages: (await import(`../messages/${locale}.json`)).default
+     |               ^
+   9 |   };
+  10 | }); {
+  code: 'MODULE_NOT_FOUND',
+  digest: '1902240946'
+}
+ HEAD /en 500 in 29ms
+ ⨯ Error: Cannot find module './undefined.json'
+    at <unknown> (.next/server/app/[locale]/page.js:228:12)
+    at async eval (i18n/request.ts:8:15)
+   6 | export default getRequestConfig(async ({ locale }) => {
+   7 |   return {
+>  8 |     messages: (await import(`../messages/${locale}.json`)).default
+     |               ^
+   9 |   };
+  10 | }); {
+  code: 'MODULE_NOT_FOUND',
+  digest: '1902240946'
+}
+ HEAD /pt 500 in 32ms
+ ✓ Compiled in 124ms (961 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages();
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /es 500 in 83ms
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages();
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /en 500 in 30ms
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages();
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /pt 500 in 29ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3004
+   - Network:      http://192.168.0.4:3004
+
+ ✓ Starting...
+ ✓ Ready in 1647ms
+ ✓ Compiled /middleware in 266ms (130 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.2s (974 modules)
+ ✓ Compiled in 180ms (388 modules)
+ ✓ Compiled in 206ms (388 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages();
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /es 500 in 2751ms
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages();
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /en 500 in 32ms
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages();
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /pt 500 in 30ms
+ ✓ Compiled in 211ms (961 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages({ locale });
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /es 500 in 93ms
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages({ locale });
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /en 500 in 32ms
+ ⨯ Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request
+    at async LocaleLayout (app/[locale]/layout.tsx:12:19)
+  10 | }) {
+  11 |   const { locale } = await params;
+> 12 |   const messages = await getMessages({ locale });
+     |                   ^
+  13 |
+  14 |   return (
+  15 |     <html lang={locale} suppressHydrationWarning> {
+  digest: '3860546926'
+}
+ HEAD /pt 500 in 29ms
+ ✓ Compiled in 156ms (961 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '3070653563'
+}
+ HEAD /es 500 in 117ms
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '3070653563'
+}
+ HEAD /en 500 in 32ms
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '3070653563'
+}
+ HEAD /pt 500 in 30ms
+ ✓ Compiled in 252ms (961 modules)
+ ✓ Compiled in 158ms (961 modules)
+ ✓ Compiled in 142ms (961 modules)
+ ✓ Compiled in 192ms (961 modules)
+ ✓ Compiled in 145ms (961 modules)
+ ✓ Compiled in 126ms (961 modules)
+ ✓ Compiled in 549ms (961 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '3070653563'
+}
+ HEAD /es 500 in 99ms
+ ✓ Compiled in 133ms (961 modules)
+ ✓ Compiled in 131ms (961 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '3070653563'
+}
+ HEAD /es 500 in 94ms
+ ✓ Compiled in 115ms (945 modules)
+ ✓ Compiled in 139ms (945 modules)
+ ✓ Compiled in 170ms (945 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '3070653563'
+}
+ HEAD /es 500 in 68ms
+ ✓ Compiled in 300ms (842 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ HEAD /es 200 in 154ms
+ HEAD /en 200 in 33ms
+ HEAD /pt 200 in 43ms
+ ✓ Compiled in 153ms (359 modules)
+ ✓ Compiled in 61ms (359 modules)
+ ✓ Compiled in 165ms (842 modules)
+ ✓ Compiled in 168ms (850 modules)
+ ✓ Compiled in 173ms (850 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ HEAD /es 200 in 146ms
+ HEAD /en 200 in 42ms
+ GET /en 200 in 175ms
+ ✓ Compiled in 593ms (363 modules)
+ ✓ Compiled in 280ms (363 modules)
+ ✓ Compiled in 297ms (363 modules)
+ ✓ Compiled in 61ms (363 modules)
+ ✓ Compiled in 127ms (364 modules)
+ ✓ Compiled in 299ms (364 modules)
+ ✓ Compiled in 92ms (364 modules)
+ ✓ Compiled in 245ms (364 modules)
+ ✓ Compiled in 229ms (364 modules)
+ ✓ Compiled in 425ms (364 modules)
+ ✓ Compiled in 254ms (364 modules)
+ ✓ Compiled in 87ms (364 modules)
+ ✓ Compiled /[locale] in 372ms (843 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3004". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /es 200 in 565ms
+ GET /en 200 in 49ms
+ ✓ Compiled in 387ms (857 modules)
+ ⨯ ./app/[locale]/page.tsx
+Error:   [31mx[0m You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/
+  [31m|[0m docs/app/api-reference/directives/use-client
+  [31m|[0m 
+  [31m|[0m 
+    ,-[[36;1;4m/Users/ivanboyko/recharge-retreat/app/[locale]/page.tsx[0m:17:1]
+ [2m14[0m | import { useTranslation } from "@/components/translation-provider"
+ [2m15[0m | import { Metadata } from 'next'
+ [2m16[0m | 
+ [2m17[0m | export const metadata: Metadata = {
+    : [35;1m             ^^^^^^^^[0m
+ [2m18[0m |   title: 'Secluded Beachfront Cabins in Argentina | Recharge Retreat',
+ [2m19[0m |   description: 'Experience ultimate privacy in our secluded beachfront cabins. Stunning ocean views, digital detox, and sustainable living near Faro Querandí, Argentina.',
+ [2m20[0m |   openGraph: {
+    `----
+
+Import trace for requested module:
+./app/[locale]/page.tsx
+ ✓ Compiled in 2.8s (864 modules)
+ ✓ Compiled in 733ms (864 modules)
+ ✓ Compiled in 1981ms (864 modules)
+ ✓ Compiled in 457ms (381 modules)
+ ✓ Compiled in 1090ms (511 modules)
+ ✓ Compiled /[locale] in 240ms (483 modules)
+ GET /es 200 in 557ms
+ GET /en 200 in 208ms
+ GET /pt 200 in 173ms
+ ✓ Compiled in 418ms (381 modules)
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3004
+   - Network:      http://192.168.0.4:3004
+
+ ✓ Starting...
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Expected object, received boolean at "experimental.serverActions"
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 1846ms
+ ✓ Compiled /middleware in 329ms (130 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.7s (862 modules)
+ ✓ Compiled in 1058ms (380 modules)
+ GET /es 200 in 6121ms
+ ✓ Compiled in 408ms (380 modules)
+ ✓ Compiled in 1701ms (862 modules)
+ ✓ Compiled in 998ms (380 modules)
+ ✓ Compiled in 555ms (380 modules)
+ ✓ Compiled in 1083ms (380 modules)
+ ✓ Compiled /[locale] in 407ms (482 modules)
+ GET /es 200 in 694ms
+ GET /en 200 in 123ms
+ GET /es 200 in 122ms
+ GET /en 200 in 196ms
+[?25h

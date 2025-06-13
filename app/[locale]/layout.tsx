@@ -1,7 +1,15 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { locales } from '@/i18n/request';
+import { TranslationProvider } from '@/components/translation-provider';
+
+async function getMessagesForLocale(locale: string) {
+  try {
+    const messages = await import(`../../messages/${locale}.json`);
+    return messages.default;
+  } catch (error) {
+    // Fallback to Spanish if locale file doesn't exist
+    const fallback = await import('../../messages/es.json');
+    return fallback.default;
+  }
+}
 
 export default async function LocaleLayout({
   children,
@@ -11,17 +19,15 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
+  const messages = await getMessagesForLocale(locale);
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      {children}
-    </NextIntlClientProvider>
+    <html lang={locale} suppressHydrationWarning>
+      <body className="antialiased bg-background text-foreground">
+        <TranslationProvider locale={locale} messages={messages}>
+          {children}
+        </TranslationProvider>
+      </body>
+    </html>
   );
 }
