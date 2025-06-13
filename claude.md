@@ -254,3 +254,11 @@ A: Your own food, personal items, and anything you need to feel good in total so
 Back to Home
 
 ⸻
+
+## Image policy
+
+Galleries of images are done with the simple grid. They should be responsive. 
+
+Images smaller than 500x500px should be zoomable with some library that allows to browse them one by one with left and right arrows and preferably previews on the bottom.
+
+Exception: Aerial images are always zoomable regardless of size, as they contain interesting details worth examining closely.

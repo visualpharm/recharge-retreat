@@ -152,6 +152,9 @@ importers:
       vaul:
         specifier: ^0.9.6
         version: 0.9.6(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      yet-another-react-lightbox:
+        specifier: ^3.23.2
+        version: 3.23.2(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       zod:
         specifier: ^3.24.1
         version: 3.24.1
@@ -1950,6 +1953,20 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yet-another-react-lightbox@3.23.2:
+    resolution: {integrity: sha512-nEEtFejdUTeF5VLVO0/uZ+Kw+BxQn4ODKyJkX1JACyXmILRE/++50BS3ylnFytRRWYOJjeeTcOS8o9B00ENTqA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@types/react': ^16 || ^17 || ^18 || ^19
+      '@types/react-dom': ^16 || ^17 || ^18 || ^19
+      react: ^16.8.0 || ^17 || ^18 || ^19
+      react-dom: ^16.8.0 || ^17 || ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
   zod@3.24.1:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
@@ -3692,5 +3709,13 @@ snapshots:
       strip-ansi: 7.1.0
 
   yaml@2.8.0: {}
+
+  yet-another-react-lightbox@3.23.2(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+    optionalDependencies:
+      '@types/react': 19.0.0
+      '@types/react-dom': 19.0.0
 
   zod@3.24.1: {}

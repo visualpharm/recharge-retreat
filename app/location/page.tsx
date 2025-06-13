@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import SingleImageLightbox from "@/components/single-image-lightbox"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -186,16 +187,14 @@ export default function LocationPage() {
             <div className="w-16 h-1 bg-primary mt-2"></div>
           </div>
           <div className="bg-white rounded-lg overflow-hidden">
-            <div className="relative w-full h-auto">
-              <Image
-                src="/images/directions/Como llegar al rancho@0.5x.png"
-                alt="Correct route to Recharge Retreat - turn from ruta 11"
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
+            <SingleImageLightbox
+              src="/images/directions/Como llegar al rancho@0.5x.png"
+              alt="Correct route to Recharge Retreat - turn from ruta 11"
+              width={1200}
+              height={800}
+              className="w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </div>
