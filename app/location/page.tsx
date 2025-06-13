@@ -42,21 +42,23 @@ export default function LocationPage() {
       <Navigation />
       {/* Hero Section */}
       <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Location</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Find us in the heart of the dunes, where the ocean meets the sky.
-            </p>
+        <div className="pt-5">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Location</h1>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Find us in the heart of the dunes, where the ocean meets the sky.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Google Maps Section */}
-      <section className="py-0 bg-white">
+      <section className="pt-0 pb-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <div className="mt-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="-mt-8">
               <div className="w-full h-[400px] rounded-xl overflow-hidden">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.1234567890123!2d-57.0770374!3d-37.3756338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b5515744056f796!2sRecharge%20Retreat!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
@@ -96,7 +98,8 @@ export default function LocationPage() {
 
       {/* Where Are You Section */}
       <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Where Are You?</h2>
@@ -170,11 +173,13 @@ export default function LocationPage() {
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       {/* Hand-drawn Map Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
+      <section className="pt-0 pb-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
           <div className="mb-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Where Not to Go</h2>
             <p className="text-gray-600">Google Maps sends you the wrong route (I've reported it, but still). Use this map to turn from the ruta 11.</p>
@@ -193,6 +198,7 @@ export default function LocationPage() {
             </div>
           </div>
         </div>
+      </div>
       </section>
       <Footer />
     </div>

@@ -52,7 +52,7 @@ export default function LandPage() {
 
       {/* Aerial Views Masonry */}
       <section className="container mx-auto px-4 py-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-4 gap-3 mb-12">
             {/* Fork - smaller */}
             <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -205,9 +205,10 @@ export default function LandPage() {
         </div>
       </section>
 
-      {/* Plants Masonry */}
+      {/* Plants Section */}
       <section className="container mx-auto px-4 py-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">Plants</h2>
           <div className="grid grid-cols-6 gap-3">
             {/* Dunes sunset - large feature */}
             <div className="col-span-2 relative aspect-[4/5] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
