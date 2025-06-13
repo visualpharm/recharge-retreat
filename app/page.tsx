@@ -6,6 +6,7 @@ import { Compass, MapPin, Wheat, Signal, Building2, Waves, TreePine, Droplets } 
 import Image from "next/image"
 import Link from "next/link"
 import ImageGallery from "@/components/image-gallery"
+import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Metadata } from 'next'
@@ -160,68 +161,27 @@ export default function Page() {
           </div>
 
           {/* Grid of images */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/images/shelter/cabin-exterior-2.jpg"
-                alt="Front view of the shelter"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/images/shelter/outdoor-chair.jpg"
-                alt="Outdoor contemplation space"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/images/comfort/bedroom.webp"
-                alt="Covered area with seating"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/images/shelter/cabin-landscape.jpg"
-                alt="The shelter in its natural environment"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
+          <ImageGalleryLightbox 
+            images={[
+              { src: "/images/shelter/cabin-exterior-2.jpg", alt: "Front view of the shelter" },
+              { src: "/images/shelter/outdoor-chair.jpg", alt: "Outdoor contemplation space" },
+              { src: "/images/comfort/bedroom.webp", alt: "Covered area with seating" },
+              { src: "/images/shelter/cabin-landscape.jpg", alt: "The shelter in its natural environment" }
+            ]}
+            gridCols="grid-cols-2 md:grid-cols-4"
+            className="mb-8"
+          />
 
           {/* Flora and environment */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
-              <Image
-                src="/images/plants/native-plants.jpg"
-                alt="Native species that survive in the dunes"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
-              <Image
-                src="/images/plants/nursery.jpg"
-                alt="Nursery with tree seedlings"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
-              <Image
-                src="/images/plants/cactus.jpg"
-                alt="Resilient flora of the environment"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
+          <ImageGalleryLightbox 
+            images={[
+              { src: "/images/plants/native-plants.jpg", alt: "Native species that survive in the dunes" },
+              { src: "/images/plants/nursery.jpg", alt: "Nursery with tree seedlings" },
+              { src: "/images/plants/cactus.jpg", alt: "Resilient flora of the environment" }
+            ]}
+            gridCols="grid md:grid-cols-3"
+            imageClassName="aspect-[4/5]"
+          />
         </div>
       </section>
 

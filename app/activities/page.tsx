@@ -4,6 +4,7 @@ import { Signal, Building2, TreePine, Book, Footprints, Compass } from "lucide-r
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -51,38 +52,9 @@ export default function ActivitiesPage() {
         </div>
       </section>
 
-      {/* Why Recharge */}
-      <section className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-10">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-              <div className="text-3xl">🔋</div>
-            </div>
-            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-              Why "Recharge"?
-            </h2>
-          </div>
-
-          <Card className="border-2 border-primary/20 bg-primary/5 mb-12">
-            <CardContent className="p-8">
-              <p className="text-lg leading-relaxed">
-                In our hyperconnected world, true disconnection has become a luxury. Recharge Retreat offers a rare
-                opportunity to step away from the constant noise, notifications, and demands of modern life.
-              </p>
-              <p className="text-lg leading-relaxed mt-4">
-                Here, surrounded by nothing but natural dunes and the distant sound of the ocean, you can finally hear
-                yourself think. You can recharge your mental batteries, reset your perspective, and return to your
-                regular life with renewed energy and clarity.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* What to Do */}
       <section className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">What to Do</h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Quiet Activities */}
@@ -140,35 +112,45 @@ export default function ActivitiesPage() {
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <p>Cook over an open fire under the stars</p>
                 </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <p>Fish on the steep coast — you can catch sharks</p>
+                </li>
               </ul>
             </div>
           </div>
 
-          {/* Images */}
-          <div className="grid grid-cols-2 gap-4 mb-12">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-              <Image src="/images/plants/dunes-sunset.jpeg" alt="Sunset over the dunes" fill className="object-cover" />
-            </div>
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-              <Image
-                src="/images/plants/fence-sunset.jpeg"
-                alt="Evening atmosphere at the retreat"
-                fill
-                className="object-cover"
-              />
-            </div>
+          {/* Activities Images */}
+          <div className="mb-12">
+            <ImageGalleryLightbox 
+              images={[
+                { src: "/images/activities/beach-fishing.png", alt: "Beach fishing activities" },
+                { src: "/images/activities/shark-fishing.png", alt: "Shark fishing on the steep coast" },
+                { src: "/images/activities/outdoor-activities.png", alt: "Outdoor activities and exploration" },
+                { src: "/images/activities/nature-exploration.png", alt: "Nature exploration in the dunes" }
+              ]}
+              gridCols="grid-cols-2 md:grid-cols-4"
+            />
           </div>
 
-          {/* Guest Quote */}
-          <Card className="border-2 border-primary/20 bg-primary/5 mb-12">
-            <CardContent className="p-8">
-              <blockquote className="text-lg italic">
-                "I came here exhausted and left recharged. The silence was deafening at first, then liberating. I've
-                never slept better or thought more clearly."
-              </blockquote>
-              <p className="text-right mt-4 text-sm text-muted-foreground">— Previous Guest</p>
-            </CardContent>
-          </Card>
+          {/* Fishing Video */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold mb-6 text-center">Shark Fishing Experience</h3>
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/gXvgVHJOcn0?start=16"
+                title="Shark Fishing at Recharge Retreat"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+            <p className="text-center text-muted-foreground mt-4">
+              Experience the thrill of fishing on our steep coastal waters where sharks roam.
+            </p>
+          </div>
+
         </div>
       </section>
 

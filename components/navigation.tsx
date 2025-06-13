@@ -2,10 +2,14 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Building2, Menu, X } from "lucide-react"
 
 export default function Navigation({ transparent = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (path: string) => pathname === path
 
   return (
     <header className="fixed top-0 left-0 right-0 z-20 border-b border-border bg-background/95 backdrop-blur-sm">
@@ -24,25 +28,41 @@ export default function Navigation({ transparent = false }) {
           <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
             <Link
               href="/shelter"
-              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              className={`text-base font-medium transition-colors ${
+                isActive('/shelter') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
             >
               The Shelter
             </Link>
             <Link
               href="/land"
-              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              className={`text-base font-medium transition-colors ${
+                isActive('/land') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
             >
               The Land
             </Link>
             <Link
               href="/activities"
-              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              className={`text-base font-medium transition-colors ${
+                isActive('/activities') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
             >
               What You'll Do
             </Link>
             <Link
               href="/location"
-              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              className={`text-base font-medium transition-colors ${
+                isActive('/location') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
             >
               Location
             </Link>
@@ -65,28 +85,44 @@ export default function Navigation({ transparent = false }) {
           <div className="md:hidden pt-4 pb-6 border-t border-border/10 mt-4 space-y-4 text-center">
             <Link
               href="/shelter"
-              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              className={`block py-2 text-base font-medium transition-colors ${
+                isActive('/shelter') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               The Shelter
             </Link>
             <Link
               href="/land"
-              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              className={`block py-2 text-base font-medium transition-colors ${
+                isActive('/land') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               The Land
             </Link>
             <Link
               href="/activities"
-              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              className={`block py-2 text-base font-medium transition-colors ${
+                isActive('/activities') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               What You'll Do
             </Link>
             <Link
               href="/location"
-              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              className={`block py-2 text-base font-medium transition-colors ${
+                isActive('/location') 
+                  ? 'text-primary font-semibold' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Location

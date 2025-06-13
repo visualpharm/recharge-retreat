@@ -39,7 +39,7 @@ export default function ImageGalleryLightbox({
         {images.map((image, index) => (
           <div 
             key={index}
-            className={`relative aspect-square rounded-lg overflow-hidden cursor-zoom-in ${imageClassName}`}
+            className={`relative ${imageClassName || 'aspect-square'} rounded-lg overflow-hidden cursor-zoom-in`}
             onClick={() => openLightbox(index)}
           >
             <Image

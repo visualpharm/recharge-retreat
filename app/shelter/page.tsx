@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Flame, Droplets, Sun, Thermometer, Wifi, Utensils, Bed } from "lucide-react"
+import { Flame, Droplets, Sun, Thermometer, Wifi, Utensils, Bed, Zap, ChefHat, Gift, Heater } from "lucide-react"
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
-import CSSMasonryGallery from "@/components/css-masonry-gallery"
+import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -44,7 +44,11 @@ const shelterImages = [
     caption: "Self-Sufficient Shelter"
   },
   {
-    src: "/images/shelter/cabin-exterior-2.jpg",
+    src: "/images/shelter/entrance.jpg",
+    alt: "Entrance to the shelter"
+  },
+  {
+    src: "/images/shelter/front.jpg",
     alt: "Front view of the shelter"
   },
   {
@@ -102,11 +106,10 @@ export default function ShelterPage() {
 
         {/* Shelter Exterior Section */}
         <section className="pt-4 pb-12">
-          <div className="w-full overflow-hidden mb-8">
-            <CSSMasonryGallery 
+          <div className="mb-8">
+            <ImageGalleryLightbox 
               images={shelterImages}
-              className="-mx-2"
-              gap="0.5rem"
+              gridCols="grid-cols-2 md:grid-cols-3"
             />
           </div>
           
@@ -147,11 +150,10 @@ export default function ShelterPage() {
           <h2 className="text-3xl font-bold mb-8">Cabin Comforts</h2>
 
           {/* Comfort Images Gallery */}
-          <div className="w-full overflow-hidden mb-8">
-            <CSSMasonryGallery 
+          <div className="mb-8">
+            <ImageGalleryLightbox 
               images={comfortImages}
-              className="-mx-2"
-              gap="0.5rem"
+              gridCols="grid-cols-2 md:grid-cols-2"
             />
           </div>
 
@@ -159,11 +161,11 @@ export default function ShelterPage() {
             <Card className="h-full">
               <CardContent className="p-6 h-full">
                 <div className="flex items-start gap-4">
-                  <Droplets className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
+                  <Zap className="h-6 w-6 text-yellow-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Hot Shower</h3>
+                    <h3 className="font-semibold mb-2">Solar Power System</h3>
                     <p className="text-muted-foreground">
-                      Solar-heated water for comfortable showers even in the middle of nowhere.
+                      Equipped with solar panels providing lights and standard 220V outlets for all your devices.
                     </p>
                   </div>
                 </div>
@@ -173,11 +175,53 @@ export default function ShelterPage() {
             <Card className="h-full">
               <CardContent className="p-6 h-full">
                 <div className="flex items-start gap-4">
-                  <Flame className="h-6 w-6 text-orange-500 mt-1 flex-shrink-0" />
+                  <Droplets className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Fire Pit</h3>
+                    <h3 className="font-semibold mb-2">Hot Shower</h3>
                     <p className="text-muted-foreground">
-                      Outdoor fire pit for cooking and evening gatherings under the stars.
+                      Private bathroom with hot shower for comfortable hygiene routines.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-start gap-4">
+                  <ChefHat className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-2">Full Kitchen</h3>
+                    <p className="text-muted-foreground">
+                      Stove, fridge, and complete cookware: plates, cutlery, glasses, pots, pans, kettle, and all cooking utensils.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-start gap-4">
+                  <Gift className="h-6 w-6 text-purple-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-2">Welcome Amenities</h3>
+                    <p className="text-muted-foreground">
+                      Complimentary welcome tea and sweets to start your retreat experience.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-start gap-4">
+                  <Heater className="h-6 w-6 text-orange-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-2">Climate Control</h3>
+                    <p className="text-muted-foreground">
+                      Well-insulated with gas heating, suitable for cold climates and comfortable year-round.
                     </p>
                   </div>
                 </div>
@@ -197,20 +241,6 @@ export default function ShelterPage() {
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="h-full">
-              <CardContent className="p-6 h-full">
-                <div className="flex items-start gap-4">
-                  <Utensils className="h-6 w-6 text-gray-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-2">Basic Kitchen</h3>
-                    <p className="text-muted-foreground">
-                      Essential cooking equipment and utensils for preparing meals.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* What's Not Included */}
@@ -221,8 +251,7 @@ export default function ShelterPage() {
                 <li className="flex items-start gap-3">
                   <Wifi className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                   <span>
-                    <strong>No WiFi</strong> - This is a digital detox space. Mobile signal is available for
-                    emergencies.
+                    <strong>No WiFi</strong> - We present this as a place to disconnect. However, there is good mobile internet reception from all carriers for when you need it.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">

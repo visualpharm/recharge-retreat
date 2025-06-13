@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Compass, TreePine, Droplets } from "lucide-react"
+import { MapPin, Compass, TreePine, Droplets, Shield, Camera, Home } from "lucide-react"
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
@@ -187,6 +187,63 @@ export default function LandPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Security Section */}
+      <section className="container mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <Shield className="h-7 w-7 text-primary" />
+            <h2 className="text-3xl font-bold">Security</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Fenced Area */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <Shield className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400">Fenced Property</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      The entire area is <strong>fenced</strong> for your security and privacy.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Security Cameras */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <Camera className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400">Security Surveillance</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      <strong>Security camera surveillance</strong> ensures your safety.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Caretaker */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <Home className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-green-700 dark:text-green-400">On-Site Caretaker</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      The <strong>caretaker lives nearby</strong> for immediate assistance if needed.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
