@@ -22,19 +22,11 @@ export default function LanguageSwitcher() {
   const switchLanguage = (newLocale: string) => {
     setIsOpen(false);
     
-    // Remove the current locale from pathname if it exists
-    let newPathname = pathname;
-    if (pathname.startsWith('/en') || pathname.startsWith('/pt')) {
-      newPathname = pathname.slice(3) || '/';
-    }
-    
-    // Add new locale prefix (except for Spanish which is default)
-    const newUrl = newLocale === 'es' ? newPathname : `/${newLocale}${newPathname}`;
-    
     // Set cookie to remember language preference
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=lax`;
     
-    router.push(newUrl);
+    // Simple approach: reload the page and let middleware handle routing
+    window.location.href = newLocale === 'es' ? '/' : `/${newLocale}`;
   };
 
   return (

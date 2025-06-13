@@ -266,7 +266,7 @@ Exception: Aerial images are always zoomable regardless of size, as they contain
 ## Language policy
 The site is available in English, Spanish, and Portuguese. The content is the same in all languages, but the text is localized to each language.
 
-There's the language switcher in the top right corner of the header. The language is stored in a cookie, so it will be remembered for the next visit.
+There's the language switcher in the top right corner of the header. The language is stored in a cookie, so it will be remembered for the next visit. The spanish version in the switcher has the flag of Argentina, the english version has the flag of the United States, and the portuguese version has the flag of Brazil.
 
 The default language is Spanish. The / opens Spanish. English is in /en and Portuguese in /pt.
 

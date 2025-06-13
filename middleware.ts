@@ -8,18 +8,16 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale,
   
-  // Configure locale routing
-  localePrefix: {
-    mode: 'as-needed',
-    prefixes: {
-      'es': '/', // Spanish is the default, no prefix
-      'en': '/en',
-      'pt': '/pt'
-    }
-  }
+  // Prefix handling
+  localePrefix: 'as-needed'
 });
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(en|pt)/:path*', '/((?!_next|_vercel|.*\\..*).*)']
+  matcher: [
+    // Match all pathnames except for
+    // - … if they start with `/api`, `/_next` or `/_vercel`
+    // - … the ones containing a dot (e.g. `favicon.ico`)
+    '/((?!api|_next|_vercel|.*\\..*).*)'
+  ]
 };

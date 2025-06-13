@@ -14,8 +14,9 @@ export default function Navigation({ transparent = false }) {
   const t = useTranslations('nav')
 
   const isActive = (path: string) => {
-    const localizedPath = locale === 'es' ? path : `/${locale}${path}`
-    return pathname === localizedPath
+    // Remove locale prefix from pathname for comparison
+    const pathWithoutLocale = pathname.replace(/^\/(en|pt)/, '') || '/'
+    return pathWithoutLocale === path
   }
 
   const getLocalizedHref = (path: string) => {
