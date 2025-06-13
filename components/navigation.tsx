@@ -3,19 +3,30 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useTranslations, useLocale } from "next-intl"
 import { Building2, Menu, X } from "lucide-react"
+import LanguageSwitcher from "./language-switcher"
 
 export default function Navigation({ transparent = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
+  const locale = useLocale()
+  const t = useTranslations('nav')
 
-  const isActive = (path: string) => pathname === path
+  const isActive = (path: string) => {
+    const localizedPath = locale === 'es' ? path : `/${locale}${path}`
+    return pathname === localizedPath
+  }
+
+  const getLocalizedHref = (path: string) => {
+    return locale === 'es' ? path : `/${locale}${path}`
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-20 border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <Link href="/" className="font-semibold text-lg">
+          <Link href={getLocalizedHref("/")} className="font-semibold text-lg">
             Recharge Retreat
           </Link>
 
@@ -27,55 +38,56 @@ export default function Navigation({ transparent = false }) {
           {/* Desktop navigation - centered */}
           <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
             <Link
-              href="/shelter"
+              href={getLocalizedHref("/shelter")}
               className={`text-base font-medium transition-colors ${
                 isActive('/shelter') 
                   ? 'text-primary font-semibold' 
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              The Shelter
+              {t('shelter')}
             </Link>
             <Link
-              href="/land"
+              href={getLocalizedHref("/land")}
               className={`text-base font-medium transition-colors ${
                 isActive('/land') 
                   ? 'text-primary font-semibold' 
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              The Land
+              {t('land')}
             </Link>
             <Link
-              href="/activities"
+              href={getLocalizedHref("/activities")}
               className={`text-base font-medium transition-colors ${
                 isActive('/activities') 
                   ? 'text-primary font-semibold' 
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              What You'll Do
+              {t('activities')}
             </Link>
             <Link
-              href="/location"
+              href={getLocalizedHref("/location")}
               className={`text-base font-medium transition-colors ${
                 isActive('/location') 
                   ? 'text-primary font-semibold' 
                   : 'text-foreground/80 hover:text-foreground'
               }`}
             >
-              Location
+              {t('location')}
             </Link>
           </nav>
 
-          {/* Book button */}
-          <div className="hidden md:block">
+          {/* Language Switcher and Book button */}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <Link
-              href="/book"
+              href={getLocalizedHref("/book")}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors"
             >
               <Building2 className="h-4 w-4" />
-              Book Now
+              {t('book')}
             </Link>
           </div>
         </div>
@@ -84,7 +96,7 @@ export default function Navigation({ transparent = false }) {
         {isMenuOpen && (
           <div className="md:hidden pt-4 pb-6 border-t border-border/10 mt-4 space-y-4 text-center">
             <Link
-              href="/shelter"
+              href={getLocalizedHref("/shelter")}
               className={`block py-2 text-base font-medium transition-colors ${
                 isActive('/shelter') 
                   ? 'text-primary font-semibold' 
@@ -92,10 +104,10 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              The Shelter
+              {t('shelter')}
             </Link>
             <Link
-              href="/land"
+              href={getLocalizedHref("/land")}
               className={`block py-2 text-base font-medium transition-colors ${
                 isActive('/land') 
                   ? 'text-primary font-semibold' 
@@ -103,10 +115,10 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              The Land
+              {t('land')}
             </Link>
             <Link
-              href="/activities"
+              href={getLocalizedHref("/activities")}
               className={`block py-2 text-base font-medium transition-colors ${
                 isActive('/activities') 
                   ? 'text-primary font-semibold' 
@@ -114,10 +126,10 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              What You'll Do
+              {t('activities')}
             </Link>
             <Link
-              href="/location"
+              href={getLocalizedHref("/location")}
               className={`block py-2 text-base font-medium transition-colors ${
                 isActive('/location') 
                   ? 'text-primary font-semibold' 
@@ -125,15 +137,21 @@ export default function Navigation({ transparent = false }) {
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Location
+              {t('location')}
             </Link>
+            
+            {/* Language Switcher for Mobile */}
+            <div className="flex justify-center py-2">
+              <LanguageSwitcher />
+            </div>
+            
             <Link
-              href="/book"
+              href={getLocalizedHref("/book")}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors mt-2"
               onClick={() => setIsMenuOpen(false)}
             >
               <Building2 className="h-4 w-4" />
-              Book Now
+              {t('book')}
             </Link>
           </div>
         )}

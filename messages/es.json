@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "shelter": "El Refugio",
+    "land": "La Tierra", 
+    "activities": "Qué Harás",
+    "location": "Ubicación",
+    "book": "Reservar"
+  },
+  "common": {
+    "readMore": "Leer más",
+    "bookNow": "Reservar Ahora",
+    "viewGallery": "Ver Galería",
+    "close": "Cerrar",
+    "loading": "Cargando..."
+  },
+  "home": {
+    "title": "Recharge Retreat",
+    "subtitle": "Refugio Autónomo Privado. Sin vecinos. 9 hectáreas de médanos verdes y el océano.",
+    "description": "Esto no es un hotel. Ni una cabaña. Es un refugio autosuficiente, escondido entre médanos, en una chacra privada de 9 hectáreas cerca del mar.",
+    "exploreButton": "Explorar el Refugio",
+    "zone": {
+      "title": "La Zona",
+      "description": "Ubicado en una zona de propiedades costosas — con barrios cerrados, hoteles boutique y propiedades de siete cifras."
+    },
+    "ecosystem": {
+      "title": "Un Ecosistema Único",
+      "description": "Estas especies nativas son las únicas que logran sobrevivir en los médanos, creando un paisaje de belleza austera y resistente que cambia con las estaciones y la luz del día."
+    },
+    "shelter": {
+      "title": "El Refugio",
+      "notHotel": "No es un hotel. Ni una cabaña.",
+      "description": "Es un refugio autosuficiente, aislado, entre médanos, en una chacra privada de 9 hectáreas cerca del mar.",
+      "collapse": "Un ensayo general para cuando todo colapse",
+      "collapseDescription": "Pero estás solo, rodeado de médanos vírgenes, sin vecinos, sin tráfico, nada. Una experiencia de desconexión completa, como un ensayo para cuando todo colapse."
+    }
+  }
+}

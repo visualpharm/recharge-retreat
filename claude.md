@@ -97,7 +97,7 @@ Activo
 🧭 ¿Y si no lo aguantás?  
 	• Hay señal de celular  
 	• Hay un pueblo a solo 5 km  
-	• Y te damos descuento para mudarte a Il Buco, nuestra villa de estilo italiano con terraza verde y Wi‑Fi de 500 Mbps  
+	• Y te damos descuento para mudarte a Il Buco, nuestra villa ultra-tecnológica con terraza verde y Wi‑Fi de 500 Mbps  
 
 Reservar Ahora
 
@@ -222,7 +222,7 @@ Active
 🧭 What if you can’t handle it?
 	•	There’s cell signal
 	•	There’s a town just 5 km away
-	•	And we’ll give you a discount to switch to Il Buco, our Italian-style villa with a green terrace and 500 Mbps WiFi
+	•	And we’ll give you a discount to switch to Il Buco, our ultra-tech villa with a green terrace and 500 Mbps WiFi
 
 Book Now
 
@@ -262,3 +262,12 @@ Galleries of images are done with the simple grid. They should be responsive.
 Images smaller than 500x500px should be zoomable with some library that allows to browse them one by one with left and right arrows and preferably previews on the bottom.
 
 Exception: Aerial images are always zoomable regardless of size, as they contain interesting details worth examining closely.
+
+## Language policy
+The site is available in English, Spanish, and Portuguese. The content is the same in all languages, but the text is localized to each language.
+
+There's the language switcher in the top right corner of the header. The language is stored in a cookie, so it will be remembered for the next visit.
+
+The default language is Spanish. The / opens Spanish. English is in /en and Portuguese in /pt.
+
+We use IP geolocation to determine the language for the first visit, but it can be changed later. Spanish speaking countries resolve to Spanish, English speaking countries to English, and Portuguese speaking countries to Portuguese. If the country is not recognized or speaks some other language, it defaults to English.

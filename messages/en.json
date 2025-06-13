@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "shelter": "The Shelter",
+    "land": "The Land",
+    "activities": "What You'll Do", 
+    "location": "Location",
+    "book": "Book Now"
+  },
+  "common": {
+    "readMore": "Read more",
+    "bookNow": "Book Now",
+    "viewGallery": "View Gallery",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "home": {
+    "title": "Recharge Retreat",
+    "subtitle": "Private Autonomous Shelter. No Neighbors. 9 Hectares of Green Dunes and the Ocean.",
+    "description": "This is not a hotel. Not a cabin. It's a self-sufficient shelter, hidden among dunes, on a private 9-hectare property near the sea.",
+    "exploreButton": "Explore the Shelter",
+    "zone": {
+      "title": "The Zone",
+      "description": "Located in an area of expensive properties — with gated communities, boutique hotels and seven-figure homes."
+    },
+    "ecosystem": {
+      "title": "A Unique Ecosystem", 
+      "description": "These native species are the only ones that manage to survive in the dunes, creating a landscape of austere and resilient beauty that changes with the seasons and daylight."
+    },
+    "shelter": {
+      "title": "The Shelter",
+      "notHotel": "Not a hotel. Not a cabin.",
+      "description": "It's a self-sufficient shelter, isolated, among dunes, on a private 9-hectare property near the sea.",
+      "collapse": "A dry run for when it all collapses",
+      "collapseDescription": "But you are alone, surrounded by pristine dunes, with no neighbors, no traffic, nothing. A complete disconnection experience, like a rehearsal for when everything collapses."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Início", 
+    "shelter": "O Refúgio",
+    "land": "A Terra",
+    "activities": "O Que Você Fará",
+    "location": "Localização", 
+    "book": "Reservar"
+  },
+  "common": {
+    "readMore": "Leia mais",
+    "bookNow": "Reservar Agora",
+    "viewGallery": "Ver Galeria",
+    "close": "Fechar",
+    "loading": "Carregando..."
+  },
+  "home": {
+    "title": "Recharge Retreat",
+    "subtitle": "Refúgio Autônomo Privado. Sem vizinhos. 9 hectares de dunas verdes e o oceano.",
+    "description": "Isto não é um hotel. Nem uma cabana. É um refúgio autossuficiente, escondido entre dunas, em uma propriedade privada de 9 hectares perto do mar.",
+    "exploreButton": "Explorar o Refúgio",
+    "zone": {
+      "title": "A Zona",
+      "description": "Localizado em uma área de propriedades caras — com condomínios fechados, hotéis boutique e propriedades de sete dígitos."
+    },
+    "ecosystem": {
+      "title": "Um Ecossistema Único",
+      "description": "Essas espécies nativas são as únicas que conseguem sobreviver nas dunas, criando uma paisagem de beleza austera e resistente que muda com as estações e a luz do dia."
+    },
+    "shelter": {
+      "title": "O Refúgio", 
+      "notHotel": "Não é um hotel. Nem uma cabana.",
+      "description": "É um refúgio autossuficiente, isolado, entre dunas, em uma propriedade privada de 9 hectares perto do mar.",
+      "collapse": "Um ensaio geral para quando tudo colapsar",
+      "collapseDescription": "Mas você está sozinho, cercado por dunas pristinas, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
+    }
+  }
+}
