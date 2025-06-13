@@ -20,7 +20,7 @@ export default function Page() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/cabin-exterior-1.jpg"
-            alt="Refugio autosuficiente entre médanos"
+            alt="Self-sufficient shelter among dunes"
             fill
             className="object-cover"
             priority
@@ -69,10 +69,10 @@ export default function Page() {
             <Card className="border-2 border-white/20 bg-black/40 backdrop-blur-sm">
               <CardContent className="p-8">
                 <blockquote className="text-lg md:text-xl leading-relaxed text-white">
-                  <p className="mb-4">No es un hotel. No es una cabaña.</p>
+                  <p className="mb-4">Not a hotel. Not a cabin.</p>
                   <p>
-                    Es un <strong className="text-white">refugio autosuficiente</strong>, aislado, entre médanos, en una{" "}
-                    <strong className="text-white">chacra privada de 9 hectáreas</strong> cerca del mar.
+                    It's a <strong className="text-white">self-sufficient shelter</strong>, isolated, among dunes, on a{" "}
+                    <strong className="text-white">private 9-hectare property</strong> near the sea.
                   </p>
                 </blockquote>
               </CardContent>
@@ -84,9 +84,9 @@ export default function Page() {
                 <div className="text-left">
                   <h3 className="text-lg font-semibold text-white mb-3">Dry Run for When It All Collapses</h3>
                   <p className="text-white/80 text-sm leading-relaxed">
-                    Pero vos estás <strong className="text-white">solo</strong>, rodeado de{" "}
-                    <strong className="text-white">médanos vírgenes</strong>, sin vecinos, sin tránsito, sin nada. Una
-                    experiencia de desconexión total, como un ensayo para cuando todo colapse.
+                    But you are <strong className="text-white">alone</strong>, surrounded by{" "}
+                    <strong className="text-white">pristine dunes</strong>, with no neighbors, no traffic, nothing. A
+                    complete disconnection experience, like a rehearsal for when everything collapses.
                   </p>
                 </div>
               </CardContent>

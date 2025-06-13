@@ -19,16 +19,45 @@ export default function LandPage() {
         </div>
       </section>
 
-      {/* Featured Image */}
+      {/* Featured Image Masonry */}
       <section className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <div className="relative aspect-[21/9] rounded-lg overflow-hidden mb-12">
-            <Image
-              src="/images/dunes-sunset.jpeg"
-              alt="Panoramic view of the dunes at sunset"
-              fill
-              className="object-cover"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+              <Image
+                src="/images/dunes-sunset.jpeg"
+                alt="Panoramic view of the dunes at sunset"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+              <Image src="/images/native-flora.jpeg" alt="Native flora in the dunes" fill className="object-cover" />
+            </div>
+            <div className="relative aspect-[1/1] rounded-lg overflow-hidden">
+              <Image
+                src="/images/white-flowers.jpeg"
+                alt="White flowers growing in the dunes"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/2] rounded-lg overflow-hidden md:col-span-2">
+              <Image
+                src="/images/fence-sunset.jpeg"
+                alt="Beautiful sunset over the property"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[1/1] rounded-lg overflow-hidden">
+              <Image
+                src="/images/tall-grass.jpeg"
+                alt="Tall grass swaying in the breeze"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

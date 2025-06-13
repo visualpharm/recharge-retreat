@@ -43,6 +43,34 @@ export default function ShelterPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">Cabin Comforts</h2>
 
+          {/* Added Comfort Images */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/interior-seating.jpg"
+                alt="Comfortable seating area inside the cabin"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/outdoor-chair.jpg"
+                alt="Outdoor relaxation space"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/cabin-exterior-3.jpg"
+                alt="Cabin exterior with solar panels"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <Card>
               <CardContent className="p-6">
