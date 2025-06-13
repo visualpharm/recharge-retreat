@@ -28,7 +28,7 @@ export default function ActivitiesPage() {
               <div className="text-3xl">🔋</div>
             </div>
             <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-              ¿Por qué "Recharge"?
+              Why "Recharge"?
             </h2>
           </div>
 
@@ -116,11 +116,11 @@ export default function ActivitiesPage() {
           {/* Images */}
           <div className="grid grid-cols-2 gap-4 mb-12">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-              <Image src="/images/dunes-sunset.jpeg" alt="Sunset over the dunes" fill className="object-cover" />
+              <Image src="/images/plants/dunes-sunset.jpeg" alt="Sunset over the dunes" fill className="object-cover" />
             </div>
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
               <Image
-                src="/images/fence-sunset.jpeg"
+                src="/images/plants/fence-sunset.jpeg"
                 alt="Evening atmosphere at the retreat"
                 fill
                 className="object-cover"
@@ -146,7 +146,7 @@ export default function ActivitiesPage() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <Compass className="h-7 w-7 text-primary" />
-            <h2 className="text-3xl font-bold">¿Y si no lo aguantás?</h2>
+            <h2 className="text-3xl font-bold">What If You Can't Handle It?</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">

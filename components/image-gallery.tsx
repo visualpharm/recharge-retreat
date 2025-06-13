@@ -9,34 +9,34 @@ import { cn } from "@/lib/utils"
 
 const images = [
   {
-    src: "/images/dunes-sunset.jpeg",
-    alt: "Médanos al atardecer",
-    caption: "Atardeceres únicos entre la vegetación nativa",
+    src: "/images/plants/dunes-sunset.jpeg",
+    alt: "Dunes at sunset",
+    caption: "Unique sunsets among native vegetation",
   },
   {
-    src: "/images/native-flora.jpeg",
-    alt: "Flora nativa de los médanos",
-    caption: "Flora resistente que sobrevive en condiciones extremas",
+    src: "/images/plants/native-flora.jpeg",
+    alt: "Native flora of the dunes",
+    caption: "Resilient flora that survives in extreme conditions",
   },
   {
-    src: "/images/water-view.jpeg",
-    alt: "Vista del lago artificial",
-    caption: "Lago artificial donde beben los animales silvestres",
+    src: "/images/plants/water-view.jpeg",
+    alt: "View of the artificial lake",
+    caption: "Artificial lake where wild animals drink",
   },
   {
-    src: "/images/fence-sunset.jpeg",
-    alt: "Límites naturales",
-    caption: "Límites naturales que se integran con el paisaje",
+    src: "/images/plants/fence-sunset.jpeg",
+    alt: "Natural boundaries",
+    caption: "Natural boundaries that integrate with the landscape",
   },
   {
-    src: "/images/white-flowers.jpeg",
-    alt: "Flores silvestres",
-    caption: "Flores silvestres que crecen entre los médanos",
+    src: "/images/plants/white-flowers.jpeg",
+    alt: "Wild flowers",
+    caption: "Wild flowers that grow among the dunes",
   },
   {
-    src: "/images/tall-grass.jpeg",
-    alt: "Pastos altos",
-    caption: "Pastos nativos que se mecen con la brisa marina",
+    src: "/images/plants/tall-grass.jpeg",
+    alt: "Tall grasses",
+    caption: "Native grasses that sway with the sea breeze",
   },
 ]
 

@@ -19,44 +19,44 @@ export default function LandPage() {
         </div>
       </section>
 
-      {/* Featured Image Masonry */}
+      {/* Aerial Views Masonry */}
       <section className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+          <div className="grid grid-cols-4 gap-3 mb-12">
+            {/* Fork - smaller */}
+            <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
               <Image
-                src="/images/dunes-sunset.jpeg"
-                alt="Panoramic view of the dunes at sunset"
+                src="/images/aereo/fork.webp"
+                alt="Aerial view of the property fork"
                 fill
-                className="object-cover"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
             </div>
-            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
-              <Image src="/images/native-flora.jpeg" alt="Native flora in the dunes" fill className="object-cover" />
-            </div>
-            <div className="relative aspect-[1/1] rounded-lg overflow-hidden">
+            
+            {/* Ocean - largest, most prominent */}
+            <div className="col-span-2 relative aspect-[5/3] rounded-xl overflow-hidden cursor-pointer group shadow-xl hover:shadow-2xl transition-all duration-300">
               <Image
-                src="/images/white-flowers.jpeg"
-                alt="White flowers growing in the dunes"
+                src="/images/aereo/ocean.webp"
+                alt="Aerial view towards the ocean"
                 fill
-                className="object-cover"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium text-gray-800">Ocean View</p>
+              </div>
             </div>
-            <div className="relative aspect-[3/2] rounded-lg overflow-hidden md:col-span-2">
-              <Image
-                src="/images/fence-sunset.jpeg"
-                alt="Beautiful sunset over the property"
-                fill
-                className="object-cover"
+            
+            {/* Lake - medium */}
+            <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image 
+                src="/images/aereo/lago.webp" 
+                alt="Aerial view of the artificial lake" 
+                fill 
+                className="object-cover group-hover:scale-105 transition-transform duration-500" 
               />
-            </div>
-            <div className="relative aspect-[1/1] rounded-lg overflow-hidden">
-              <Image
-                src="/images/tall-grass.jpeg"
-                alt="Tall grass swaying in the breeze"
-                fill
-                className="object-cover"
-              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
             </div>
           </div>
         </div>
@@ -65,10 +65,6 @@ export default function LandPage() {
       {/* The Surroundings */}
       <section className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="text-2xl">🌾</div>
-            <h2 className="text-3xl font-bold">The Surroundings</h2>
-          </div>
 
           <div className="space-y-8">
             {/* Main property */}
@@ -162,49 +158,115 @@ export default function LandPage() {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Aerial Map */}
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Property Map</h2>
-          <div className="relative aspect-[16/9] rounded-lg overflow-hidden">
-            <Image src="/images/dunes-sunset.jpeg" alt="Satellite view of the property" fill className="object-cover" />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
-                <p className="text-black font-medium">Recharge Retreat Property</p>
-                <p className="text-xs text-gray-600">Route 11, km 429.5 — near Faro Querandí</p>
+          <div className="relative aspect-[16/9] rounded-xl overflow-hidden cursor-pointer group shadow-xl hover:shadow-2xl transition-all duration-300">
+            <Image src="/images/rancho-aereal-map.jpg" alt="Aerial map view of the property" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg">
+                <p className="text-black font-semibold">Recharge Retreat Property</p>
+                <p className="text-sm text-gray-600">Route 11, km 429.5 — near Faro Querandí</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Image Gallery */}
+      {/* Plants Masonry */}
       <section className="container mx-auto px-4 py-12">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">The Natural Environment</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-6 gap-3">
+            {/* Dunes sunset - large feature */}
+            <div className="col-span-2 relative aspect-[4/5] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
               <Image
-                src="/images/native-plants.jpg"
-                alt="Native plants surviving in the dunes"
+                src="/images/plants/dunes-sunset.jpeg"
+                alt="Dunes at sunset"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            
+            {/* Native flora - medium */}
+            <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image
+                src="/images/plants/native-flora.jpeg"
+                alt="Native flora of the dunes"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
             </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+            
+            {/* Water view - medium */}
+            <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
               <Image
-                src="/images/white-flowers.jpeg"
-                alt="Wild flowers growing in the dunes"
+                src="/images/plants/water-view.jpeg"
+                alt="View of the artificial lake"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
             </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+            
+            {/* Fence sunset - large */}
+            <div className="col-span-2 relative aspect-[5/3] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
               <Image
-                src="/images/tall-grass.jpeg"
-                alt="Native grasses swaying in the sea breeze"
+                src="/images/plants/fence-sunset.jpeg"
+                alt="Natural boundaries at sunset"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            
+            {/* White flowers - small */}
+            <div className="col-span-1 relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image
+                src="/images/plants/white-flowers.jpeg"
+                alt="Wild flowers"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            
+            {/* Tall grass - small */}
+            <div className="col-span-1 relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image
+                src="/images/plants/tall-grass.jpeg"
+                alt="Tall grasses"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            
+            {/* Native plants - medium */}
+            <div className="col-span-2 relative aspect-[3/2] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image
+                src="/images/plants/native-plants.jpg"
+                alt="Native species that survive in the dunes"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            
+            {/* Nursery - medium */}
+            <div className="col-span-1 relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image
+                src="/images/plants/nursery.jpg"
+                alt="Nursery with tree seedlings"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            
+            {/* Cactus - small */}
+            <div className="col-span-1 relative aspect-[4/5] rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-2xl transition-all duration-300">
+              <Image
+                src="/images/plants/cactus.jpg"
+                alt="Resilient flora of the environment"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
             </div>
           </div>

@@ -19,7 +19,7 @@ export default function Page() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cabin-exterior-1.jpg"
+            src="/images/shelter/cabin-exterior-1.jpg"
             alt="Self-sufficient shelter among dunes"
             fill
             className="object-cover"
@@ -61,47 +61,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Short Intro */}
-      <section className="container mx-auto px-4 py-16 bg-gradient-to-b from-black/80 to-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
-            {/* Main Description Card */}
-            <Card className="border-2 border-white/20 bg-black/40 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <blockquote className="text-lg md:text-xl leading-relaxed text-white">
-                  <p className="mb-4">Not a hotel. Not a cabin.</p>
-                  <p>
-                    It's a <strong className="text-white">self-sufficient shelter</strong>, isolated, among dunes, on a{" "}
-                    <strong className="text-white">private 9-hectare property</strong> near the sea.
-                  </p>
-                </blockquote>
-              </CardContent>
-            </Card>
-
-            {/* Dry run for when it all collapses */}
-            <Card className="border border-white/20 bg-white/5 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <div className="text-left">
-                  <h3 className="text-lg font-semibold text-white mb-3">Dry Run for When It All Collapses</h3>
-                  <p className="text-white/80 text-sm leading-relaxed">
-                    But you are <strong className="text-white">alone</strong>, surrounded by{" "}
-                    <strong className="text-white">pristine dunes</strong>, with no neighbors, no traffic, nothing. A
-                    complete disconnection experience, like a rehearsal for when everything collapses.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center pt-8">
-              <Link href="/shelter">
-                <Button variant="outline" size="lg" className="text-lg">
-                  See the Shelter <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* La Zona - Photo Gallery */}
       <section className="py-16 overflow-hidden">
@@ -110,10 +69,10 @@ export default function Page() {
             <div className="flex items-start gap-4 mb-8">
               <MapPin className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
               <div>
-                <h2 className="text-3xl font-bold mb-3">La Zona</h2>
+                <h2 className="text-3xl font-bold mb-3">The Zone</h2>
                 <p className="text-lg text-muted-foreground">
-                  Está en una zona de propiedades caras — con{" "}
-                  <strong>barrios cerrados, hoteles boutique y casas de siete cifras</strong>.
+                  Located in an area of expensive properties — with{" "}
+                  <strong>gated communities, boutique hotels and seven-figure homes</strong>.
                 </p>
               </div>
             </div>
@@ -126,10 +85,10 @@ export default function Page() {
                   <div className="flex items-start gap-4">
                     <Compass className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-semibold mb-3">Un ecosistema único</h3>
+                      <h3 className="text-lg font-semibold mb-3">A Unique Ecosystem</h3>
                       <p className="text-muted-foreground">
-                        Estas especies nativas son las únicas que logran sobrevivir en los médanos, creando un paisaje
-                        de belleza austera y resistente que cambia con las estaciones y la luz del día.
+                        These native species are the only ones that manage to survive in the dunes, creating a landscape
+                        of austere and resilient beauty that changes with the seasons and daylight.
                       </p>
                     </div>
                   </div>
@@ -145,7 +104,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <MapPin className="h-7 w-7 text-primary" />
-            <h2 className="text-3xl font-bold">¿Dónde estás?</h2>
+            <h2 className="text-3xl font-bold">Where Are You?</h2>
           </div>
 
           <div className="space-y-6">
@@ -154,8 +113,8 @@ export default function Page() {
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <p>
-                    En la <strong>costa atlántica argentina</strong>, cerca (literalmente a pasos) de la{" "}
-                    <strong>Reserva Faro Querandí</strong>
+                    On the <strong>Argentine Atlantic coast</strong>, close (literally steps away) from the{" "}
+                    <strong>Faro Querandí Reserve</strong>
                   </p>
                 </div>
               </CardContent>
@@ -166,7 +125,7 @@ export default function Page() {
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <p>
-                    Rodeado por <strong>médanos naturales</strong>, no urbanizados
+                    Surrounded by <strong>natural dunes</strong>, undeveloped
                   </p>
                 </div>
               </CardContent>
@@ -177,7 +136,7 @@ export default function Page() {
                 <div className="flex items-start gap-4">
                   <Waves className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                   <p>
-                    A 3 km de una <strong>playa completamente vacía</strong>
+                    3 km from a <strong>completely empty beach</strong>
                   </p>
                 </div>
               </CardContent>
@@ -188,7 +147,7 @@ export default function Page() {
                 <div className="flex items-start gap-4">
                   <Building2 className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
                   <p>
-                    A 5 km de <strong>Mar de las Pampas</strong>, si te arrepentís del aislamiento
+                    5 km from <strong>Mar de las Pampas</strong>, if you regret the isolation
                   </p>
                 </div>
               </CardContent>
@@ -200,38 +159,70 @@ export default function Page() {
       {/* Photo Gallery - Remaining Images */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">El Refugio</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">The Shelter</h2>
+
+          {/* Shelter Description */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="space-y-6">
+              {/* Main Description Card */}
+              <Card className="border-2 border-primary/20 bg-primary/5">
+                <CardContent className="p-8">
+                  <blockquote className="text-lg md:text-xl leading-relaxed">
+                    <p className="mb-4">Not a hotel. Not a cabin.</p>
+                    <p>
+                      It's a <strong>self-sufficient shelter</strong>, isolated, among dunes, on a{" "}
+                      <strong>private 9-hectare property</strong> near the sea.
+                    </p>
+                  </blockquote>
+                </CardContent>
+              </Card>
+
+              {/* Dry run for when it all collapses */}
+              <Card className="border border-primary/20 bg-primary/10">
+                <CardContent className="p-6">
+                  <div className="text-left">
+                    <h3 className="text-lg font-semibold mb-3">Dry Run for When It All Collapses</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      But you are <strong>alone</strong>, surrounded by{" "}
+                      <strong>pristine dunes</strong>, with no neighbors, no traffic, nothing. A
+                      complete disconnection experience, like a rehearsal for when everything collapses.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
 
           {/* Grid of images */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/cabin-exterior-2.jpg"
-                alt="Vista frontal del refugio"
+                src="/images/shelter/cabin-exterior-2.jpg"
+                alt="Front view of the shelter"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/outdoor-chair.jpg"
-                alt="Espacio de contemplación exterior"
+                src="/images/shelter/outdoor-chair.jpg"
+                alt="Outdoor contemplation space"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/interior-seating.jpg"
-                alt="Área cubierta con asientos"
+                src="/images/comfort/bedroom.webp"
+                alt="Covered area with seating"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/cabin-landscape.jpg"
-                alt="El refugio en su entorno natural"
+                src="/images/shelter/cabin-landscape.jpg"
+                alt="The shelter in its natural environment"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -242,24 +233,24 @@ export default function Page() {
           <div className="grid md:grid-cols-3 gap-4">
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <Image
-                src="/images/native-plants.jpg"
-                alt="Especies nativas que sobreviven en los médanos"
+                src="/images/plants/native-plants.jpg"
+                alt="Native species that survive in the dunes"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <Image
-                src="/images/nursery.jpg"
-                alt="Vivero con plantines de árboles"
+                src="/images/plants/nursery.jpg"
+                alt="Nursery with tree seedlings"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <Image
-                src="/images/cactus.jpg"
-                alt="Flora resistente del entorno"
+                src="/images/plants/cactus.jpg"
+                alt="Resilient flora of the environment"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -273,7 +264,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="text-2xl">🌾</div>
-            <h2 className="text-3xl font-bold">El entorno</h2>
+            <h2 className="text-3xl font-bold">The Environment</h2>
           </div>
 
           <div className="space-y-8">
@@ -283,10 +274,10 @@ export default function Page() {
                 <div className="flex items-start gap-4">
                   <div className="w-3 h-3 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-primary">Propiedad Principal</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-primary">Main Property</h3>
                     <p className="text-lg leading-relaxed">
-                      <strong>9 hectáreas privadas de médanos verdes</strong>, cubiertos por solo tres especies nativas
-                      que logran sobrevivir ahí — y que son sorprendentemente hermosas
+                      <strong>9 private hectares of green dunes</strong>, covered by only three native species
+                      that manage to survive there — and which are surprisingly beautiful
                     </p>
                   </div>
                 </div>
@@ -301,10 +292,10 @@ export default function Page() {
                   <div className="flex items-start gap-3">
                     <MapPin className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold mb-3 text-green-700 dark:text-green-400">Reserva Protegida</h4>
+                      <h4 className="font-semibold mb-3 text-green-700 dark:text-green-400">Protected Reserve</h4>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Ubicada a pasos de la <strong>Reserva Ecológica Faro Querandí</strong>, un área protegida de
-                        alto valor natural
+                        Located steps away from the <strong>Faro Querandí Ecological Reserve</strong>, a protected area of
+                        high natural value
                       </p>
                     </div>
                   </div>
@@ -317,10 +308,10 @@ export default function Page() {
                   <div className="flex items-start gap-3">
                     <Wheat className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400">Aislamiento Total</h4>
+                      <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400">Total Isolation</h4>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        <strong>Rodeado de otras chacras no desarrolladas</strong>: no hay vecinos, no hay
-                        construcciones, no hay gente hasta donde mires
+                        <strong>Surrounded by other undeveloped farms</strong>: no neighbors, no
+                        buildings, no people as far as you can see
                       </p>
                     </div>
                   </div>
@@ -334,10 +325,10 @@ export default function Page() {
                 <div className="flex items-start gap-3">
                   <Compass className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400">Tu Propia Reserva</h4>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400">Your Own Reserve</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Un <strong>camino perimetral de 1.200 metros entre médanos altos y vistas panorámicas</strong>,
-                      para que hagas trekking como si caminaras tu propia reserva
+                      A <strong>1,200-meter perimeter path between high dunes and panoramic views</strong>,
+                      so you can trek as if walking through your own reserve
                     </p>
                   </div>
                 </div>
@@ -354,7 +345,7 @@ export default function Page() {
                     <Badge variant="secondary">Conectividad</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Hay <strong>señal de celular</strong>
+                    There is <strong>cell phone signal</strong>
                   </p>
                 </CardContent>
               </Card>
@@ -367,7 +358,7 @@ export default function Page() {
                     <Badge variant="secondary">Proximidad</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Hay <strong>ciudad a 5 km</strong>
+                    There is a <strong>city 5 km away</strong>
                   </p>
                 </CardContent>
               </Card>
@@ -384,15 +375,15 @@ export default function Page() {
               <div className="text-3xl">🔋</div>
             </div>
             <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-              ¿Por qué "Recharge"?
+              Why "Recharge"?
             </h2>
           </div>
 
           <Card className="border-2 border-primary bg-primary/5">
             <CardContent className="p-8">
-              <h2 className="text-3xl font-bold mb-4">¿Listo para recargar?</h2>
+              <h2 className="text-3xl font-bold mb-4">Ready to Recharge?</h2>
               <p className="text-muted-foreground mb-6">
-                Reservá tu refugio en los médanos y desconectate de todo lo que te drena.
+                Book your shelter in the dunes and disconnect from everything that drains you.
               </p>
               <a
                 href="https://www.airbnb.com/rooms/1150297553735943101?source_impression_id=p3_1749749927_P3mlvFLC4Lgz4bxa"
@@ -401,7 +392,7 @@ export default function Page() {
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
               >
                 <Building2 className="h-5 w-5" />
-                Reservar en Airbnb
+                Book on Airbnb
               </a>
             </CardContent>
           </Card>
@@ -413,7 +404,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <Compass className="h-7 w-7 text-primary" />
-            <h2 className="text-3xl font-bold">¿Y si no lo aguantás?</h2>
+            <h2 className="text-3xl font-bold">What If You Can't Handle It?</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -448,8 +439,8 @@ export default function Page() {
                   <Badge variant="secondary">Alternativa</Badge>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Te hacemos <strong>descuento para mudarte a Il Buco</strong>, nuestra villa italiana con{" "}
-                  <strong>terraza verde</strong> y <strong>WiFi de 500 Mbps</strong>
+                  We give you a <strong>discount to move to Il Buco</strong>, our Italian villa with{" "}
+                  <strong>green terrace</strong> and <strong>500 Mbps WiFi</strong>
                 </p>
               </CardContent>
             </Card>
@@ -462,9 +453,9 @@ export default function Page() {
         <div className="max-w-2xl mx-auto text-center">
           <Card className="border-2 border-primary bg-primary/5">
             <CardContent className="p-8">
-              <h2 className="text-3xl font-bold mb-4">¿Listo para recargar?</h2>
+              <h2 className="text-3xl font-bold mb-4">Ready to Recharge?</h2>
               <p className="text-muted-foreground mb-6">
-                Reservá tu refugio en los médanos y desconectate de todo lo que te drena.
+                Book your shelter in the dunes and disconnect from everything that drains you.
               </p>
               <a
                 href="https://www.airbnb.com/rooms/1150297553735943101?source_impression_id=p3_1749749927_P3mlvFLC4Lgz4bxa"
@@ -473,7 +464,7 @@ export default function Page() {
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
               >
                 <Building2 className="h-5 w-5" />
-                Reservar en Airbnb
+                Book on Airbnb
               </a>
             </CardContent>
           </Card>
