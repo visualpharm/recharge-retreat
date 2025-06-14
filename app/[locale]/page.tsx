@@ -68,71 +68,42 @@ export default function Page() {
       </section>
 
 
-      {/* La Zona - Photo Gallery */}
-      <section className="py-16 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-start gap-4 mb-8">
-              <MapPin className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
-              <div>
-                <h2 className="text-3xl font-bold mb-3">{t('home.zone.title')}</h2>
-                <p className="text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.zone.description')}} />
+
+
+
+      {/* Shelter Description - Beautiful Side by Side Layout */}
+      <section className="container mx-auto px-4 py-24">
+        <div className="max-w-7xl mx-auto">
+          {/* Two Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Left Column - Main Description */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground/90 leading-tight">
+                  {t('home.shelter.notHotel')}
+                </h2>
+                <div className="h-px bg-gradient-to-r from-primary/60 to-transparent"></div>
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/80" dangerouslySetInnerHTML={{__html: t('home.shelter.description')}} />
               </div>
             </div>
 
-            <ImageGallery />
-
-            <div className="mt-8 max-w-2xl mx-auto">
-              <Card className="border-2 border-primary/20 bg-primary/5">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <Compass className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-semibold mb-3">{t('home.ecosystem.title')}</h3>
-                      <p className="text-muted-foreground">
-                        {t('home.ecosystem.description')}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            {/* Right Column - Collapse Description */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-light text-foreground/90 leading-tight">
+                  {t('home.shelter.collapse')}
+                </h2>
+                <div className="h-px bg-gradient-to-r from-primary/60 to-transparent"></div>
+                <p className="text-lg md:text-xl leading-relaxed text-foreground/70" dangerouslySetInnerHTML={{__html: t('home.shelter.collapseDescription')}} />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
-      {/* Photo Gallery - Remaining Images */}
+      {/* Shelter Photos */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">{t('home.shelter.title')}</h2>
-
-          {/* Shelter Description */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="space-y-6">
-              {/* Main Description Card */}
-              <Card className="border-2 border-primary/20 bg-primary/5">
-                <CardContent className="p-8">
-                  <blockquote className="text-lg md:text-xl leading-relaxed">
-                    <p className="mb-4">{t('home.shelter.notHotel')}</p>
-                    <p dangerouslySetInnerHTML={{__html: t('home.shelter.description')}} />
-                  </blockquote>
-                </CardContent>
-              </Card>
-
-              {/* Dry run for when it all collapses */}
-              <Card className="border border-primary/20 bg-primary/10">
-                <CardContent className="p-6">
-                  <div className="text-left">
-                    <h3 className="text-lg font-semibold mb-3">{t('home.shelter.collapse')}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.shelter.collapseDescription')}} />
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
           {/* Grid of images */}
           <ImageGalleryLightbox 
             images={[
@@ -158,58 +129,52 @@ export default function Page() {
         </div>
       </section>
 
-      {/* El entorno */}
+      {/* Environment */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="text-2xl">🌾</div>
-            <h2 className="text-3xl font-bold">{t('home.environment.title')}</h2>
-          </div>
 
-          <div className="space-y-8">
+          {/* All blocks in uniform grid */}
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Main property - First item */}
             <Card className="border-2 border-primary/20 bg-primary/5">
-              <CardContent className="p-8">
+              <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-3 h-3 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-primary">{t('home.environment.mainProperty.title')}</h3>
-                    <p className="text-lg leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.mainProperty.description')}} />
+                    <h4 className="font-semibold mb-3 text-primary">{t('home.environment.mainProperty.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.mainProperty.description')}} />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Grid layout for remaining features */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Reserva Ecológica */}
-              <Card className="border-2">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold mb-3 text-green-700 dark:text-green-400">{t('home.environment.protectedReserve.title')}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.protectedReserve.description')}} />
-                    </div>
+            {/* Reserva Ecológica */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-green-700 dark:text-green-400">{t('home.environment.protectedReserve.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.protectedReserve.description')}} />
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              {/* Aislamiento */}
-              <Card className="border-2">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-3">
-                    <Wheat className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400">{t('home.environment.totalIsolation.title')}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.totalIsolation.description')}} />
-                    </div>
+            {/* Aislamiento */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3">
+                  <Wheat className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400">{t('home.environment.totalIsolation.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.totalIsolation.description')}} />
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            {/* Camino perimetral - Full width */}
+            {/* Camino perimetral */}
             <Card className="border-2">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
@@ -222,35 +187,48 @@ export default function Page() {
               </CardContent>
             </Card>
 
-            {/* Bottom grid */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Lago artificial */}
-              <Card className="border-2">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-3 mb-4">
-                    <Droplets className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
-                    <Badge variant="secondary">{t('home.environment.connectivity.title')}</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.environment.connectivity.description')}} />
-                </CardContent>
-              </Card>
+            {/* Lago artificial */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-4">
+                  <Droplets className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
+                  <Badge variant="secondary">{t('home.environment.connectivity.title')}</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.environment.connectivity.description')}} />
+              </CardContent>
+            </Card>
 
-              {/* Vivero */}
-              <Card className="border-2">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-3 mb-4">
-                    <TreePine className="h-6 w-6 text-emerald-500 mt-1 flex-shrink-0" />
-                    <Badge variant="secondary">{t('home.environment.proximity.title')}</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.environment.proximity.description')}} />
-                </CardContent>
-              </Card>
-            </div>
+            {/* Vivero */}
+            <Card className="border-2">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-4">
+                  <TreePine className="h-6 w-6 text-emerald-500 mt-1 flex-shrink-0" />
+                  <Badge variant="secondary">{t('home.environment.proximity.title')}</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.environment.proximity.description')}} />
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
+      {/* La Zona - Photo Gallery */}
+      <section className="py-16 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-start gap-4 mb-8">
+              <MapPin className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
+              <div>
+                <h2 className="text-3xl font-bold mb-3">{t('home.zone.title')}</h2>
+                <p className="text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.zone.description')}} />
+              </div>
+            </div>
 
+            <ImageGallery />
+
+          </div>
+        </div>
+      </section>
 
       {/* ¿Y si no lo aguantás? */}
       <section className="container mx-auto px-4 py-16">
@@ -294,28 +272,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Booking Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="max-w-2xl mx-auto text-center">
-          <Card className="border-2 border-primary bg-primary/5">
-            <CardContent className="p-8">
-              <h2 className="text-3xl font-bold mb-4">{t('home.booking.title')}</h2>
-              <p className="text-muted-foreground mb-6">
-                {t('home.booking.description')}
-              </p>
-              <a
-                href="https://www.airbnb.com/rooms/1150297553735943101?source_impression_id=p3_1749749927_P3mlvFLC4Lgz4bxa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-              >
-                <Building2 className="h-5 w-5" />
-                {t('home.booking.airbnbButton')}
-              </a>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       <Footer />
     </div>

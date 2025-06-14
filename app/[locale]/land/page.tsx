@@ -256,8 +256,8 @@ export default function LandPage() {
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg">
-                <p className="text-black font-semibold">Recharge Retreat Property</p>
-                <p className="text-sm text-gray-600">Route 11, km 429.5 — near Faro Querandí</p>
+                <p className="text-black font-bold">The area is 9 ha.</p>
+                <p className="text-sm text-gray-600">Almost the perfect square shape of 300x300 m.</p>
               </div>
             </div>
           </div>

@@ -78,10 +78,18 @@ export default function ImageGallery() {
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative aspect-square rounded-lg overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="relative rounded-lg overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            style={{ height: '172px' }}
             onClick={() => openLightbox(index)}
           >
-            <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+            <Image 
+              src={image.src || "/placeholder.svg"} 
+              alt={image.alt} 
+              fill 
+              className="object-cover" 
+              sizes="(max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
+              priority={index < 6}
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
           </div>
         ))}
