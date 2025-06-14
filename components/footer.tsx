@@ -15,60 +15,40 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4">Related Projects</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/shelter" className="text-muted-foreground hover:text-foreground transition-colors">
-                  The Shelter
-                </Link>
-              </li>
-              <li>
-                <Link href="/land" className="text-muted-foreground hover:text-foreground transition-colors">
-                  The Land
-                </Link>
-              </li>
-              <li>
-                <Link href="/activities" className="text-muted-foreground hover:text-foreground transition-colors">
-                  What You'll Do
-                </Link>
-              </li>
-              <li>
                 <Link 
-                  href="https://book.recharge.com.ar/listing/110889" 
+                  href="https://ilbuco.com.ar" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Book Now
+                  Il Buco, ultra modern co-living in Carilo
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Location</h3>
+            <h3 className="font-semibold mb-4">Project Credit</h3>
             <p className="text-sm text-muted-foreground">
-              Ruta 11, km 429.5
-              <br />
-              Turn at "Camping" sign
-              <br />
-              Buenos Aires, Argentina
+              <Link 
+                href="https://aiandtractors.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors"
+              >
+                Project of Ivan Braun, AI entrepreneur and speaker
+              </Link>
             </p>
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t mt-8 pt-6 text-center">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Recharge Retreat. All rights reserved.
           </p>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
