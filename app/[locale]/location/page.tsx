@@ -87,8 +87,8 @@ export default function LocationPage() {
                 <div>
                   <p className="text-lg font-medium">Recharge Retreat</p>
                   <p className="text-gray-600">
-                    Paraiso 324, Cariló (7167)<br />
-                    Partido de Pinamar, Provincia de Buenos Aires, Argentina
+                    Parcela 48AT, 7165<br />
+                    Partido Villa Gesell, Provincia de Buenos Aires, Argentina
                   </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function LocationPage() {
 
             <div className="border-l-2 border-gray-200 pl-4">
               <p className="text-gray-800 leading-relaxed">
-                5 km from <span className="font-semibold text-gray-900">Mar de las Pampas</span>, if you regret the isolation
+                10 km from <span className="font-semibold text-gray-900">Mar de las Pampas</span>, if you regret the isolation
               </p>
             </div>
           </div>
