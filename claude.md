@@ -53,8 +53,9 @@ Página 3: La Tierra
 	• A veces, con tu permiso, entraremos a regarlos  
 
 🗺️ Cómo Llegar  
-	• Acceso por Ruta 11, km 429.5 — doblar hacia Faro Querandí  
-	• ⚠️ *Google Maps puede sugerir el country «Salvaje» — esa entrada está cerrada*  
+	- Ruta 11, km 429.5 	— doblar en el cartel "Camping"
+	- Si el portero te pide dinero, decí que vas a ver a Ivan  
+	- ⚠️ *Google Maps puede sugerir el country «Salvaje» — esa entrada está cerrada*  
 
 Ver Qué Harás
 
@@ -112,7 +113,7 @@ Página 5: Reservar
 💬 Preguntas Frecuentes
 
 **¿Cómo llego?**  
-Desde Ruta 11, km 429.5, doblá en el cartel de Faro Querandí. Ignorá cualquier instrucción para entrar por «Salvaje»: esa ruta está cerrada.
+Desde Ruta 11, km 429.5, doblá en el cartel "Camping". Si el portero te pide dinero, decí que vas a ver a Ivan. Ignorá cualquier instrucción para entrar por «Salvaje»: esa ruta está cerrada.
 
 **¿Hay Wi‑Fi?**  
 No. Pero hay buena señal de celular.
@@ -178,8 +179,10 @@ Page 3: The Land
 	•	Sometimes, with your permission, we’ll step in to water the saplings
 
 🗺️ Getting Here
-	•	Access via Ruta 11, km 429.5 — turn toward Faro Querandí
-	•	⚠️ Google Maps may suggest the “Salvaje” gated community — that route is blocked
+	- Ruta 11, km 429.5 
+	— turn at the "Camping" sign
+	- If the keeper asks for money, say you're going to Ivan
+	- ⚠️ Google Maps may suggest the “Salvaje” gated community — that route is blocked
 
 See What You’ll Do
 
@@ -237,7 +240,7 @@ Page 5: Book
 💬 FAQ
 
 Q: How do I get there?
-A: From Ruta 11, km 429.5, turn at the Faro Querandí sign. Ignore any instructions to turn at “Salvaje” — that route is gated and closed.
+A: From Ruta 11, km 429.5, turn at the "Camping" sign. If the keeper asks for money, say you're going to Ivan. Ignore any instructions to turn at “Salvaje” — that route is gated and closed.
 
 Q: Is there WiFi?
 A: No. There’s good cell signal though.

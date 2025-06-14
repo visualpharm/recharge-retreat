@@ -33,7 +33,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/book" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link 
+                  href="https://book.recharge.com.ar/listing/110889" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Book Now
                 </Link>
               </li>
@@ -45,7 +50,7 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">
               Ruta 11, km 429.5
               <br />
-              Near Faro Querandí
+              Turn at "Camping" sign
               <br />
               Buenos Aires, Argentina
             </p>

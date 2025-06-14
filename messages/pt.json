@@ -29,8 +29,8 @@
     },
     "shelter": {
       "title": "O Refúgio", 
-      "notHotel": "Não é um hotel. Nem uma cabana.",
-      "description": "É um refúgio autossuficiente, isolado, entre dunas, em uma propriedade privada de 9 hectares perto do mar.",
+      "notHotel": "Refúgio Pós-Colapso",
+      "description": "Quando tudo colapsar, você tem um lugar na Argentina. Visite, teste, verifique a pista de pouso para seu jato. Quer o seu próprio por perto? Vamos conversar.",
       "collapse": "Um ensaio geral para quando tudo colapsar",
       "collapseDescription": "Mas você está sozinho, cercado por dunas pristinas, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
     }

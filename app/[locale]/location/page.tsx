@@ -145,12 +145,12 @@ export default function LocationPage() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">By Car</h3>
-                <ol className="space-y-2 text-gray-800 pl-5 list-decimal">
-                  <li>Take Ruta 11 towards the coast</li>
-                  <li>Look for km marker 429.5</li>
-                  <li>Turn onto the dirt road (look for our sign)</li>
-                  <li>Follow the signs to Recharge Retreat (approximately 1.5km from the main road)</li>
-                </ol>
+                <ul className="space-y-3 text-gray-800 pl-5 list-disc">
+                  <li><strong>Ruta 11, km 429.5</strong> — turn at the "Camping" sign</li>
+                  <li>If the keeper asks for money, say you're going to Ivan</li>
+                  <li>Follow the dirt road for about 1.5 km, first turn left. In 300 m you'll see our water tower. Welcome!</li>
+                  <li><strong>⚠️ Warning:</strong> Google Maps may suggest the "Salvaje" gated community — that route is blocked</li>
+                </ul>
               </div>
 
               <div>

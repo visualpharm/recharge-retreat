@@ -83,7 +83,9 @@ export default function Navigation({ transparent = false }) {
           <div className="hidden md:flex items-center gap-4">
             <SimpleLanguageSwitcher />
             <Link
-              href={getLocalizedHref("/book")}
+              href="https://book.recharge.com.ar/listing/110889"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors"
             >
               <Building2 className="h-4 w-4" />
@@ -147,7 +149,9 @@ export default function Navigation({ transparent = false }) {
             </div>
             
             <Link
-              href={getLocalizedHref("/book")}
+              href="https://book.recharge.com.ar/listing/110889"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors mt-2"
               onClick={() => setIsMenuOpen(false)}
             >

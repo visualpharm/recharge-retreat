@@ -29,8 +29,8 @@
     },
     "shelter": {
       "title": "El Refugio",
-      "notHotel": "No es un hotel. Ni una cabaña.",
-      "description": "Es un <strong>refugio autosuficiente</strong>, aislado, entre médanos, en una <strong>chacra privada de 9 hectáreas</strong> cerca del mar.",
+      "notHotel": "Refugio Post-Colapso",
+      "description": "Cuando todo colapse, tenés un lugar en Argentina. Conocelo, probalo, chequeá la pista de aterrizaje para tu jet. ¿Querés el tuyo cerca? Hablemos.",
       "collapse": "Un ensayo general para cuando todo colapse",
       "collapseDescription": "Pero estás <strong>solo</strong>, rodeado de <strong>médanos vírgenes</strong>, sin vecinos, sin tráfico, nada. Una experiencia de desconexión completa, como un ensayo para cuando todo colapse."
     },

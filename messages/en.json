@@ -29,8 +29,8 @@
     },
     "shelter": {
       "title": "The Shelter",
-      "notHotel": "Not a hotel. Not a cabin.",
-      "description": "It's a <strong>self-sufficient shelter</strong>, isolated, among dunes, on a <strong>private 9-hectare property</strong> near the sea.",
+      "notHotel": "Post-Meltdown Shelter",
+      "description": "When everything collapses, you've got a spot in Argentina. Tour it, test it, check the airstrip for your jet. Want your own nearby? Let's talk.",
       "collapse": "A dry run for when it all collapses",
       "collapseDescription": "But you are <strong>alone</strong>, surrounded by <strong>pristine dunes</strong>, with no neighbors, no traffic, nothing. A complete disconnection experience, like a rehearsal for when everything collapses."
     },

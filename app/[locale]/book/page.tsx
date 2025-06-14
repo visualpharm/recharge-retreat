@@ -202,9 +202,14 @@ export default function BookPage() {
             <h2 className="text-3xl font-bold">Location</h2>
           </div>
 
-          <p className="text-lg mb-6">
-            <strong>Address:</strong> Ruta 11, km 429.5 — turn at Faro Querandí
-          </p>
+          <div className="mb-6">
+            <p className="text-lg mb-2">
+              <strong>Address:</strong> Ruta 11, km 429.5 — turn at the "Camping" sign
+            </p>
+            <p className="text-sm text-gray-600">
+              If the keeper asks for money, say you're going to Ivan
+            </p>
+          </div>
 
           <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-8">
             {/* This would be replaced with an actual Google Maps embed */}
