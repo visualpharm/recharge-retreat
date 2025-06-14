@@ -33,6 +33,53 @@
       "description": "Quando tudo colapsar, você tem um lugar na Argentina. Visite, teste, verifique a pista de pouso para seu jato. Quer o seu próprio por perto? Vamos conversar.",
       "collapse": "Um ensaio geral para quando tudo colapsar",
       "collapseDescription": "Mas você está sozinho, cercado por dunas pristinas, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
+    },
+    "environment": {
+      "title": "O Ambiente",
+      "mainProperty": {
+        "title": "Propriedade Principal",
+        "description": "<strong>9 hectares privados de dunas verdes</strong>, cobertas por apenas três espécies nativas que conseguem sobreviver lá — e que são surpreendentemente belas"
+      },
+      "protectedReserve": {
+        "title": "Reserva Protegida",
+        "description": "Localizada a poucos passos da <strong>Reserva Ecológica Faro Querandí</strong>, área protegida de alto valor natural"
+      },
+      "totalIsolation": {
+        "title": "Isolamento Total",
+        "description": "<strong>Cercada por outras fazendas não desenvolvidas</strong>: sem vizinhos, sem prédios, sem pessoas até onde a vista alcança"
+      },
+      "ownReserve": {
+        "title": "Sua Própria Reserva",
+        "description": "Um <strong>caminho perimetral de 1.200 metros entre dunas altas e vistas panorâmicas</strong>, para que você faça trekking como se caminhasse por sua própria reserva"
+      },
+      "connectivity": {
+        "title": "Conectividade",
+        "description": "Há <strong>sinal de celular</strong>"
+      },
+      "proximity": {
+        "title": "Proximidade", 
+        "description": "Há <strong>cidade a 5 km</strong>"
+      }
+    },
+    "whatIf": {
+      "title": "E se Você Não Conseguir Aguentar?",
+      "connectivity": {
+        "title": "Conectividade",
+        "description": "Há <strong>sinal de celular</strong>"
+      },
+      "proximity": {
+        "title": "Proximidade",
+        "description": "Há <strong>cidade a 5 km</strong>"
+      },
+      "alternative": {
+        "title": "Alternativa",
+        "description": "Damos <strong>desconto para se mudar para Il Buco</strong>, nossa villa italiana com <strong>terraço verde</strong> e <strong>WiFi de 500 Mbps</strong>"
+      }
+    },
+    "booking": {
+      "title": "Pronto para Recarregar?",
+      "description": "Reserve seu refúgio nas dunas e desconecte-se de tudo que te drena.",
+      "airbnbButton": "Reservar no Airbnb"
     }
   },
   "location": {
