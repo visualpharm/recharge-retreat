@@ -276,3 +276,18 @@ The default language is Spanish. The / opens Spanish. English is in /en and Port
 We use IP geolocation to determine the language for the first visit, but it can be changed later. Spanish speaking countries resolve to Spanish, English speaking countries to English, and Portuguese speaking countries to Portuguese. If the country is not recognized or speaks some other language, it defaults to English.
 
 Spanish is argentinian, portuguese is brazilian, and english is american. The text is localized to each language, so it may not be a direct translation.
+
+## Welcome message (don't send it for now)
+
+¡Gracias por reservar Recharge! 🌿
+
+Es un refugio autónomo entre el mar y la reserva.
+
+📍Cómo llegar:
+https://recharge.com.ar/es/location
+
+🧳 Traé por favor:
+	•	Sábanas y toallas
+	•	Comida y bebida
+
+💡 Tip: fijate qué hacer en la zona https://recharge.com.ar/es/activities

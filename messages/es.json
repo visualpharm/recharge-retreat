@@ -82,6 +82,171 @@
       "airbnbButton": "Reservar en Airbnb"
     }
   },
+  "location": {
+    "title": "Nuestra Ubicación",
+    "subtitle": "Encontranos en el corazón de los médanos, donde el océano se encuentra con el cielo.",
+    "openMaps": "Abrir en Google Maps",
+    "address": "Recharge Retreat",
+    "whereAreYou": {
+      "title": "¿Dónde Estás?",
+      "coast": "En la <strong>costa atlántica argentina</strong>, cerca de la <strong>Reserva Faro Querandí</strong>",
+      "beach": "A 3 km de una <strong>playa completamente vacía</strong>",
+      "dunes": "Rodeado de <strong>médanos naturales</strong>, sin desarrollar",
+      "distance": "A 10 km de <strong>Mar de las Pampas</strong>, si te arrepentís del aislamiento"
+    },
+    "howToGet": {
+      "title": "Cómo Llegar",
+      "byCar": "En Auto",
+      "step1": "<strong>Ruta 11, km 429.5</strong> — doblá en el cartel \"Camping\"",
+      "step2": "Si el portero te pide dinero, decí que vas a ver a Ivan",
+      "step3": "Seguí el camino de tierra por unos 1.5 km, primera vuelta a la izquierda. En 300 m verás nuestra torre de agua. ¡Bienvenido!",
+      "warning": "<strong>⚠️ Advertencia:</strong> Google Maps puede sugerir el country \"Salvaje\" — esa ruta está bloqueada",
+      "gpsTitle": "Coordenadas GPS",
+      "gpsNote": "Usá estas coordenadas si tu GPS no reconoce la dirección",
+      "notesTitle": "Notas Importantes",
+      "note1": "La última parte del camino es de tierra pero accesible con vehículos estándar",
+      "note2": "Recomendamos llegar durante el día para tu primera visita",
+      "note3": "Se proporcionarán instrucciones detalladas después de la reserva"
+    },
+    "whereNotToGo": {
+      "title": "Por Dónde No Ir",
+      "description": "Google Maps te manda por la ruta equivocada (lo reporté, pero sigue). Usá este mapa para doblar desde la ruta 11."
+    }
+  },
+  "activities": {
+    "title": "Qué Harás",
+    "subtitle": "Convertí la ausencia de entretenimiento en una característica. Reconectá con vos mismo y la naturaleza.",
+    "quiet": {
+      "title": "Actividades Tranquilas",
+      "read": "Leer ese libro que venís postergando",
+      "journal": "Escribir en tu diario sin distracciones",
+      "meditate": "Meditar con vistas panorámicas de los médanos",
+      "stargaze": "Observar las estrellas en uno de los cielos más oscuros de la región",
+      "coffee": "Disfrutar tu café matutino en completo silencio"
+    },
+    "active": {
+      "title": "Actividades Activas",
+      "hike": "Hacer trekking por el sendero privado de 1.200 metros entre médanos",
+      "beach": "Caminar hasta la playa completamente vacía (3km)",
+      "wildlife": "Observar la fauna local y plantas nativas",
+      "yoga": "Practicar yoga o ejercicio en la naturaleza",
+      "cook": "Cocinar al fuego bajo las estrellas",
+      "fish": "Pescar en la costa empinada — podés agarrar tiburones"
+    },
+    "fishing": {
+      "title": "Experiencia de Pesca de Tiburones",
+      "description": "Experimentá la emoción de pescar en nuestras aguas costeras empinadas donde los tiburones merodean."
+    },
+    "cantHandle": {
+      "title": "¿Y si no lo aguantás?",
+      "connectivity": {
+        "badge": "Conectividad",
+        "description": "Hay <strong>señal de celular</strong> para emergencias"
+      },
+      "proximity": {
+        "badge": "Proximidad",
+        "description": "Hay <strong>ciudad a solo 5 km</strong>"
+      },
+      "alternative": {
+        "badge": "Alternativa",
+        "description": "Ofrecemos <strong>descuento para mudarte a Il Buco</strong>, nuestra villa italiana con <strong>terraza verde</strong> y <strong>WiFi de 500 Mbps</strong>"
+      }
+    }
+  },
+  "land": {
+    "title": "La Tierra",
+    "subtitle": "9 hectáreas de médanos vírgenes y belleza natural, todo para vos.",
+    "oceanView": "Vista al Océano",
+    "privateProperty": {
+      "title": "Propiedad Privada",
+      "description": "<strong>9 hectáreas de médanos verdes</strong>, cubiertas por solo tres especies nativas que logran sobrevivir aquí — y son sorprendentemente hermosas."
+    },
+    "protectedReserve": {
+      "title": "Reserva Protegida",
+      "description": "Ubicado a pasos de la <strong>Reserva Ecológica Faro Querandí</strong>, un área protegida de alto valor natural."
+    },
+    "privateTrail": {
+      "title": "Sendero Privado",
+      "description": "Un <strong>sendero perimetral de 1.200 metros entre médanos altos con vistas panorámicas</strong>, para hacer trekking como si caminaras por tu propia reserva privada."
+    },
+    "artificialLake": {
+      "title": "Lago Artificial",
+      "description": "Un pequeño lago artificial donde los animales salvajes vienen a beber, creando un ecosistema único dentro de la propiedad."
+    },
+    "nursery": {
+      "title": "Vivero de Plantas Nativas",
+      "description": "Un pequeño vivero con plantines de árboles nativos, parte de nuestro esfuerzo continuo para preservar y mejorar el ecosistema local."
+    },
+    "security": {
+      "title": "Seguridad",
+      "fenced": {
+        "title": "Propiedad Cercada",
+        "description": "Toda el área está <strong>cercada</strong> para tu seguridad y privacidad."
+      },
+      "surveillance": {
+        "title": "Vigilancia de Seguridad",
+        "description": "<strong>Vigilancia con cámaras de seguridad</strong> asegura tu protección."
+      },
+      "caretaker": {
+        "title": "Cuidador en el Lugar",
+        "description": "El <strong>cuidador vive cerca</strong> para asistencia inmediata si es necesario."
+      }
+    },
+    "aerialMap": {
+      "area": "El área es de 9 hectáreas.",
+      "shape": "Casi la forma perfecta de un cuadrado de 300x300 m."
+    },
+    "plants": {
+      "title": "Plantas"
+    }
+  },
+  "shelter": {
+    "title": "El Refugio",
+    "subtitle": "Un refugio autosuficiente diseñado para la desconexión y la recarga.",
+    "exterior": {
+      "solarPowered": {
+        "title": "Energía Solar",
+        "description": "Completamente autosuficiente con paneles solares que proveen toda la electricidad que necesitás."
+      },
+      "insulated": {
+        "title": "Bien Aislado",
+        "description": "Se mantiene fresco en verano y cálido en invierno con aislamiento natural."
+      }
+    },
+    "comforts": {
+      "title": "Comodidades de la Cabaña",
+      "solarSystem": {
+        "title": "Sistema de Energía Solar",
+        "description": "Equipado con paneles solares que proveen luces y tomas de 220V estándar para todos tus dispositivos."
+      },
+      "hotShower": {
+        "title": "Ducha Caliente",
+        "description": "Baño privado con ducha caliente para rutinas de higiene cómodas."
+      },
+      "kitchen": {
+        "title": "Cocina Completa",
+        "description": "Hornalla, heladera y utensilios completos: platos, cubiertos, vasos, ollas, sartenes, pava y todos los utensilios de cocina."
+      },
+      "amenities": {
+        "title": "Amenidades de Bienvenida",
+        "description": "Té de bienvenida y dulces de cortesía para comenzar tu experiencia de retiro."
+      },
+      "climate": {
+        "title": "Control de Clima",
+        "description": "Bien aislado con calefacción a gas, adecuado para climas fríos y cómodo durante todo el año."
+      },
+      "sleeping": {
+        "title": "Descanso Cómodo",
+        "description": "Colchón y ropa de cama de calidad para noches reparadoras después de días en la naturaleza."
+      }
+    },
+    "notIncluded": {
+      "title": "Qué No Está Incluido",
+      "noWifi": "<strong>Sin WiFi</strong> - Presentamos esto como un lugar para desconectarse. Sin embargo, hay buena recepción de internet móvil de todas las compañías para cuando lo necesites.",
+      "linens": "<strong>Traé tus propias sábanas y toallas</strong> - Recomendamos traer tu propia ropa de cama para mayor comodidad.",
+      "electricity": "<strong>Electricidad limitada</strong> - La energía solar es suficiente para luces y cargar dispositivos, pero no para electrodomésticos de alto consumo."
+    }
+  },
   "footer": {
     "description": "Refugio autónomo privado en los médanos.<br/>Desconectá. Recargá. Volvé.",
     "quickLinks": "Enlaces Rápidos",

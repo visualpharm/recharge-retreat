@@ -1,40 +1,12 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Flame, Droplets, Sun, Thermometer, Wifi, Utensils, Bed, Zap, ChefHat, Gift, Heater } from "lucide-react"
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Self-Sufficient Beachfront Shelter | Recharge Retreat Argentina',
-  description: 'Experience sustainable off-grid living in our self-sufficient beachfront shelter. Solar power, rainwater collection, and modern comforts in a private dune setting near Faro Querandí.',
-  openGraph: {
-    title: 'Self-Sufficient Beachfront Shelter | Recharge Retreat Argentina',
-    description: 'Discover our eco-friendly shelter with solar power, rainwater collection, and stunning ocean views. Perfect for a digital detox in nature.',
-    images: [
-      {
-        url: '/images/shelter/cabin-exterior-1.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Self-sufficient beachfront shelter at Recharge Retreat',
-      },
-    ],
-  },
-  alternates: {
-    canonical: 'https://recharge-retreat.com/shelter',
-  },
-  keywords: [
-    'self-sufficient shelter Argentina',
-    'off-grid beach cabin',
-    'sustainable beach house',
-    'solar powered cabin Argentina',
-    'eco-friendly beach retreat',
-    'private beach shelter',
-    'sustainable tourism Argentina',
-    'off-grid living'
-  ],
-}
+import { useTranslation } from "@/components/translation-provider"
 
 // Shelter exterior images
 const shelterImages = [
@@ -89,6 +61,7 @@ const comfortImages = [
 ]
 
 export default function ShelterPage() {
+  const { t } = useTranslation()
   return (
     <div className="min-h-screen bg-background pt-20">
       <Navigation />
@@ -97,9 +70,9 @@ export default function ShelterPage() {
         {/* Hero Section */}
         <section className="py-12">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">The Shelter</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('shelter.title')}</h1>
             <p className="text-xl text-muted-foreground">
-              A self-sufficient refuge designed for disconnection and recharging.
+              {t('shelter.subtitle')}
             </p>
           </div>
         </section>
@@ -120,9 +93,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Sun className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Solar Powered</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.exterior.solarPowered.title')}</h3>
                     <p className="text-muted-foreground">
-                      Fully self-sufficient with solar panels providing all the electricity you need.
+                      {t('shelter.exterior.solarPowered.description')}
                     </p>
                   </div>
                 </div>
@@ -134,9 +107,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Thermometer className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Well Insulated</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.exterior.insulated.title')}</h3>
                     <p className="text-muted-foreground">
-                      Stays cool in summer and warm in winter with natural insulation.
+                      {t('shelter.exterior.insulated.description')}
                     </p>
                   </div>
                 </div>
@@ -147,7 +120,7 @@ export default function ShelterPage() {
 
         {/* Cabin Comforts Section */}
         <section className="py-8">
-          <h2 className="text-3xl font-bold mb-8">Cabin Comforts</h2>
+          <h2 className="text-3xl font-bold mb-8">{t('shelter.comforts.title')}</h2>
 
           {/* Comfort Images Gallery */}
           <div className="mb-8">
@@ -163,9 +136,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Zap className="h-6 w-6 text-yellow-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Solar Power System</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.comforts.solarSystem.title')}</h3>
                     <p className="text-muted-foreground">
-                      Equipped with solar panels providing lights and standard 220V outlets for all your devices.
+                      {t('shelter.comforts.solarSystem.description')}
                     </p>
                   </div>
                 </div>
@@ -177,9 +150,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Droplets className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Hot Shower</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.comforts.hotShower.title')}</h3>
                     <p className="text-muted-foreground">
-                      Private bathroom with hot shower for comfortable hygiene routines.
+                      {t('shelter.comforts.hotShower.description')}
                     </p>
                   </div>
                 </div>
@@ -191,9 +164,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <ChefHat className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Full Kitchen</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.comforts.kitchen.title')}</h3>
                     <p className="text-muted-foreground">
-                      Stove, fridge, and complete cookware: plates, cutlery, glasses, pots, pans, kettle, and all cooking utensils.
+                      {t('shelter.comforts.kitchen.description')}
                     </p>
                   </div>
                 </div>
@@ -205,9 +178,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Gift className="h-6 w-6 text-purple-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Welcome Amenities</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.comforts.amenities.title')}</h3>
                     <p className="text-muted-foreground">
-                      Complimentary welcome tea and sweets to start your retreat experience.
+                      {t('shelter.comforts.amenities.description')}
                     </p>
                   </div>
                 </div>
@@ -219,9 +192,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Heater className="h-6 w-6 text-orange-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Climate Control</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.comforts.climate.title')}</h3>
                     <p className="text-muted-foreground">
-                      Well-insulated with gas heating, suitable for cold climates and comfortable year-round.
+                      {t('shelter.comforts.climate.description')}
                     </p>
                   </div>
                 </div>
@@ -233,9 +206,9 @@ export default function ShelterPage() {
                 <div className="flex items-start gap-4">
                   <Bed className="h-6 w-6 text-gray-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-2">Comfortable Sleeping</h3>
+                    <h3 className="font-semibold mb-2">{t('shelter.comforts.sleeping.title')}</h3>
                     <p className="text-muted-foreground">
-                      Quality mattress and bedding for restful nights after days in nature.
+                      {t('shelter.comforts.sleeping.description')}
                     </p>
                   </div>
                 </div>
@@ -246,27 +219,19 @@ export default function ShelterPage() {
           {/* What's Not Included */}
           <Card className="border-2 border-orange-500/20 bg-orange-500/5 mt-12">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">What's Not Included</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('shelter.notIncluded.title')}</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Wifi className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
-                  <span>
-                    <strong>No WiFi</strong> - We present this as a place to disconnect. However, there is good mobile internet reception from all carriers for when you need it.
-                  </span>
+                  <span dangerouslySetInnerHTML={{__html: t('shelter.notIncluded.noWifi')}} />
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block h-5 w-5 text-center text-orange-500 mt-1 flex-shrink-0">!</span>
-                  <span>
-                    <strong>Bring your own sheets and towels</strong> - We recommend bringing your own linens for
-                    comfort.
-                  </span>
+                  <span dangerouslySetInnerHTML={{__html: t('shelter.notIncluded.linens')}} />
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block h-5 w-5 text-center text-orange-500 mt-1 flex-shrink-0">!</span>
-                  <span>
-                    <strong>Limited electricity</strong> - Solar power is sufficient for lights and charging devices,
-                    but not for high-consumption appliances.
-                  </span>
+                  <span dangerouslySetInnerHTML={{__html: t('shelter.notIncluded.electricity')}} />
                 </li>
               </ul>
             </CardContent>

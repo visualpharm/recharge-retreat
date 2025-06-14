@@ -82,6 +82,171 @@
       "airbnbButton": "Book on Airbnb"
     }
   },
+  "location": {
+    "title": "Our Location",
+    "subtitle": "Find us in the heart of the dunes, where the ocean meets the sky.",
+    "openMaps": "Open in Google Maps",
+    "address": "Recharge Retreat",
+    "whereAreYou": {
+      "title": "Where Are You?",
+      "coast": "On the <strong>Argentine Atlantic coast</strong>, close to the <strong>Faro Querandí Reserve</strong>",
+      "beach": "3 km from a <strong>completely empty beach</strong>",
+      "dunes": "Surrounded by <strong>natural dunes</strong>, undeveloped",
+      "distance": "10 km from <strong>Mar de las Pampas</strong>, if you regret the isolation"
+    },
+    "howToGet": {
+      "title": "How to Get Here",
+      "byCar": "By Car",
+      "step1": "<strong>Ruta 11, km 429.5</strong> — turn at the \"Camping\" sign",
+      "step2": "If the keeper asks for money, say you're going to Ivan",
+      "step3": "Follow the dirt road for about 1.5 km, first turn left. In 300 m you'll see our water tower. Welcome!",
+      "warning": "<strong>⚠️ Warning:</strong> Google Maps may suggest the \"Salvaje\" gated community — that route is blocked",
+      "gpsTitle": "GPS Coordinates",
+      "gpsNote": "Use these coordinates if your GPS doesn't recognize the address",
+      "notesTitle": "Important Notes",
+      "note1": "The last part of the road is unpaved but accessible by standard vehicles",
+      "note2": "We recommend arriving during daylight hours for your first visit",
+      "note3": "Detailed arrival instructions will be provided after booking"
+    },
+    "whereNotToGo": {
+      "title": "Where Not to Go",
+      "description": "Google Maps sends you the wrong route (I've reported it, but still). Use this map to turn from the ruta 11."
+    }
+  },
+  "activities": {
+    "title": "What You'll Do",
+    "subtitle": "Turn the absence of entertainment into a feature. Reconnect with yourself and nature.",
+    "quiet": {
+      "title": "Quiet Activities",
+      "read": "Read that book you've been putting off",
+      "journal": "Journal your thoughts without distractions",
+      "meditate": "Meditate with panoramic dune views",
+      "stargaze": "Stargaze in one of the darkest skies in the region",
+      "coffee": "Enjoy your morning coffee in complete silence"
+    },
+    "active": {
+      "title": "Active Pursuits",
+      "hike": "Hike the 1,200-meter private trail through the dunes",
+      "beach": "Walk to the completely empty beach (3km)",
+      "wildlife": "Observe local wildlife and native plants",
+      "yoga": "Practice yoga or exercise in nature",
+      "cook": "Cook over an open fire under the stars",
+      "fish": "Fish on the steep coast — you can catch sharks"
+    },
+    "fishing": {
+      "title": "Shark Fishing Experience",
+      "description": "Experience the thrill of fishing on our steep coastal waters where sharks roam."
+    },
+    "cantHandle": {
+      "title": "What If You Can't Handle It?",
+      "connectivity": {
+        "badge": "Connectivity",
+        "description": "There is <strong>cell phone signal</strong> for emergencies"
+      },
+      "proximity": {
+        "badge": "Proximity",
+        "description": "There is a <strong>town just 5 km away</strong>"
+      },
+      "alternative": {
+        "badge": "Alternative",
+        "description": "We offer a <strong>discount to move to Il Buco</strong>, our Italian villa with a <strong>green terrace</strong> and <strong>500 Mbps WiFi</strong>"
+      }
+    }
+  },
+  "land": {
+    "title": "The Land",
+    "subtitle": "9 hectares of pristine dunes and natural beauty, all to yourself.",
+    "oceanView": "Ocean View",
+    "privateProperty": {
+      "title": "Private Property",
+      "description": "<strong>9 hectares of green dunes</strong>, covered by only three native species that manage to survive here — and are surprisingly beautiful."
+    },
+    "protectedReserve": {
+      "title": "Protected Reserve",
+      "description": "Located steps away from the <strong>Faro Querandí Ecological Reserve</strong>, a protected area of high natural value."
+    },
+    "privateTrail": {
+      "title": "Private Trail",
+      "description": "A <strong>1,200-meter perimeter path between high dunes with panoramic views</strong>, for trekking as if you were walking in your own private reserve."
+    },
+    "artificialLake": {
+      "title": "Artificial Lake",
+      "description": "A small artificial lake where wild animals come to drink, creating a unique ecosystem within the property."
+    },
+    "nursery": {
+      "title": "Native Plant Nursery",
+      "description": "A small nursery with native tree seedlings, part of our ongoing effort to preserve and enhance the local ecosystem."
+    },
+    "security": {
+      "title": "Security",
+      "fenced": {
+        "title": "Fenced Property",
+        "description": "The entire area is <strong>fenced</strong> for your security and privacy."
+      },
+      "surveillance": {
+        "title": "Security Surveillance",
+        "description": "<strong>Security camera surveillance</strong> ensures your safety."
+      },
+      "caretaker": {
+        "title": "On-Site Caretaker",
+        "description": "The <strong>caretaker lives nearby</strong> for immediate assistance if needed."
+      }
+    },
+    "aerialMap": {
+      "area": "The area is 9 ha.",
+      "shape": "Almost the perfect square shape of 300x300 m."
+    },
+    "plants": {
+      "title": "Plants"
+    }
+  },
+  "shelter": {
+    "title": "The Shelter",
+    "subtitle": "A self-sufficient refuge designed for disconnection and recharging.",
+    "exterior": {
+      "solarPowered": {
+        "title": "Solar Powered",
+        "description": "Fully self-sufficient with solar panels providing all the electricity you need."
+      },
+      "insulated": {
+        "title": "Well Insulated",
+        "description": "Stays cool in summer and warm in winter with natural insulation."
+      }
+    },
+    "comforts": {
+      "title": "Cabin Comforts",
+      "solarSystem": {
+        "title": "Solar Power System",
+        "description": "Equipped with solar panels providing lights and standard 220V outlets for all your devices."
+      },
+      "hotShower": {
+        "title": "Hot Shower",
+        "description": "Private bathroom with hot shower for comfortable hygiene routines."
+      },
+      "kitchen": {
+        "title": "Full Kitchen",
+        "description": "Stove, fridge, and complete cookware: plates, cutlery, glasses, pots, pans, kettle, and all cooking utensils."
+      },
+      "amenities": {
+        "title": "Welcome Amenities",
+        "description": "Complimentary welcome tea and sweets to start your retreat experience."
+      },
+      "climate": {
+        "title": "Climate Control",
+        "description": "Well-insulated with gas heating, suitable for cold climates and comfortable year-round."
+      },
+      "sleeping": {
+        "title": "Comfortable Sleeping",
+        "description": "Quality mattress and bedding for restful nights after days in nature."
+      }
+    },
+    "notIncluded": {
+      "title": "What's Not Included",
+      "noWifi": "<strong>No WiFi</strong> - We present this as a place to disconnect. However, there is good mobile internet reception from all carriers for when you need it.",
+      "linens": "<strong>Bring your own sheets and towels</strong> - We recommend bringing your own linens for comfort.",
+      "electricity": "<strong>Limited electricity</strong> - Solar power is sufficient for lights and charging devices, but not for high-consumption appliances."
+    }
+  },
   "footer": {
     "description": "Private autonomous shelter in the dunes.<br/>Disconnect. Recharge. Return.",
     "quickLinks": "Quick Links",

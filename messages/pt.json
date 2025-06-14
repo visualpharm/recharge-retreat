@@ -34,5 +34,170 @@
       "collapse": "Um ensaio geral para quando tudo colapsar",
       "collapseDescription": "Mas você está sozinho, cercado por dunas pristinas, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
     }
+  },
+  "location": {
+    "title": "Nossa Localização",
+    "subtitle": "Nos encontre no coração das dunas, onde o oceano encontra o céu.",
+    "openMaps": "Abrir no Google Maps",
+    "address": "Recharge Retreat",
+    "whereAreYou": {
+      "title": "Onde Você Está?",
+      "coast": "Na <strong>costa atlântica argentina</strong>, perto da <strong>Reserva Faro Querandí</strong>",
+      "beach": "A 3 km de uma <strong>praia completamente vazia</strong>",
+      "dunes": "Cercado por <strong>dunas naturais</strong>, não desenvolvidas",
+      "distance": "A 10 km de <strong>Mar de las Pampas</strong>, se você se arrepender do isolamento"
+    },
+    "howToGet": {
+      "title": "Como Chegar",
+      "byCar": "De Carro",
+      "step1": "<strong>Ruta 11, km 429.5</strong> — vire na placa \"Camping\"",
+      "step2": "Se o porteiro pedir dinheiro, diga que você vai ver o Ivan",
+      "step3": "Siga a estrada de terra por cerca de 1,5 km, primeira curva à esquerda. Em 300 m você verá nossa torre de água. Bem-vindo!",
+      "warning": "<strong>⚠️ Aviso:</strong> O Google Maps pode sugerir o condomínio \"Salvaje\" — essa rota está bloqueada",
+      "gpsTitle": "Coordenadas GPS",
+      "gpsNote": "Use essas coordenadas se seu GPS não reconhecer o endereço",
+      "notesTitle": "Notas Importantes",
+      "note1": "A última parte da estrada é de terra, mas acessível por veículos padrão",
+      "note2": "Recomendamos chegar durante o dia para sua primeira visita",
+      "note3": "Instruções detalhadas de chegada serão fornecidas após a reserva"
+    },
+    "whereNotToGo": {
+      "title": "Por Onde Não Ir",
+      "description": "O Google Maps te manda pela rota errada (reportei, mas ainda continua). Use este mapa para virar da ruta 11."
+    }
+  },
+  "activities": {
+    "title": "O Que Você Fará",
+    "subtitle": "Transforme a ausência de entretenimento em uma característica. Reconecte-se consigo mesmo e com a natureza.",
+    "quiet": {
+      "title": "Atividades Tranquilas",
+      "read": "Ler aquele livro que você tem adiado",
+      "journal": "Escrever seus pensamentos sem distrações",
+      "meditate": "Meditar com vistas panorâmicas das dunas",
+      "stargaze": "Observar as estrelas em um dos céus mais escuros da região",
+      "coffee": "Desfrutar seu café matinal em completo silêncio"
+    },
+    "active": {
+      "title": "Atividades Ativas",
+      "hike": "Caminhar pela trilha privada de 1.200 metros entre as dunas",
+      "beach": "Caminhar até a praia completamente vazia (3km)",
+      "wildlife": "Observar a vida selvagem local e plantas nativas",
+      "yoga": "Praticar yoga ou exercícios na natureza",
+      "cook": "Cozinhar no fogo sob as estrelas",
+      "fish": "Pescar na costa íngreme — você pode pegar tubarões"
+    },
+    "fishing": {
+      "title": "Experiência de Pesca de Tubarões",
+      "description": "Experimente a emoção de pescar em nossas águas costeiras íngremes onde os tubarões vagueiam."
+    },
+    "cantHandle": {
+      "title": "E se Você Não Conseguir Aguentar?",
+      "connectivity": {
+        "badge": "Conectividade",
+        "description": "Há <strong>sinal de celular</strong> para emergências"
+      },
+      "proximity": {
+        "badge": "Proximidade",
+        "description": "Há uma <strong>cidade a apenas 5 km</strong>"
+      },
+      "alternative": {
+        "badge": "Alternativa",
+        "description": "Oferecemos <strong>desconto para se mudar para Il Buco</strong>, nossa villa italiana com <strong>terraço verde</strong> e <strong>WiFi de 500 Mbps</strong>"
+      }
+    }
+  },
+  "land": {
+    "title": "A Terra",
+    "subtitle": "9 hectares de dunas pristinas e beleza natural, tudo para você.",
+    "oceanView": "Vista do Oceano",
+    "privateProperty": {
+      "title": "Propriedade Privada",
+      "description": "<strong>9 hectares de dunas verdes</strong>, cobertas por apenas três espécies nativas que conseguem sobreviver aqui — e são surpreendentemente belas."
+    },
+    "protectedReserve": {
+      "title": "Reserva Protegida",
+      "description": "Localizada a poucos passos da <strong>Reserva Ecológica Faro Querandí</strong>, uma área protegida de alto valor natural."
+    },
+    "privateTrail": {
+      "title": "Trilha Privada",
+      "description": "Um <strong>caminho perimetral de 1.200 metros entre dunas altas com vistas panorâmicas</strong>, para fazer trekking como se estivesse caminhando em sua própria reserva privada."
+    },
+    "artificialLake": {
+      "title": "Lago Artificial",
+      "description": "Um pequeno lago artificial onde animais selvagens vêm beber, criando um ecossistema único dentro da propriedade."
+    },
+    "nursery": {
+      "title": "Viveiro de Plantas Nativas",
+      "description": "Um pequeno viveiro com mudas de árvores nativas, parte do nosso esforço contínuo para preservar e melhorar o ecossistema local."
+    },
+    "security": {
+      "title": "Segurança",
+      "fenced": {
+        "title": "Propriedade Cercada",
+        "description": "Toda a área está <strong>cercada</strong> para sua segurança e privacidade."
+      },
+      "surveillance": {
+        "title": "Vigilância de Segurança",
+        "description": "<strong>Vigilância com câmeras de segurança</strong> garante sua proteção."
+      },
+      "caretaker": {
+        "title": "Zelador no Local",
+        "description": "O <strong>zelador mora nas proximidades</strong> para assistência imediata se necessário."
+      }
+    },
+    "aerialMap": {
+      "area": "A área é de 9 hectares.",
+      "shape": "Quase a forma perfeita de um quadrado de 300x300 m."
+    },
+    "plants": {
+      "title": "Plantas"
+    }
+  },
+  "shelter": {
+    "title": "O Refúgio",
+    "subtitle": "Um refúgio autossuficiente projetado para desconexão e recarga.",
+    "exterior": {
+      "solarPowered": {
+        "title": "Energia Solar",
+        "description": "Completamente autossuficiente com painéis solares fornecendo toda a eletricidade que você precisa."
+      },
+      "insulated": {
+        "title": "Bem Isolado",
+        "description": "Mantém-se fresco no verão e quente no inverno com isolamento natural."
+      }
+    },
+    "comforts": {
+      "title": "Confortos da Cabana",
+      "solarSystem": {
+        "title": "Sistema de Energia Solar",
+        "description": "Equipado com painéis solares fornecendo luzes e tomadas de 220V padrão para todos os seus dispositivos."
+      },
+      "hotShower": {
+        "title": "Chuveiro Quente",
+        "description": "Banheiro privativo com chuveiro quente para rotinas de higiene confortáveis."
+      },
+      "kitchen": {
+        "title": "Cozinha Completa",
+        "description": "Fogão, geladeira e utensílios completos: pratos, talheres, copos, panelas, frigideiras, chaleira e todos os utensílios de cozinha."
+      },
+      "amenities": {
+        "title": "Amenidades de Boas-Vindas",
+        "description": "Chá de boas-vindas e doces cortesia para começar sua experiência de retiro."
+      },
+      "climate": {
+        "title": "Controle de Clima",
+        "description": "Bem isolado com aquecimento a gás, adequado para climas frios e confortável o ano todo."
+      },
+      "sleeping": {
+        "title": "Sono Confortável",
+        "description": "Colchão e roupa de cama de qualidade para noites reparadoras após dias na natureza."
+      }
+    },
+    "notIncluded": {
+      "title": "O Que Não Está Incluído",
+      "noWifi": "<strong>Sem WiFi</strong> - Apresentamos isso como um lugar para se desconectar. No entanto, há boa recepção de internet móvel de todas as operadoras para quando você precisar.",
+      "linens": "<strong>Traga suas próprias lençóis e toalhas</strong> - Recomendamos trazer suas próprias roupas de cama para conforto.",
+      "electricity": "<strong>Eletricidade limitada</strong> - A energia solar é suficiente para luzes e carregar dispositivos, mas não para aparelhos de alto consumo."
+    }
   }
 }
