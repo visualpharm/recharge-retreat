@@ -190,22 +190,26 @@ export default function Page() {
             {/* Lago artificial */}
             <Card className="border-2">
               <CardContent className="p-6">
-                <div className="flex items-start gap-3 mb-4">
+                <div className="flex items-start gap-3">
                   <Droplets className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
-                  <Badge variant="secondary">{t('home.environment.connectivity.title')}</Badge>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400">{t('home.environment.connectivity.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.connectivity.description')}} />
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.environment.connectivity.description')}} />
               </CardContent>
             </Card>
 
             {/* Vivero */}
             <Card className="border-2">
               <CardContent className="p-6">
-                <div className="flex items-start gap-3 mb-4">
+                <div className="flex items-start gap-3">
                   <TreePine className="h-6 w-6 text-emerald-500 mt-1 flex-shrink-0" />
-                  <Badge variant="secondary">{t('home.environment.proximity.title')}</Badge>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-emerald-700 dark:text-emerald-400">{t('home.environment.proximity.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.environment.proximity.description')}} />
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.environment.proximity.description')}} />
               </CardContent>
             </Card>
           </div>
@@ -239,33 +243,39 @@ export default function Page() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
+            <Card className="border-2">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Signal className="h-5 w-5 text-green-500" />
-                  <Badge variant="secondary">{t('home.whatIf.connectivity.title')}</Badge>
+                <div className="flex items-start gap-3">
+                  <Signal className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-green-700 dark:text-green-400">{t('home.whatIf.connectivity.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.whatIf.connectivity.description')}} />
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.whatIf.connectivity.description')}} />
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Building2 className="h-5 w-5 text-blue-500" />
-                  <Badge variant="secondary">{t('home.whatIf.proximity.title')}</Badge>
+                <div className="flex items-start gap-3">
+                  <Building2 className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400">{t('home.whatIf.proximity.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.whatIf.proximity.description')}} />
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.whatIf.proximity.description')}} />
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <TreePine className="h-6 w-6 text-emerald-500" />
-                  <Badge variant="secondary">{t('home.whatIf.alternative.title')}</Badge>
+                <div className="flex items-start gap-3">
+                  <TreePine className="h-6 w-6 text-emerald-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-3 text-emerald-700 dark:text-emerald-400">{t('home.whatIf.alternative.title')}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.whatIf.alternative.description')}} />
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{__html: t('home.whatIf.alternative.description')}} />
               </CardContent>
             </Card>
           </div>

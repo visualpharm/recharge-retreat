@@ -4,8 +4,10 @@ import type React from "react"
 
 import { useState } from "react"
 import Image from "next/image"
-import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import Link from "next/link"
+import { X, ChevronLeft, ChevronRight, TreePine } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useTranslation } from "@/components/translation-provider"
 
 const images = [
   {
@@ -33,14 +35,10 @@ const images = [
     alt: "Wild flowers",
     caption: "Wild flowers that grow among the dunes",
   },
-  {
-    src: "/images/plants/tall-grass.jpeg",
-    alt: "Tall grasses",
-    caption: "Native grasses that sway with the sea breeze",
-  },
 ]
 
 export default function ImageGallery() {
+  const { t, locale } = useTranslation()
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)
 
@@ -72,6 +70,8 @@ export default function ImageGallery() {
     if (e.key === "ArrowLeft") setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))
   }
 
+  const floraUrl = locale === 'es' ? '/flora-faro-querandi' : `/${locale}/flora-faro-querandi`
+
   return (
     <>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
@@ -93,6 +93,22 @@ export default function ImageGallery() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
           </div>
         ))}
+        
+        {/* Flora Link Card */}
+        <Link href={floraUrl}>
+          <div
+            className="relative rounded-lg overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-gradient-to-br from-green-500 to-emerald-600 flex flex-col items-center justify-center text-white"
+            style={{ height: '172px' }}
+          >
+            <TreePine className="h-12 w-12 mb-2" />
+            <p className="text-sm font-medium text-center px-2 leading-tight">
+              {locale === 'es' ? 'Todas las plantas de nuestros médanos' : 
+               locale === 'pt' ? 'Todas as plantas das nossas dunas' : 
+               'All plants of our dunes'}
+            </p>
+            <div className="absolute inset-0 bg-white/0 hover:bg-white/10 transition-colors duration-300"></div>
+          </div>
+        </Link>
       </div>
 
       {/* Lightbox */}

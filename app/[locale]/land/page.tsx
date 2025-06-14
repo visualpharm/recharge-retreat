@@ -45,35 +45,43 @@ export default function LandPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">The Land</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">The Land</h1>
           <p className="text-xl text-muted-foreground mb-8">
             9 hectares of pristine dunes and natural beauty, all to yourself.
           </p>
         </div>
       </section>
 
-      {/* Aerial Views Masonry */}
+      {/* Aerial Views Gallery */}
       <section className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-4 gap-3 mb-12">
-            {/* Fork - smaller */}
-            <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-12">
+            {/* Fork - left column */}
+            <div 
+              className="relative rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300 cursor-zoom-in"
+              style={{ height: '320px' }}
+            >
               <SingleImageLightbox
                 src="/images/aereo/fork.webp"
                 alt="Aerial view of the property fork"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
+                containerClassName="w-full h-full"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
             </div>
             
-            {/* Ocean - largest, most prominent */}
-            <div className="col-span-2 relative aspect-[5/3] rounded-xl overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300">
+            {/* Ocean - center two columns */}
+            <div 
+              className="md:col-span-2 relative rounded-xl overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300 cursor-zoom-in"
+              style={{ height: '320px' }}
+            >
               <SingleImageLightbox
                 src="/images/aereo/ocean.webp"
                 alt="Aerial view towards the ocean"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
+                containerClassName="w-full h-full"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -81,13 +89,17 @@ export default function LandPage() {
               </div>
             </div>
             
-            {/* Lake - medium */}
-            <div className="col-span-1 relative aspect-[3/4] rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300">
+            {/* Lake - right column */}
+            <div 
+              className="relative rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300 cursor-zoom-in"
+              style={{ height: '320px' }}
+            >
               <SingleImageLightbox 
                 src="/images/aereo/lago.webp" 
                 alt="Aerial view of the artificial lake" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                containerClassName="w-full h-full"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
             </div>

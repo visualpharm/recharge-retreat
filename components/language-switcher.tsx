@@ -25,8 +25,17 @@ export default function LanguageSwitcher() {
     // Set cookie to remember language preference
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=lax`;
     
-    // Simple approach: reload the page and let middleware handle routing
-    window.location.href = newLocale === 'es' ? '/' : `/${newLocale}`;
+    // Get current path without the locale prefix
+    const pathWithoutLocale = pathname.startsWith(`/${locale}`) 
+      ? pathname.substring(`/${locale}`.length) || '/'
+      : pathname;
+    
+    // Navigate to the same path in the new locale
+    const newPath = newLocale === 'es' 
+      ? pathWithoutLocale === '/' ? '/' : pathWithoutLocale
+      : `/${newLocale}${pathWithoutLocale}`;
+    
+    window.location.href = newPath;
   };
 
   return (

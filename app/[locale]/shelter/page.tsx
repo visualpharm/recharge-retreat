@@ -97,7 +97,7 @@ export default function ShelterPage() {
         {/* Hero Section */}
         <section className="py-12">
           <div className="max-w-4xl">
-            <h1 className="text-4xl font-bold mb-6">The Shelter</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">The Shelter</h1>
             <p className="text-xl text-muted-foreground">
               A self-sufficient refuge designed for disconnection and recharging.
             </p>

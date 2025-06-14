@@ -44,7 +44,7 @@ export default function BookPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Book Your Stay</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Book Your Stay</h1>
           <p className="text-xl text-muted-foreground mb-8">
             Ready to disconnect and recharge? Book your retreat in the dunes.
           </p>
