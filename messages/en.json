@@ -3,7 +3,7 @@
     "home": "Home",
     "shelter": "The Shelter",
     "land": "The Land",
-    "activities": "What You'll Do", 
+    "activities": "What You'll Do",
     "location": "Location",
     "book": "Book Now"
   },
@@ -24,7 +24,7 @@
       "description": "Located in an area of expensive properties — with <strong>gated communities, boutique hotels and seven-figure homes</strong>."
     },
     "ecosystem": {
-      "title": "A Unique Ecosystem", 
+      "title": "A Unique Ecosystem",
       "description": "These native species are the only ones that manage to survive in the dunes, creating a landscape of austere and resilient beauty that changes with the seasons and daylight."
     },
     "shelter": {
@@ -57,7 +57,7 @@
         "description": "There is <strong>cell phone signal</strong>"
       },
       "proximity": {
-        "title": "Proximity", 
+        "title": "Proximity",
         "description": "There is a <strong>city 5 km away</strong>"
       }
     },
@@ -246,6 +246,215 @@
       "linens": "<strong>Bring your own sheets and towels</strong> - We recommend bringing your own linens for comfort.",
       "electricity": "<strong>Limited electricity</strong> - Solar power is sufficient for lights and charging devices, but not for high-consumption appliances."
     }
+  },
+  "argentinaShelter": {
+    "metaTitle": "Your Private Argentina Shelter: Escape to the Dunes",
+    "metaDescription": "Discover a unique Argentina shelter experience. A private, self-sufficient retreat nestled in 9 hectares of pristine dunes near the Atlantic. Disconnect and recharge in nature.",
+    "title": "Your Private Argentina Shelter: Escape to the Dunes",
+    "intro": {
+      "headline": "Experience an Unforgettable Argentina Shelter Getaway",
+      "paragraph": "Escape to Recharge Retreat, your exclusive Argentina shelter nestled within 9 private hectares of stunning green dunes. Located near the vast Atlantic Ocean, this self-sufficient haven offers unparalleled privacy and a profound connection with nature. It's more than a place to stay; it's an experience designed for those seeking true disconnection and rejuvenation in the unique coastal landscape of Argentina."
+    },
+    "whyChoose": {
+      "headline": "The Recharge Retreat: More Than Just an Argentina Shelter",
+      "privacy": {
+        "title": "Total Privacy in Your Own Dune Reserve",
+        "text": "Imagine 9 hectares of pristine Argentine landscape all to yourself. Our shelter ensures absolute privacy with no neighbors in sight, surrounded by undeveloped farms. Explore a 1,200-meter private perimeter trail with panoramic dune views – your personal nature reserve awaits at this secluded Argentina shelter."
+      },
+      "selfSufficiency": {
+        "title": "Self-Sufficient by Design, Sustainable Comfort",
+        "text": "This Argentina shelter operates entirely off-grid, powered by a robust solar energy system. Thoughtful insulation keeps the interior comfortable year-round, reflecting a commitment to sustainable living without sacrificing essential comforts. Experience true independence in harmony with nature."
+      },
+      "coastalEnvironment": {
+        "title": "Unique Coastal Environment",
+        "text": "Positioned near the Faro Querandí Ecological Reserve, our Argentina shelter offers direct access to a protected area of immense natural value. Discover the raw beauty of the Argentine coast, its unique flora, and the tranquil sounds of the nearby ocean."
+      }
+    },
+    "inside": {
+      "headline": "Comfort and Essential Amenities in Your Argentina Shelter",
+      "paragraph": "While designed for an authentic off-grid experience, your Argentina shelter doesn't skimp on essential comforts. Enjoy a refreshing hot shower, prepare meals in a fully equipped kitchen, and rest soundly in a comfortable bed after a day of exploration. We provide the basics for a truly restorative stay."
+    },
+    "experience": {
+      "headline": "Your Argentina Shelter: An Invitation to Disconnect",
+      "paragraph": "Embrace the opportunity to truly disconnect. Our Argentina shelter intentionally omits WiFi, encouraging you to immerse yourself in the present. Read, meditate, stargaze, or simply enjoy the profound silence. It's a space to recharge your spirit and reconnect with what truly matters."
+    },
+    "locationBooking": {
+      "headline": "Find & Book Your Argentina Shelter",
+      "paragraph": "Located on the serene Argentine Atlantic coast, your private shelter experience is within reach. Ready to disconnect and recharge in a unique natural setting? Explore availability and book your stay.",
+      "button": "Explore the Shelter"
+    },
+    "placeholder": "Content coming soon for Argentina Shelter."
+  },
+  "survivalSheltersArgentina": {
+    "metaTitle": "Survival Shelters Argentina: Secure Off-Grid Refuge",
+    "metaDescription": "Explore top survival shelters in Argentina. Our private, self-sufficient retreat offers security, isolation, and essential resources for preparedness in the Argentine wilderness.",
+    "title": "Survival Shelters Argentina: Your Secure Off-Grid Refuge",
+    "intro": {
+      "headline": "Why Consider Survival Shelters in Argentina?",
+      "paragraph": "In an unpredictable world, preparedness is key. Argentina, with its vast landscapes and remote havens, offers unique advantages for those seeking robust survival shelters. Recharge Retreat stands as a prime example of how self-reliance and security can be achieved in harmony with nature, providing a sanctuary when you need it most."
+    },
+    "premierShelter": {
+      "headline": "Recharge Retreat: Engineered for Survival and Self-Reliance",
+      "seclusion": {
+        "title": "Ultimate Seclusion & Security",
+        "text": "Our survival shelter is set within 9 hectares of privately owned, fenced land in Argentina. With no immediate neighbors and the added security of an on-site caretaker, it offers unparalleled isolation—a critical factor for any serious survival strategy."
+      },
+      "offGrid": {
+        "title": "Off-Grid Power & Essential Resources",
+        "text": "Designed for true autonomy, this Argentina survival shelter features a reliable solar power system, robust insulation for all-weather resilience, and a fully equipped kitchen. These elements ensure you have the essential resources for short or long-term off-grid living."
+      },
+      "postMeltdown": {
+        "title": "Inspired by 'Post-Meltdown' Preparedness",
+        "text": "The core philosophy of Recharge Retreat is rooted in preparedness: 'When everything collapses, you've got a spot in Argentina.' This isn't just a getaway; it's a functional survival shelter designed to be your dependable refuge in times of crisis."
+      }
+    },
+    "keyFeatures": {
+      "headline": "Essential Features for Your Peace of Mind",
+      "land": {
+        "title": "Private & Fenced Land",
+        "text": "9 hectares providing space, security, and natural barriers."
+      },
+      "solar": {
+        "title": "Independent Solar Power",
+        "text": "Reliable electricity for lighting, devices, and essential systems."
+      },
+      "water": {
+        "title": "Water Access",
+        "text": "Includes hot shower and functional kitchen water supply."
+      },
+      "climate": {
+        "title": "All-Weather Climate Control",
+        "text": "Superior insulation and gas heating ensure comfort in any season."
+      },
+      "kitchen": {
+        "title": "Full Kitchen Facilities",
+        "text": "Equipped for all your food preparation and storage needs."
+      }
+    },
+    "experience": {
+      "headline": "Beyond Basic Survival: Thriving in Your Argentine Shelter",
+      "paragraph": "A true survival shelter in Argentina should support not just existence, but well-being. The surrounding dunes offer opportunities for hiking, fishing, and connecting with nature, vital for mental and physical resilience during extended stays. The tranquility of the landscape itself is a powerful ally."
+    },
+    "secureShelter": {
+      "headline": "Preparedness Meets Tranquility: Secure Your Shelter",
+      "paragraph": "For those prioritizing safety, self-reliance, and a secure future, Recharge Retreat offers a unique survival shelter solution in Argentina. Discover how our facility can meet your preparedness needs.",
+      "button": "Explore Shelter Details"
+    },
+    "placeholder": "Content coming soon for Survival Shelters Argentina."
+  },
+  "survivalBunkerArgentina": {
+    "metaTitle": "Survival Bunker Argentina: Ultimate Fortified Retreat",
+    "metaDescription": "Seeking a survival bunker in Argentina? Discover Recharge Retreat, a private, fortified shelter designed for ultimate security, self-sufficiency, and long-term resilience in remote Argentina.",
+    "title": "Survival Bunker Argentina: Your Ultimate Fortified Retreat",
+    "intro": {
+      "headline": "Why a Survival Bunker in Argentina is a Prudent Choice",
+      "paragraph": "In times of uncertainty, a secure survival bunker in Argentina offers unparalleled peace of mind. Argentina's unique geography provides ideal locations for fortified retreats designed for long-term safety and self-reliance. Recharge Retreat embodies this principle, offering a robust sanctuary built for resilience."
+    },
+    "premierBunker": {
+      "headline": "Recharge Retreat: More Than a Shelter, It's Your Argentine Bunker",
+      "seclusion": {
+        "title": "Fortified Seclusion & Enhanced Security",
+        "text": "This Argentine survival bunker is situated on 9 private, fenced hectares, offering extreme isolation. The absence of close neighbors and diligent caretaker presence enhance its security profile, making it a true stronghold."
+      },
+      "lifeSupport": {
+        "title": "Autonomous Power & Life Support Systems",
+        "text": "Engineered for autonomy, this survival bunker features independent solar power, comprehensive kitchen facilities, and effective heating, forming critical life support systems for extended off-grid durations in Argentina."
+      },
+      "postMeltdown": {
+        "title": "The 'Post-Meltdown' Bunker Philosophy",
+        "text": "Our design is guided by a 'Post-Meltdown' bunker philosophy: a prepared, secure location in Argentina for when global systems face collapse. This is your tested refuge for ultimate peace of mind."
+      }
+    },
+    "coreFeatures": {
+      "headline": "Bunker-Grade Features for Uncompromised Safety",
+      "compound": {
+        "title": "Secure Private Compound",
+        "text": "9 hectares, fully fenced, offering a controlled and private environment."
+      },
+      "energy": {
+        "title": "Independent Energy Source",
+        "text": "Robust solar infrastructure for dependable off-grid power."
+      },
+      "water": {
+        "title": "Reliable Water Systems",
+        "text": "Consistent hot water for hygiene and full kitchen plumbing."
+      },
+      "shielding": {
+        "title": "Environmental Shielding",
+        "text": "Well-insulated structure with heating, ensuring protection against elements."
+      },
+      "sustenance": {
+        "title": "Sustenance Facilities",
+        "text": "Complete kitchen designed for managing long-term food supplies."
+      }
+    },
+    "livability": {
+      "headline": "Long-Term Livability in Your Secure Argentine Bunker",
+      "paragraph": "A survival bunker in Argentina must ensure long-term livability. Recharge Retreat's design balances security with an environment that supports well-being, offering connection to nature and space for essential activities, crucial for extended stays."
+    },
+    "investBunker": {
+      "headline": "Invest in Your Argentine Survival Bunker",
+      "paragraph": "Secure your peace of mind and future preparedness with Recharge Retreat, a premier survival bunker solution in Argentina. Explore the features that make this a resilient, long-term sanctuary.",
+      "button": "Explore Bunker Specifications"
+    },
+    "placeholder": "Content coming soon for Survival Bunker Argentina."
+  },
+  "bunkerArgentina": {
+    "metaTitle": "Bunker Argentina: Discover Your Private & Secure Retreat",
+    "metaDescription": "Explore options for a bunker in Argentina. Recharge Retreat offers a unique, private, and self-sufficient bunker experience in a secluded natural setting.",
+    "title": "Bunker Argentina: Discover Your Private & Secure Retreat",
+    "intro": {
+      "headline": "Bunker Argentina: Security and Peace of Mind in a Private Setting",
+      "paragraph": "For those seeking ultimate security and privacy, a bunker in Argentina presents a compelling solution. The country's diverse landscapes offer unique opportunities for establishing private, fortified retreats. Recharge Retreat is a prime example, showcasing how modern design and self-sufficiency can create an unparalleled bunker experience."
+    },
+    "premierBunker": {
+      "headline": "Recharge Retreat: A Premier Bunker Solution in Argentina",
+      "privacy": {
+        "title": "Unmatched Privacy & Fortification",
+        "text": "This exceptional bunker in Argentina is set on a 9-hectare private, fenced estate, ensuring total seclusion. Its design prioritizes security and discretion, making it an ideal fortified retreat."
+      },
+      "autonomy": {
+        "title": "Designed for Autonomy & Resilience",
+        "text": "Functioning entirely off-grid with solar power, a full kitchen, and efficient heating, this bunker in Argentina is built for long-term resilience and independent living, regardless of external conditions."
+      },
+      "modernApproach": {
+        "title": "A Modern Take on the Argentine Bunker",
+        "text": "Inspired by preparedness for any eventuality ('Post-Meltdown Shelter'), Recharge Retreat redefines the concept of a bunker in Argentina. It blends robust security with thoughtful design for a comfortable, sustainable, and secure lifestyle."
+      }
+    },
+    "keyAttributes": {
+      "headline": "What Makes Recharge Retreat a Superior Bunker in Argentina",
+      "estate": {
+        "title": "Expansive Private Estate",
+        "text": "9 hectares of fenced land ensure privacy and control over your surroundings."
+      },
+      "energy": {
+        "title": "Independent Solar Energy",
+        "text": "Complete off-grid capability with a reliable solar power system."
+      },
+      "utilities": {
+        "title": "Essential Utilities On-Site",
+        "text": "Hot water, a fully equipped kitchen, and comfortable amenities."
+      },
+      "climate": {
+        "title": "Climate Resilient Design",
+        "text": "Well-insulated to maintain comfort across all Argentine seasons."
+      },
+      "location": {
+        "title": "Strategic & Secluded Location",
+        "text": "Nestled in coastal dunes, offering natural beauty and enhanced privacy."
+      }
+    },
+    "lifestyle": {
+      "headline": "Experience Life in Your Own Argentine Bunker",
+      "paragraph": "Owning a bunker in Argentina like Recharge Retreat offers more than just security; it provides a unique lifestyle. Enjoy unparalleled peace, a deep connection with nature, and the freedom that comes with true self-sufficiency, all within your private, fortified haven."
+    },
+    "explore": {
+      "headline": "Your Private Bunker in Argentina Awaits",
+      "paragraph": "Discover the exceptional quality and unique features of Recharge Retreat, your premier choice for a private bunker in Argentina. Secure your peace of mind and explore a new standard of resilient living.",
+      "button": "Discover the Retreat"
+    },
+    "placeholder": "Content coming soon for Bunker Argentina."
   },
   "footer": {
     "description": "Private autonomous shelter in the dunes.<br/>Disconnect. Recharge. Return.",

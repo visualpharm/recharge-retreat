@@ -76,8 +76,7 @@ export default function LocationPage() {
           <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">{t('location.whereAreYou.title')}</h2>
-            <div className="w-16 h-1 bg-primary"></div>
+            <h2 className="text-left text-3xl font-bold text-gray-900 mb-2">{t('location.whereAreYou.title')}</h2>
           </div>
 
           {/* Location Cards */}
@@ -102,8 +101,7 @@ export default function LocationPage() {
           {/* Directions Section */}
           <div className="mb-16">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">{t('location.howToGet.title')}</h2>
-              <div className="w-16 h-1 bg-primary"></div>
+              <h2 className="text-left text-3xl font-bold text-gray-900 mb-2">{t('location.howToGet.title')}</h2>
             </div>
 
             <div className="space-y-8">
@@ -146,9 +144,8 @@ export default function LocationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">{t('location.whereNotToGo.title')}</h2>
+            <h2 className="text-left text-3xl font-bold text-gray-900 mb-2">{t('location.whereNotToGo.title')}</h2>
             <p className="text-gray-600">{t('location.whereNotToGo.description')}</p>
-            <div className="w-16 h-1 bg-primary mt-2"></div>
           </div>
           <div className="bg-white rounded-lg overflow-hidden">
             <SingleImageLightbox

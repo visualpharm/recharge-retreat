@@ -18,7 +18,7 @@ export default function ActivitiesPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('activities.title')}</h1>
+          <h1 className="text-left text-4xl md:text-5xl font-bold mb-6">{t('activities.title')}</h1>
           <p className="text-xl text-muted-foreground mb-8">
             {t('activities.subtitle')}
           </p>
@@ -108,7 +108,7 @@ export default function ActivitiesPage() {
 
           {/* Fishing Video */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-center">{t('activities.fishing.title')}</h3>
+            <h3 className="text-left text-2xl font-bold mb-6">{t('activities.fishing.title')}</h3>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/gXvgVHJOcn0?start=16"

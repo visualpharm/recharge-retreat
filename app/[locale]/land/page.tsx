@@ -26,9 +26,9 @@ export default function LandPage() {
       </section>
 
       {/* Aerial Views Gallery */}
-      <section className="container mx-auto px-4 py-[22px]">
+      <section className="container mx-auto px-4 py-[2px]">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-[38px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-[18px]">
             {/* Fork - left column */}
             <div 
               className="relative rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300 cursor-zoom-in"

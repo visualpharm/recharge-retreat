@@ -34,7 +34,7 @@ export default function Page() {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
-          <div className="max-w-4xl mx-auto text-center space-y-12">
+          <div className="max-w-4xl mx-auto space-y-12 text-left">
             <div className="space-y-8">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
                 {t('home.title')}
@@ -66,8 +66,8 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-6">
+            <div className="mb-12">
+              <h2 className="text-left text-3xl font-bold mb-6">
                 {t('home.shelter.notHotel')}
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed" 
@@ -75,7 +75,7 @@ export default function Page() {
             </div>
 
             {/* Movie Images Row */}
-            <div className="flex items-center justify-center gap-6">
+            <div className="flex flex-col md:flex-row items-stretch justify-center gap-6">
               
               <Link 
                 href="https://www.rottentomatoes.com/m/mountainhead" 
@@ -83,13 +83,13 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <div className="relative w-64 h-36 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="relative w-full md:w-1/3 aspect-video rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                   <Image
                     src="/images/argentina-shelter/argentina-mountainhead.jpg"
                     alt="Mountainhead movie poster"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="256px"
+                    sizes="(max-width: 768px) 100vw, (min-width: 769px) 33vw"
                   />
                 </div>
               </Link>
@@ -100,13 +100,13 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <div className="relative w-64 h-36 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="relative w-full md:w-1/3 aspect-video rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                   <Image
                     src="/images/argentina-shelter/lovedeathrobots.jpg"
                     alt="Love, Death & Robots poster"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="256px"
+                    sizes="(max-width: 768px) 100vw, (min-width: 769px) 33vw"
                   />
                 </div>
               </Link>
@@ -117,13 +117,13 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <div className="relative w-64 h-36 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                <div className="relative w-full md:w-1/3 aspect-video rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                   <Image
                     src="/images/argentina-shelter/lastofus.avif"
                     alt="The Last of Us poster"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="256px"
+                    sizes="(max-width: 768px) 100vw, (min-width: 769px) 33vw"
                   />
                 </div>
               </Link>
@@ -172,7 +172,7 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            <h2 className="text-3xl font-bold mb-12 text-center">The Environment</h2>
+            <h2 className="text-left text-3xl font-bold mb-12">The Environment</h2>
 
             <div className="grid md:grid-cols-3 gap-8">
               
@@ -282,8 +282,8 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-6">
+            <div className="mb-12">
+              <h2 className="text-left text-3xl font-bold mb-6">
                 {t('home.zone.title')}
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto" 
@@ -301,7 +301,7 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            <h2 className="text-3xl font-bold mb-12 text-center">
+            <h2 className="text-left text-3xl font-bold mb-12">
               {t('home.whatIf.title')}
             </h2>
 
