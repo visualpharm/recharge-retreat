@@ -291,3 +291,16 @@ https://recharge.com.ar/es/location
 	•	Comida y bebida
 
 💡 Tip: fijate qué hacer en la zona https://recharge.com.ar/es/activities
+
+
+## SEO Landing pages
+create landing pages for these keywords, only for english version:
+
+argentina shelter 
+survival shelters argentina 
+survival bunker argentina 
+bunker argentina
+
+Use the content from the rest of the website, but rewrite it. Relink these pages in the footer, 3 links per footer, so each of the pages has incoming links. Make these pages the same design as the rest of the website. Don't add them in the top menu.
+
+Don't invent the features bunkers/shelters have, use the real features of the Recharge Retreat.
