@@ -75,72 +75,91 @@ export default function Page() {
             </div>
 
             {/* Movie Images Row */}
-            <div className="flex items-center justify-center gap-6">
-              
-              <Link 
-                href="https://www.rottentomatoes.com/m/mountainhead" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <div className="relative w-64 h-36 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                  <Image
-                    src="/images/argentina-shelter/argentina-mountainhead.jpg"
-                    alt="Mountainhead movie poster"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="256px"
-                  />
-                </div>
-              </Link>
-
-              <Link 
-                href="https://www.rottentomatoes.com/tv/love_death_robots/s03"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <div className="relative w-64 h-36 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                  <Image
-                    src="/images/argentina-shelter/lovedeathrobots.jpg"
-                    alt="Love, Death & Robots poster"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="256px"
-                  />
-                </div>
-              </Link>
-
-              <Link 
-                href="https://www.rottentomatoes.com/tv/the_last_of_us/s01/e03"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <div className="relative w-64 h-36 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                  <Image
-                    src="/images/argentina-shelter/lastofus.avif"
-                    alt="The Last of Us poster"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="256px"
-                  />
-                </div>
-              </Link>
-
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-6xl mx-auto">
+  <Link 
+    href="https://www.rottentomatoes.com/m/mountainhead" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group"
+  >
+    <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+      <Image
+        src="/images/argentina-shelter/argentina-mountainhead.jpg"
+        alt="Mountainhead movie poster"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-300"
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
+    </div>
+  </Link>
+  <Link 
+    href="https://www.rottentomatoes.com/tv/love_death_robots/s03"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group"
+  >
+    <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+      <Image
+        src="/images/argentina-shelter/lovedeathrobots.jpg"
+        alt="Love, Death & Robots poster"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-300"
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
+    </div>
+  </Link>
+  <Link 
+    href="https://www.rottentomatoes.com/tv/the_last_of_us/s01/e03"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group"
+  >
+    <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+      <Image
+        src="/images/argentina-shelter/lastofus.avif"
+        alt="The Last of Us poster"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-300"
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
+    </div>
+  </Link>
+</div>
 
           </div>
         </div>
       </section>
+
+      <section className="max-w-5xl mx-auto my-12 px-4">
+  <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">What's special?</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Digital Detox Card */}
+    <div className="rounded-xl shadow bg-white/80 p-6 flex flex-col items-center text-center">
+      <div className="text-3xl mb-3">📴</div>
+      <h3 className="font-semibold text-lg mb-2">Digital Detox</h3>
+      <p className="text-muted-foreground text-base">No distractions, no WiFi, no TV—just nature, peace, and time to reconnect with yourself and the world around you.</p>
+    </div>
+    {/* Vast Private Reserve Card */}
+    <div className="rounded-xl shadow bg-white/80 p-6 flex flex-col items-center text-center">
+      <div className="text-3xl mb-3">🌲</div>
+      <h3 className="font-semibold text-lg mb-2">Vast Private Reserve</h3>
+      <p className="text-muted-foreground text-base">Surrounded by 9 hectares of private land and bordering a protected reserve—no neighbors, no crowds, just wild nature at your doorstep.</p>
+    </div>
+    {/* Simple Comfort Card */}
+    <div className="rounded-xl shadow bg-white/80 p-6 flex flex-col items-center text-center">
+      <div className="text-3xl mb-3">🛏️</div>
+      <h3 className="font-semibold text-lg mb-2">Simple Comfort</h3>
+      <p className="text-muted-foreground text-base">Essential amenities, cozy interiors, off-grid living—everything you need for rest and inspiration, nothing you don’t.</p>
+    </div>
+  </div>
+</section>
 
       {/* PHOTO GALLERY SECTION */}
       <section className="py-20 bg-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            {/* Top Gallery - 4 Images */}
-            <div className="mb-12">
+            <div className="mb-3">
               <ImageGalleryLightbox 
                 images={[
                   { src: "/images/shelter/cabin-exterior-2.jpg", alt: "Front view of the shelter" },
@@ -148,19 +167,18 @@ export default function Page() {
                   { src: "/images/comfort/bedroom.webp", alt: "Covered area with seating" },
                   { src: "/images/shelter/cabin-landscape.jpg", alt: "The shelter in its natural environment" }
                 ]}
-                gridCols="grid-cols-2 md:grid-cols-4"
+                gridCols="grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
+                imageClassName="aspect-[4/3] md:aspect-[4/3] w-full"
               />
             </div>
-
-            {/* Bottom Gallery - 3 Images */}
             <ImageGalleryLightbox 
               images={[
                 { src: "/images/plants/native-plants.jpg", alt: "Native species that survive in the dunes" },
                 { src: "/images/plants/nursery.jpg", alt: "Nursery with tree seedlings" },
                 { src: "/images/plants/cactus.jpg", alt: "Resilient flora of the environment" }
               ]}
-              gridCols="grid md:grid-cols-3"
-              imageClassName="aspect-[4/5]"
+              gridCols="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"
+              imageClassName="aspect-[4/3] md:aspect-[4/3] w-full"
             />
 
           </div>

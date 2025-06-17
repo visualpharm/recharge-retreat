@@ -35,7 +35,7 @@ export default function ImageGalleryLightbox({
 
   return (
     <>
-      <div className={`grid ${gridCols} gap-4 ${className}`}>
+      <div className={`grid ${gridCols} gap-3 ${className}`}>
         {images.map((image, index) => (
           <div 
             key={index}
