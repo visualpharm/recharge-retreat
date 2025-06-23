@@ -1,10 +1,10 @@
 {
   "nav": {
-    "home": "Início", 
+    "home": "Início",
     "shelter": "O Refúgio",
     "land": "A Terra",
     "activities": "O Que Você Fará",
-    "location": "Localização", 
+    "location": "Localização",
     "book": "Reservar"
   },
   "common": {
@@ -16,23 +16,38 @@
   },
   "home": {
     "title": "Recharge Retreat",
-    "subtitle": "Refúgio Autônomo Privado. Sem vizinhos. 9 hectares de dunas verdes e o oceano.",
+    "subtitle": "Refúgio Autônomo Privado. Sem vizinhos. 9 hectares de dunas verdes e oceano.",
     "description": "Isto não é um hotel. Nem uma cabana. É um refúgio autossuficiente, escondido entre dunas, em uma propriedade privada de 9 hectares perto do mar.",
     "exploreButton": "Explorar o Refúgio",
+    "special": {
+      "title": "O Que Nos Torna Especiais",
+      "detox": {
+        "title": "Detox Digital",
+        "description": "Sem Wi-Fi, sem distrações. Apenas você e a natureza. Uma oportunidade para se desconectar e recarregar as energias longe das telas."
+      },
+      "reserve": {
+        "title": "Vasta Reserva Privada",
+        "description": "9 hectares de dunas intocadas e natureza intocada, tudo para você explorar. Sem multidões, sem barulho, apenas pura tranquilidade."
+      },
+      "comfort": {
+        "title": "Conforto Simples",
+        "description": "Tudo o que você precisa, nada do que não precisa. Um espaço aconchegante e bem equipado para uma estadia confortável no meio da natureza."
+      }
+    },
     "zone": {
       "title": "A Zona",
-      "description": "Localizado em uma área de propriedades caras — com condomínios fechados, hotéis boutique e propriedades de sete dígitos."
+      "description": "Localizado em uma área de propriedades caras — com <strong>condomínios fechados, hotéis boutique e propriedades de sete dígitos</strong>."
     },
     "ecosystem": {
       "title": "Um Ecossistema Único",
       "description": "Essas espécies nativas são as únicas que conseguem sobreviver nas dunas, criando uma paisagem de beleza austera e resistente que muda com as estações e a luz do dia."
     },
     "shelter": {
-      "title": "O Refúgio", 
+      "title": "O Refúgio",
       "notHotel": "Refúgio Pós-Colapso",
       "description": "Quando tudo colapsar, você tem um lugar na Argentina. Visite, teste, verifique a pista de pouso para seu jato. Quer o seu próprio por perto? Vamos conversar.",
       "collapse": "Um ensaio geral para quando tudo colapsar",
-      "collapseDescription": "Mas você está sozinho, cercado por dunas pristinas, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
+      "collapseDescription": "Mas você está <strong>sozinho</strong>, cercado por <strong>dunas intocadas</strong>, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
     },
     "environment": {
       "title": "O Ambiente",
@@ -57,7 +72,7 @@
         "description": "Há <strong>sinal de celular</strong>"
       },
       "proximity": {
-        "title": "Proximidade", 
+        "title": "Proximidade",
         "description": "Há <strong>cidade a 5 km</strong>"
       }
     },
@@ -97,7 +112,7 @@
     "howToGet": {
       "title": "Como Chegar",
       "byCar": "De Carro",
-      "step1": "<strong>Ruta 11, km 429.5</strong> — vire na placa \"Camping\"",
+      "step1": "<strong>Rota 11, km 429.5</strong> — vire na placa \"Camping\"",
       "step2": "Se o porteiro pedir dinheiro, diga que você vai ver o Ivan",
       "step3": "Siga a estrada de terra por cerca de 1,5 km, primeira curva à esquerda. Em 300 m você verá nossa torre de água. Bem-vindo!",
       "warning": "<strong>⚠️ Aviso:</strong> O Google Maps pode sugerir o condomínio \"Salvaje\" — essa rota está bloqueada",
@@ -110,7 +125,7 @@
     },
     "whereNotToGo": {
       "title": "Por Onde Não Ir",
-      "description": "O Google Maps te manda pela rota errada (reportei, mas ainda continua). Use este mapa para virar da ruta 11."
+      "description": "O Google Maps te manda pela rota errada (reportei, mas ainda continua). Use este mapa para virar da rota 11."
     }
   },
   "activities": {
@@ -246,5 +261,13 @@
       "linens": "<strong>Traga suas próprias lençóis e toalhas</strong> - Recomendamos trazer suas próprias roupas de cama para conforto.",
       "electricity": "<strong>Eletricidade limitada</strong> - A energia solar é suficiente para luzes e carregar dispositivos, mas não para aparelhos de alto consumo."
     }
+  },
+  "footer": {
+    "description": "Refúgio autônomo privado nas dunas.<br/>Desconecte. Recarregue. Volte.",
+    "quickLinks": "Links Rápidos",
+    "location": "Localização",
+    "copyright": "Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
   }
 }
