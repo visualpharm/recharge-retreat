@@ -8,38 +8,40 @@ import Footer from "@/components/footer"
 import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-
-// Bunker images
-const bunkerImages = [
-  {
-    src: "/images/shelter/cabin-exterior-1.jpg",
-    alt: "Survival bunker in Argentina",
-    caption: "Secure Survival Bunker in Argentina"
-  },
-  {
-    src: "/images/shelter/entrance.jpg",
-    alt: "Reinforced entrance to the survival bunker"
-  },
-  {
-    src: "/images/shelter/front.jpg",
-    alt: "Discreet exterior of the Argentine survival bunker"
-  },
-  {
-    src: "/images/shelter/cabin-landscape.jpg",
-    alt: "Survival bunker integrated into the Argentine landscape",
-    caption: "Designed for Discretion"
-  },
-  {
-    src: "/images/shelter/cabin-exterior-3.jpg",
-    alt: "Durable construction of the survival bunker"
-  },
-  {
-    src: "/images/shelter/outdoor-chair.jpg",
-    alt: "Discreet outdoor area of the survival bunker"
-  }
-]
+import { useTranslation } from "@/components/translation-provider"
 
 export default function SurvivalBunkerArgentina() {
+  const { t } = useTranslation()
+  
+  // Bunker images with translations
+  const bunkerImages = [
+    {
+      src: "/images/shelter/cabin-exterior-1.jpg",
+      alt: t('survivalBunker.images.main.alt'),
+      caption: t('survivalBunker.images.main.caption')
+    },
+    {
+      src: "/images/shelter/entrance.jpg",
+      alt: t('survivalBunker.images.entrance.alt')
+    },
+    {
+      src: "/images/shelter/front.jpg",
+      alt: t('survivalBunker.images.front.alt')
+    },
+    {
+      src: "/images/shelter/cabin-landscape.jpg",
+      alt: t('survivalBunker.images.landscape.alt'),
+      caption: t('survivalBunker.images.landscape.caption')
+    },
+    {
+      src: "/images/shelter/cabin-exterior-3.jpg",
+      alt: t('survivalBunker.images.side.alt')
+    },
+    {
+      src: "/images/shelter/outdoor-chair.jpg",
+      alt: t('survivalBunker.images.outdoor.alt')
+    }
+  ]
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -49,7 +51,7 @@ export default function SurvivalBunkerArgentina() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/shelter/cabin-exterior-1.jpg"
-            alt="Survival bunker in Argentina"
+            alt={t('survivalBunker.hero.alt')}
             fill
             className="object-cover"
             priority
@@ -58,10 +60,10 @@ export default function SurvivalBunkerArgentina() {
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-            Bunker Construction in Argentina
+            {t('survivalBunker.hero.title')}
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto drop-shadow-lg">
-            Custom construction services for off-grid structures in Argentina's dune landscape
+            {t('survivalBunker.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -71,9 +73,9 @@ export default function SurvivalBunkerArgentina() {
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Survival Bunkers in Argentina</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('survivalBunker.title')}</h1>
               <p className="text-xl text-muted-foreground">
-                Custom off-grid structures designed for resilience and self-sufficiency in Argentina's diverse landscapes.
+                {t('survivalBunker.subtitle')}
               </p>
             </div>
           </div>
@@ -84,65 +86,65 @@ export default function SurvivalBunkerArgentina() {
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 text-2xl font-bold">
-                  🇦🇷 Why Argentina?
+                  {t('survivalBunker.whyArgentina.title')}
                 </div>
                 <p className="text-lg">
-                  Argentina is one of the world's most resilient and strategic countries for long-term survival and self-sufficiency:
+                  {t('survivalBunker.whyArgentina.description')}
                 </p>
                 <ul className="space-y-3">
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Geopolitically neutral:</strong> Far from wars, nuclear targets, and global tensions.</span>
+                    <span><strong>{t('survivalBunker.whyArgentina.points.neutral.title')}:</strong> {t('survivalBunker.whyArgentina.points.neutral.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Low natural disaster risk:</strong> No hurricanes, volcanoes, or major seismic activity in most regions.</span>
+                    <span><strong>{t('survivalBunker.whyArgentina.points.disaster.title')}:</strong> {t('survivalBunker.whyArgentina.points.disaster.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Rich in resources:</strong> Freshwater, fertile soil, forests, and renewable energy potential.</span>
+                    <span><strong>{t('survivalBunker.whyArgentina.points.resources.title')}:</strong> {t('survivalBunker.whyArgentina.points.resources.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Sparse population:</strong> Ideal for privacy and autonomy outside urban centers.</span>
+                    <span><strong>{t('survivalBunker.whyArgentina.points.population.title')}:</strong> {t('survivalBunker.whyArgentina.points.population.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Off-grid-friendly:</strong> Few restrictions on wells, solar systems, and rural construction.</span>
+                    <span><strong>{t('survivalBunker.whyArgentina.points.offGrid.title')}:</strong> {t('survivalBunker.whyArgentina.points.offGrid.description')}</span>
                   </li>
                 </ul>
               </div>
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 text-2xl font-bold">
-                  🛖 Why Recharge Retreat?
+                  {t('survivalBunker.whyRecharge.title')}
                 </div>
                 <p className="text-lg">
-                  Recharge Retreat is surrounded by millionaire homes and boutique hotels, on the border with the vast wilderness of the Querandí coastal reserve — offering safety, discretion, and access to nature:
+                  {t('survivalBunker.whyRecharge.description')}
                 </p>
                 <ul className="space-y-3">
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Protected wilderness:</strong> Next to 9,000+ hectares of protected dunes and forest — no construction allowed.</span>
+                    <span><strong>{t('survivalBunker.whyRecharge.points.wilderness.title')}:</strong> {t('survivalBunker.whyRecharge.points.wilderness.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Naturally safe:</strong> No floods, earthquakes, or extreme climate risks. Stable terrain and mild weather year-round.</span>
+                    <span><strong>{t('survivalBunker.whyRecharge.points.safety.title')}:</strong> {t('survivalBunker.whyRecharge.points.safety.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Self-sufficient:</strong> Shallow aquifers and 2,500+ hours of sun per year — perfect for off-grid systems.</span>
+                    <span><strong>{t('survivalBunker.whyRecharge.points.selfSufficient.title')}:</strong> {t('survivalBunker.whyRecharge.points.selfSufficient.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Wild abundance:</strong> Firewood, fish, wild herbs, small game — nature provides.</span>
+                    <span><strong>{t('survivalBunker.whyRecharge.points.abundance.title')}:</strong> {t('survivalBunker.whyRecharge.points.abundance.description')}</span>
                   </li>
                   <li className="flex gap-3">
                     <span>•</span>
-                    <span><strong>Secluded yet accessible:</strong> Hidden in native pines, steps from luxury — but completely shielded.</span>
+                    <span><strong>{t('survivalBunker.whyRecharge.points.location.title')}:</strong> {t('survivalBunker.whyRecharge.points.location.description')}</span>
                   </li>
                 </ul>
                 <p className="text-lg font-medium">
-                  A place to disappear — without disconnecting.
+                  {t('survivalBunker.whyRecharge.tagline')}
                 </p>
               </div>
             </div>
@@ -152,9 +154,9 @@ export default function SurvivalBunkerArgentina() {
         <div className="max-w-4xl mx-auto space-y-16">
           <section className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold">Custom Off-Grid Construction</h2>
+              <h2 className="text-3xl font-bold">{t('survivalBunker.construction.title')}</h2>
               <p className="text-lg text-muted-foreground">
-                We specialize in building simple, durable structures that blend with Argentina's dune landscape. Whether you're looking for a small retreat or a larger off-grid home, we can help bring your vision to life using sustainable materials and techniques suited to the local environment.
+                {t('survivalBunker.construction.description')}
               </p>
             </div>
 
@@ -162,27 +164,27 @@ export default function SurvivalBunkerArgentina() {
               <Card>
                 <CardContent className="p-6">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold">Our Approach</h3>
+                    <h3 className="text-xl font-semibold">{t('survivalBunker.approach.title')}</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
                         <div>
-                          <p className="font-medium">Simple Construction</p>
-                          <p className="text-sm text-muted-foreground">Built with local, natural materials</p>
+                          <p className="font-medium">{t('survivalBunker.approach.construction.title')}</p>
+                          <p className="text-sm text-muted-foreground">{t('survivalBunker.approach.construction.description')}</p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Lock className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
                         <div>
-                          <p className="font-medium">Basic Security</p>
-                          <p className="text-sm text-muted-foreground">Standard locks and basic protection</p>
+                          <p className="font-medium">{t('survivalBunker.approach.security.title')}</p>
+                          <p className="text-sm text-muted-foreground">{t('survivalBunker.approach.security.description')}</p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Thermometer className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
                         <div>
-                          <p className="font-medium">Natural Insulation</p>
-                          <p className="text-sm text-muted-foreground">Designed to work with the local climate</p>
+                          <p className="font-medium">{t('survivalBunker.approach.insulation.title')}</p>
+                          <p className="text-sm text-muted-foreground">{t('survivalBunker.approach.insulation.description')}</p>
                         </div>
                       </li>
                     </ul>
@@ -193,27 +195,27 @@ export default function SurvivalBunkerArgentina() {
               <Card>
                 <CardContent className="p-6">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold">Construction Services</h3>
+                    <h3 className="text-xl font-semibold">{t('survivalBunker.services.title')}</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
                         <div>
-                          <p className="font-medium">Solar Power</p>
-                          <p className="text-sm text-muted-foreground">Basic electricity from solar panels</p>
+                          <p className="font-medium">{t('survivalBunker.services.solar.title')}</p>
+                          <p className="text-sm text-muted-foreground">{t('survivalBunker.services.solar.description')}</p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Droplets className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
                         <div>
-                          <p className="font-medium">Water Supply</p>
-                          <p className="text-sm text-muted-foreground">Basic water storage and collection</p>
+                          <p className="font-medium">{t('survivalBunker.services.water.title')}</p>
+                          <p className="text-sm text-muted-foreground">{t('survivalBunker.services.water.description')}</p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Wifi className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
                         <div>
-                          <p className="font-medium">Off-Grid Living</p>
-                          <p className="text-sm text-muted-foreground">Designed for disconnecting from technology</p>
+                          <p className="font-medium">{t('survivalBunker.services.offGrid.title')}</p>
+                          <p className="text-sm text-muted-foreground">{t('survivalBunker.services.offGrid.description')}</p>
                         </div>
                       </li>
                     </ul>
@@ -224,51 +226,51 @@ export default function SurvivalBunkerArgentina() {
           </section>
 
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold">Gallery</h2>
+            <h2 className="text-3xl font-bold">{t('survivalBunker.gallery.title')}</h2>
             <div className="rounded-lg overflow-hidden">
               <ImageGalleryLightbox images={bunkerImages} />
             </div>
           </section>
 
           <section className="bg-muted/50 rounded-lg p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">Try Our Shelter</h2>
+            <h2 className="text-2xl font-bold mb-4">{t('survivalBunker.cta.title')}</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Experience simple living in our tiny home. If you love the lifestyle, we can discuss building your own shelter on our property.
+              {t('survivalBunker.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
-                <Link href="/book">Book a Stay</Link>
+                <Link href="/book">{t('common.actions.bookStay')}</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="mailto:ciao@ilbuco.com.ar" className="no-underline">Discuss Your Project</a>
+                <a href="mailto:ciao@ilbuco.com.ar" className="no-underline">{t('common.actions.discussProject')}</a>
               </Button>
             </div>
           </section>
 
           <section className="space-y-6">
-            <h2 className="text-2xl font-bold">Explore Our Other Solutions</h2>
+            <h2 className="text-2xl font-bold">{t('common.exploreSolutions')}</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <Link href="/argentina-shelter">
                   <CardContent className="p-6 hover:bg-muted/50 transition-colors">
-                    <h3 className="font-semibold mb-2">Argentina Shelter</h3>
-                    <p className="text-sm text-muted-foreground">Premium shelter options in Argentina's beautiful landscapes.</p>
+                    <h3 className="font-semibold mb-2">{t('common.solutions.argentinaShelter.title')}</h3>
+                    <p className="text-sm text-muted-foreground">{t('common.solutions.argentinaShelter.description')}</p>
                   </CardContent>
                 </Link>
               </Card>
               <Card>
                 <Link href="/survival-shelters-argentina">
                   <CardContent className="p-6 hover:bg-muted/50 transition-colors">
-                    <h3 className="font-semibold mb-2">Survival Shelters Argentina</h3>
-                    <p className="text-sm text-muted-foreground">Secure and self-sufficient shelter solutions.</p>
+                    <h3 className="font-semibold mb-2">{t('common.solutions.survivalShelters.title')}</h3>
+                    <p className="text-sm text-muted-foreground">{t('common.solutions.survivalShelters.description')}</p>
                   </CardContent>
                 </Link>
               </Card>
               <Card>
                 <Link href="/bunker-argentina">
                   <CardContent className="p-6 hover:bg-muted/50 transition-colors">
-                    <h3 className="font-semibold mb-2">Bunker Argentina</h3>
-                    <p className="text-sm text-muted-foreground">Discrete and secure bunker options throughout Argentina.</p>
+                    <h3 className="font-semibold mb-2">{t('common.solutions.bunkerArgentina.title')}</h3>
+                    <p className="text-sm text-muted-foreground">{t('common.solutions.bunkerArgentina.description')}</p>
                   </CardContent>
                 </Link>
               </Card>

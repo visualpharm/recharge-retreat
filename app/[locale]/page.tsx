@@ -25,7 +25,7 @@ export default function Page() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/shelter/cabin-exterior-1.jpg"
-            alt="Self-sufficient shelter among dunes"
+            alt={t('home.hero.imageAlt')}
             fill
             className="object-cover"
             priority
@@ -85,7 +85,7 @@ export default function Page() {
     <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
       <Image
         src="/images/argentina-shelter/argentina-mountainhead.jpg"
-        alt="Mountainhead movie poster"
+        alt={t('home.movies.mountainhead')}
         fill
         className="object-cover group-hover:scale-105 transition-transform duration-300"
         sizes="(max-width: 768px) 100vw, 33vw"
@@ -101,7 +101,7 @@ export default function Page() {
     <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
       <Image
         src="/images/argentina-shelter/lovedeathrobots.jpg"
-        alt="Love, Death & Robots poster"
+        alt={t('home.movies.loveDeathRobots')}
         fill
         className="object-cover group-hover:scale-105 transition-transform duration-300"
         sizes="(max-width: 768px) 100vw, 33vw"
@@ -117,7 +117,7 @@ export default function Page() {
     <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
       <Image
         src="/images/argentina-shelter/lastofus.avif"
-        alt="The Last of Us poster"
+        alt={t('home.movies.lastOfUs')}
         fill
         className="object-cover group-hover:scale-105 transition-transform duration-300"
         sizes="(max-width: 768px) 100vw, 33vw"
@@ -131,25 +131,25 @@ export default function Page() {
       </section>
 
       <section className="max-w-5xl mx-auto my-12 px-4">
-  <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">What's special?</h2>
+  <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">{t('home.special.title')}</h2>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     {/* Digital Detox Card */}
     <div className="rounded-xl shadow bg-white/80 p-6 flex flex-col items-center text-center">
       <div className="text-3xl mb-3">📴</div>
-      <h3 className="font-semibold text-lg mb-2">Digital Detox</h3>
-      <p className="text-muted-foreground text-base">No distractions, no WiFi, no TV—just nature, peace, and time to reconnect with yourself and the world around you.</p>
+      <h3 className="font-semibold text-lg mb-2">{t('home.special.detox.title')}</h3>
+      <p className="text-muted-foreground text-base">{t('home.special.detox.description')}</p>
     </div>
     {/* Vast Private Reserve Card */}
     <div className="rounded-xl shadow bg-white/80 p-6 flex flex-col items-center text-center">
       <div className="text-3xl mb-3">🌲</div>
-      <h3 className="font-semibold text-lg mb-2">Vast Private Reserve</h3>
-      <p className="text-muted-foreground text-base">Surrounded by 9 hectares of private land and bordering a protected reserve—no neighbors, no crowds, just wild nature at your doorstep.</p>
+      <h3 className="font-semibold text-lg mb-2">{t('home.special.reserve.title')}</h3>
+      <p className="text-muted-foreground text-base">{t('home.special.reserve.description')}</p>
     </div>
     {/* Simple Comfort Card */}
     <div className="rounded-xl shadow bg-white/80 p-6 flex flex-col items-center text-center">
       <div className="text-3xl mb-3">🛏️</div>
-      <h3 className="font-semibold text-lg mb-2">Simple Comfort</h3>
-      <p className="text-muted-foreground text-base">Essential amenities, cozy interiors, off-grid living—everything you need for rest and inspiration, nothing you don’t.</p>
+      <h3 className="font-semibold text-lg mb-2">{t('home.special.comfort.title')}</h3>
+      <p className="text-muted-foreground text-base">{t('home.special.comfort.description')}</p>
     </div>
   </div>
 </section>
@@ -162,10 +162,10 @@ export default function Page() {
             <div className="mb-3">
               <ImageGalleryLightbox 
                 images={[
-                  { src: "/images/shelter/cabin-exterior-2.jpg", alt: "Front view of the shelter" },
-                  { src: "/images/shelter/outdoor-chair.jpg", alt: "Outdoor contemplation space" },
-                  { src: "/images/comfort/bedroom.webp", alt: "Covered area with seating" },
-                  { src: "/images/shelter/cabin-landscape.jpg", alt: "The shelter in its natural environment" }
+                  { src: "/images/shelter/cabin-exterior-2.jpg", alt: t('home.gallery.images.shelterFront') },
+                  { src: "/images/shelter/outdoor-chair.jpg", alt: t('home.gallery.images.outdoorSpace') },
+                  { src: "/images/comfort/bedroom.webp", alt: t('home.gallery.images.bedroom') },
+                  { src: "/images/shelter/cabin-landscape.jpg", alt: t('home.gallery.images.naturalEnvironment') }
                 ]}
                 gridCols="grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
                 imageClassName="aspect-[4/3] md:aspect-[4/3] w-full"
@@ -173,9 +173,9 @@ export default function Page() {
             </div>
             <ImageGalleryLightbox 
               images={[
-                { src: "/images/plants/native-plants.jpg", alt: "Native species that survive in the dunes" },
-                { src: "/images/plants/nursery.jpg", alt: "Nursery with tree seedlings" },
-                { src: "/images/plants/cactus.jpg", alt: "Resilient flora of the environment" }
+                { src: "/images/plants/native-plants.jpg", alt: t('home.gallery.images.nativeSpecies') },
+                { src: "/images/plants/nursery.jpg", alt: t('home.gallery.images.nursery') },
+                { src: "/images/plants/cactus.jpg", alt: t('home.gallery.images.flora') }
               ]}
               gridCols="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"
               imageClassName="aspect-[4/3] md:aspect-[4/3] w-full"
@@ -190,7 +190,7 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            <h2 className="text-3xl font-bold mb-12 text-center">The Environment</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">{t('home.environment.title')}</h2>
 
             <div className="grid md:grid-cols-3 gap-8">
               

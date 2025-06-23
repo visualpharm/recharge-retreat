@@ -8,60 +8,61 @@ import Footer from "@/components/footer"
 import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import { useTranslation } from "@/components/translation-provider"
 
-// Shelter exterior images
-const shelterImages = [
-  {
-    src: "/images/shelter/cabin-exterior-1.jpg",
-    alt: "Main view of the self-sufficient shelter",
-    caption: "Self-Sufficient Shelter"
-  },
-  {
-    src: "/images/shelter/entrance.jpg",
-    alt: "Entrance to the shelter"
-  },
-  {
-    src: "/images/shelter/front.jpg",
-    alt: "Front view of the shelter"
-  },
-  {
-    src: "/images/shelter/cabin-landscape.jpg",
-    alt: "The shelter in its natural dune environment",
-    caption: "Surrounded by Natural Dunes"
-  },
-  {
-    src: "/images/shelter/cabin-exterior-3.jpg",
-    alt: "Side view of the shelter"
-  },
-  {
-    src: "/images/shelter/outdoor-chair.jpg",
-    alt: "Outdoor relaxation area"
-  }
-]
 
-// Comfort images
-const comfortImages = [
-  {
-    src: "/images/comfort/bedroom.webp",
-    alt: "Comfortable bedroom area",
-    caption: "Restful Sleep"
-  },
-  {
-    src: "/images/comfort/window_view.webp",
-    alt: "Panoramic window view",
-    caption: "Panoramic Views"
-  },
-  {
-    src: "/images/comfort/toilet.webp",
-    alt: "Modern bathroom facilities"
-  },
-  {
-    src: "/images/comfort/rancho.webp",
-    alt: "Comfortable seating area inside the cabin"
-  }
-]
 
 export default function ShelterPage() {
   const { t } = useTranslation()
+  
+  // Image arrays with translations
+  const shelterImages = [
+    {
+      src: "/images/shelter/cabin-exterior-1.jpg",
+      alt: t('shelter.images.mainView.alt'),
+      caption: t('shelter.images.mainView.caption')
+    },
+    {
+      src: "/images/shelter/entrance.jpg",
+      alt: t('shelter.images.entrance.alt')
+    },
+    {
+      src: "/images/shelter/front.jpg",
+      alt: t('shelter.images.frontView.alt')
+    },
+    {
+      src: "/images/shelter/cabin-landscape.jpg",
+      alt: t('shelter.images.landscape.alt'),
+      caption: t('shelter.images.landscape.caption')
+    },
+    {
+      src: "/images/shelter/cabin-exterior-3.jpg",
+      alt: t('shelter.images.sideView.alt')
+    },
+    {
+      src: "/images/shelter/outdoor-chair.jpg",
+      alt: t('shelter.images.outdoorArea.alt')
+    }
+  ]
+
+  const comfortImages = [
+    {
+      src: "/images/comfort/bedroom.webp",
+      alt: t('shelter.comfortImages.bedroom.alt'),
+      caption: t('shelter.comfortImages.bedroom.caption')
+    },
+    {
+      src: "/images/comfort/window_view.webp",
+      alt: t('shelter.comfortImages.window.alt'),
+      caption: t('shelter.comfortImages.window.caption')
+    },
+    {
+      src: "/images/comfort/toilet.webp",
+      alt: t('shelter.comfortImages.bathroom.alt')
+    },
+    {
+      src: "/images/comfort/rancho.webp",
+      alt: t('shelter.comfortImages.seating.alt')
+    }
+  ]
   return (
     <div className="min-h-screen bg-background pt-20">
       <Navigation />

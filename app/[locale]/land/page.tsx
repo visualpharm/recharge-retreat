@@ -36,7 +36,7 @@ export default function LandPage() {
             >
               <SingleImageLightbox
                 src="/images/aereo/fork.webp"
-                alt="Aerial view of the property fork"
+                alt={t('land.images.aerial.fork')}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 containerClassName="w-full h-full"
@@ -51,7 +51,7 @@ export default function LandPage() {
             >
               <SingleImageLightbox
                 src="/images/aereo/ocean.webp"
-                alt="Aerial view towards the ocean"
+                alt={t('land.images.aerial.ocean')}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 containerClassName="w-full h-full"
@@ -69,7 +69,7 @@ export default function LandPage() {
             >
               <SingleImageLightbox 
                 src="/images/aereo/lago.webp" 
-                alt="Aerial view of the artificial lake" 
+                alt={t('land.images.aerial.lake')} 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-500" 
                 containerClassName="w-full h-full"
@@ -220,7 +220,7 @@ export default function LandPage() {
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="relative aspect-[16/9] rounded-xl overflow-hidden group shadow-xl hover:shadow-2xl transition-all duration-300">
-            <SingleImageLightbox src="/images/rancho-aereal-map.jpg" alt="Aerial map view of the property" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+            <SingleImageLightbox src="/images/rancho-aereal-map.jpg" alt={t('land.images.aerial.map')} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg">
@@ -238,15 +238,15 @@ export default function LandPage() {
           <h2 className="text-3xl font-bold mb-8">{t('land.plants.title')}</h2>
           <ImageGalleryLightbox 
             images={[
-              { src: "/images/plants/dunes-sunset.jpeg", alt: "Dunes at sunset" },
-              { src: "/images/plants/native-flora.jpeg", alt: "Native flora of the dunes" },
-              { src: "/images/plants/water-view.jpeg", alt: "View of the artificial lake" },
-              { src: "/images/plants/fence-sunset.jpeg", alt: "Natural boundaries at sunset" },
-              { src: "/images/plants/white-flowers.jpeg", alt: "Wild flowers" },
-              { src: "/images/plants/tall-grass.jpeg", alt: "Tall grasses" },
-              { src: "/images/plants/native-plants.jpg", alt: "Native species that survive in the dunes" },
-              { src: "/images/plants/nursery.jpg", alt: "Nursery with tree seedlings" },
-              { src: "/images/plants/cactus.jpg", alt: "Resilient flora of the environment" }
+              { src: "/images/plants/dunes-sunset.jpeg", alt: t('land.images.plants.dunesSunset') },
+              { src: "/images/plants/native-flora.jpeg", alt: t('land.images.plants.nativeFlora') },
+              { src: "/images/plants/water-view.jpeg", alt: t('land.images.plants.waterView') },
+              { src: "/images/plants/fence-sunset.jpeg", alt: t('land.images.plants.fenceSunset') },
+              { src: "/images/plants/white-flowers.jpeg", alt: t('land.images.plants.wildFlowers') },
+              { src: "/images/plants/tall-grass.jpeg", alt: t('land.images.plants.tallGrass') },
+              { src: "/images/plants/native-plants.jpg", alt: t('land.images.plants.nativeSpecies') },
+              { src: "/images/plants/nursery.jpg", alt: t('land.images.plants.nursery') },
+              { src: "/images/plants/cactus.jpg", alt: t('land.images.plants.resilientFlora') }
             ]}
           />
         </div>

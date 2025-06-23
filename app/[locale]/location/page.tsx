@@ -39,6 +39,7 @@ export default function LocationPage() {
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
+                  title={t('location.map.title')}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -60,8 +61,7 @@ export default function LocationPage() {
                 <div>
                   <p className="text-lg font-medium">{t('location.address')}</p>
                   <p className="text-gray-600">
-                    Parcela 48AT, 7165<br />
-                    Partido Villa Gesell, Provincia de Buenos Aires, Argentina
+                    {t('location.fullAddress')}
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ export default function LocationPage() {
           <div className="bg-white rounded-lg overflow-hidden">
             <SingleImageLightbox
               src="/images/directions/Como llegar al rancho@0.5x.png"
-              alt="Correct route to Recharge Retreat - turn from ruta 11"
+              alt={t('location.map.directionsAlt')}
               width={1200}
               height={800}
               className="w-full h-auto"

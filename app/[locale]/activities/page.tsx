@@ -97,10 +97,10 @@ export default function ActivitiesPage() {
           <div className="mb-12">
             <ImageGalleryLightbox 
               images={[
-                { src: "/images/activities/beach-fishing.png", alt: "Beach fishing activities" },
-                { src: "/images/activities/shark-fishing.png", alt: "Shark fishing on the steep coast" },
-                { src: "/images/activities/outdoor-activities.png", alt: "Outdoor activities and exploration" },
-                { src: "/images/activities/nature-exploration.png", alt: "Nature exploration in the dunes" }
+                { src: "/images/activities/beach-fishing.png", alt: t('activities.images.beachFishing') },
+                { src: "/images/activities/shark-fishing.png", alt: t('activities.images.sharkFishing') },
+                { src: "/images/activities/outdoor-activities.png", alt: t('activities.images.outdoorActivities') },
+                { src: "/images/activities/nature-exploration.png", alt: t('activities.images.natureExploration') }
               ]}
               gridCols="grid-cols-2 md:grid-cols-4"
             />
@@ -112,7 +112,7 @@ export default function ActivitiesPage() {
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/gXvgVHJOcn0?start=16"
-                title="Shark Fishing at Recharge Retreat"
+                title={t('activities.video.title')}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

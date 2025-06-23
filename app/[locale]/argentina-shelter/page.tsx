@@ -11,38 +11,40 @@ import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import { useTranslation } from "@/components/translation-provider"
 import Link from "next/link"
 
-// Shelter exterior images
-const shelterImages = [
-  {
-    src: "/images/shelter/cabin-exterior-1.jpg",
-    alt: "Main view of the self-sufficient shelter in Argentina",
-    caption: "Self-Sufficient Shelter in Argentina"
-  },
-  {
-    src: "/images/shelter/entrance.jpg",
-    alt: "Entrance to the Argentine shelter"
-  },
-  {
-    src: "/images/shelter/front.jpg",
-    alt: "Front view of the Argentine shelter"
-  },
-  {
-    src: "/images/shelter/cabin-landscape.jpg",
-    alt: "The shelter in the Argentine dune environment",
-    caption: "Nestled in Argentina's Natural Dunes"
-  },
-  {
-    src: "/images/shelter/cabin-exterior-3.jpg",
-    alt: "Side view of the Argentine shelter"
-  },
-  {
-    src: "/images/shelter/outdoor-chair.jpg",
-    alt: "Outdoor relaxation area in Argentina"
-  }
-]
+
 
 export default function ArgentinaShelter() {
   const { t } = useTranslation()
+  
+  // Shelter exterior images
+  const shelterImages = [
+    {
+      src: "/images/shelter/cabin-exterior-1.jpg",
+      alt: t('argentinaShelter.images.main.alt'),
+      caption: t('argentinaShelter.images.main.caption')
+    },
+    {
+      src: "/images/shelter/entrance.jpg",
+      alt: t('argentinaShelter.images.entrance.alt')
+    },
+    {
+      src: "/images/shelter/front.jpg",
+      alt: t('argentinaShelter.images.front.alt')
+    },
+    {
+      src: "/images/shelter/cabin-landscape.jpg",
+      alt: t('argentinaShelter.images.landscape.alt'),
+      caption: t('argentinaShelter.images.landscape.caption')
+    },
+    {
+      src: "/images/shelter/cabin-exterior-3.jpg",
+      alt: t('argentinaShelter.images.side.alt')
+    },
+    {
+      src: "/images/shelter/outdoor-chair.jpg",
+      alt: t('argentinaShelter.images.outdoor.alt')
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-background">
@@ -53,7 +55,7 @@ export default function ArgentinaShelter() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/shelter/cabin-exterior-1.jpg"
-            alt="Self-sufficient shelter in Argentina"
+            alt={t('argentinaShelter.hero.alt')}
             fill
             className="object-cover"
             priority
@@ -62,10 +64,10 @@ export default function ArgentinaShelter() {
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-            Argentina Shelter
+            {t('argentinaShelter.hero.title')}
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto drop-shadow-lg">
-            A simple, off-grid retreat in harmony with Argentina's wild dune landscape
+            {t('argentinaShelter.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -75,9 +77,9 @@ export default function ArgentinaShelter() {
       {/* Building in Harmony with Nature */}
       <section className="py-16">
         <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Building in Harmony with Nature</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('argentinaShelter.harmony.title')}</h2>
           <p className="text-lg text-muted-foreground">
-            Crafted with local materials and a light footprint, our shelters blend seamlessly into the dunes so you can live with—not just in—nature.
+            {t('argentinaShelter.harmony.description')}
           </p>
         </div>
       </section>
@@ -94,9 +96,9 @@ export default function ArgentinaShelter() {
         <div className="max-w-4xl mx-auto space-y-16">
           <section className="space-y-8">
             <div className="space-y-4 text-center">
-              <h2 className="text-3xl font-bold">Simple Living in Nature</h2>
+              <h2 className="text-3xl font-bold">{t('argentinaShelter.simpleLiving.title')}</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Tucked away in the wild dunes of Argentina's coastline, our self-sufficient tiny home offers a chance to experience off-grid living. Far from crowded beaches and luxury developments, this is a place to reconnect with nature's rhythms in a comfortable, low-impact way.
+                {t('argentinaShelter.simpleLiving.description')}
               </p>
             </div>
 
@@ -104,23 +106,23 @@ export default function ArgentinaShelter() {
               <Card>
                 <CardContent className="p-6">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold">The Experience</h3>
+                    <h3 className="text-xl font-semibold">{t('argentinaShelter.experience.title')}</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <Bed className="h-5 w-5 mt-0.5 text-primary flex-shrink-0" />
-                        <span>Cozy sleeping loft with premium bedding</span>
+                        <span>{t('argentinaShelter.experience.bed')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Utensils className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Fully equipped kitchen with gas stove</span>
+                        <span>{t('argentinaShelter.experience.kitchen')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Droplets className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Solar-heated outdoor shower</span>
+                        <span>{t('argentinaShelter.experience.shower')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Wifi className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Starlink internet available</span>
+                        <span>{t('argentinaShelter.experience.internet')}</span>
                       </li>
                     </ul>
                   </div>
@@ -130,23 +132,23 @@ export default function ArgentinaShelter() {
               <Card>
                 <CardContent className="p-6">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold">Off-Grid Features</h3>
+                    <h3 className="text-xl font-semibold">{t('argentinaShelter.features.title')}</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <Sun className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Solar power system</span>
+                        <span>{t('argentinaShelter.features.solar')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Droplets className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Rainwater collection system</span>
+                        <span>{t('argentinaShelter.features.water')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Flame className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Wood-burning stove</span>
+                        <span>{t('argentinaShelter.features.heating')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Thermometer className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>Passive solar design</span>
+                        <span>{t('argentinaShelter.features.design')}</span>
                       </li>
                     </ul>
                   </div>
@@ -160,41 +162,41 @@ export default function ArgentinaShelter() {
       {/* 🇦🇷 Why Argentina? */}
       <section className="pt-0 pb-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-8">🇦🇷 Why Argentina?</h2>
+          <h2 className="text-2xl font-bold text-center mb-8">{t('argentinaShelter.whyArgentina.title')}</h2>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             <Card>
               <CardContent className="p-6 space-y-2">
                 <Shield className="h-6 w-6 text-primary" />
-                <p className="font-medium">Geopolitically Neutral</p>
-                <p className="text-sm text-muted-foreground">Far from wars, nuclear targets, and global tensions.</p>
+                <p className="font-medium">{t('argentinaShelter.whyArgentina.neutral.title')}</p>
+                <p className="text-sm text-muted-foreground">{t('argentinaShelter.whyArgentina.neutral.description')}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 space-y-2">
                 <Thermometer className="h-6 w-6 text-primary" />
-                <p className="font-medium">Low Disaster Risk</p>
-                <p className="text-sm text-muted-foreground">No hurricanes, volcanoes, or major seismic activity in most regions.</p>
+                <p className="font-medium">{t('argentinaShelter.whyArgentina.disaster.title')}</p>
+                <p className="text-sm text-muted-foreground">{t('argentinaShelter.whyArgentina.disaster.description')}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 space-y-2">
                 <Droplets className="h-6 w-6 text-primary" />
-                <p className="font-medium">Rich in Resources</p>
-                <p className="text-sm text-muted-foreground">Freshwater, fertile soil, forests, and renewable energy potential.</p>
+                <p className="font-medium">{t('argentinaShelter.whyArgentina.resources.title')}</p>
+                <p className="text-sm text-muted-foreground">{t('argentinaShelter.whyArgentina.resources.description')}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 space-y-2">
                 <MapPin className="h-6 w-6 text-primary" />
-                <p className="font-medium">Space & Privacy</p>
-                <p className="text-sm text-muted-foreground">Sparse population outside cities—ideal for autonomy.</p>
+                <p className="font-medium">{t('argentinaShelter.whyArgentina.space.title')}</p>
+                <p className="text-sm text-muted-foreground">{t('argentinaShelter.whyArgentina.space.description')}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 space-y-2">
                 <Sun className="h-6 w-6 text-primary" />
-                <p className="font-medium">Off-Grid Friendly</p>
-                <p className="text-sm text-muted-foreground">Few restrictions on wells, solar systems, and rural builds.</p>
+                <p className="font-medium">{t('argentinaShelter.whyArgentina.offGrid.title')}</p>
+                <p className="text-sm text-muted-foreground">{t('argentinaShelter.whyArgentina.offGrid.description')}</p>
               </CardContent>
             </Card>
             <Card>
