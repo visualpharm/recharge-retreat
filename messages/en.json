@@ -58,7 +58,7 @@
       },
       "proximity": {
         "title": "Proximity", 
-        "description": "There is a <strong>city 5 km away</strong>"
+        "description": "There is a <strong>city 5 km away</strong> or you can rent our <a href=\"/en/mar-azul-cabin-rental\" class=\"text-blue-600 hover:underline\">cabin in Mar Azul</a>"
       }
     },
     "whatIf": {
@@ -69,7 +69,7 @@
       },
       "proximity": {
         "title": "Proximity",
-        "description": "There is a <strong>city 5 km away</strong>"
+        "description": "There is a <strong>city 5 km away</strong> or you can rent our <a href=\"/en/mar-azul-cabin-rental\" class=\"text-blue-600 hover:underline\">cabin in Mar Azul</a>"
       },
       "alternative": {
         "title": "Alternative",

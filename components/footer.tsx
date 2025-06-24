@@ -49,6 +49,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href={`${p}/alquiler-cabana-mar-azul`} className="text-muted-foreground hover:text-foreground transition-colors">
+                  {es ? "Alquiler Cabaña Mar Azul" : "Mar Azul Cabin Rental"}
+                </Link>
+              </li>
+              <li>
                 <Link href={`${p}/bunker-argentina`} className="text-muted-foreground hover:text-foreground transition-colors">
                   Bunker Argentina
                 </Link>

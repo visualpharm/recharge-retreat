@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: 'https://recharge-retreat.com',
+    languages: {
+      'es-AR': 'https://recharge-retreat.com/es',
+      'en-US': 'https://recharge-retreat.com/en',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'es_AR',

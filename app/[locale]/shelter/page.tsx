@@ -8,8 +8,6 @@ import Footer from "@/components/footer"
 import ImageGalleryLightbox from "@/components/image-gallery-lightbox"
 import { useTranslation } from "@/components/translation-provider"
 
-
-
 export default function ShelterPage() {
   const { t } = useTranslation()
   

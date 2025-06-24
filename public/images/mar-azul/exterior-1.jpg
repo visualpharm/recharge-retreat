@@ -1,0 +1,11 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#E5E7EB"/>
+  <rect x="200" y="200" width="400" height="300" fill="#9CA3AF" stroke="#4B5563" stroke-width="3"/>
+  <rect x="300" y="150" width="200" height="80" fill="#9CA3AF" stroke="#4B5563" stroke-width="3"/>
+  <rect x="350" y="350" width="20" height="80" fill="#4B5563"/>
+  <rect x="430" y="350" width="20" height="80" fill="#4B5563"/>
+  <path d="M0 450L800 400V600H0V450Z" fill="#10B981"/>
+  <path d="M0 450L800 400" stroke="#059669" stroke-width="3"/>
+  <text x="400" y="100" font-family="Arial" font-size="20" text-anchor="middle" fill="#1F2937">Exterior View - Mar Azul</text>
+  <text x="400" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Placeholder image - Replace with actual photo</text>
+</svg>

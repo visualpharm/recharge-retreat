@@ -2,7 +2,7 @@
   "nav": {
     "home": "Inicio",
     "shelter": "El Refugio",
-    "land": "La Tierra", 
+    "land": "La Tierra",
     "activities": "Qué Harás",
     "location": "Ubicación",
     "book": "Reservar"
@@ -12,13 +12,47 @@
     "bookNow": "Reservar Ahora",
     "viewGallery": "Ver Galería",
     "close": "Cerrar",
-    "loading": "Cargando..."
+    "loading": "Cargando...",
+    "actions": {
+      "bookStay": "Reservar Estancia",
+      "discussProject": "Hablemos de tu Proyecto"
+    },
+    "exploreSolutions": "Explora Nuestras Soluciones",
+    "solutions": {
+      "argentinaShelter": {
+        "title": "Refugio en Argentina",
+        "description": "Descubre nuestro refugio autosuficiente en la Patagonia"
+      },
+      "survivalShelters": {
+        "title": "Refugios de Supervivencia",
+        "description": "Soluciones de refugio para preparación y autosuficiencia"
+      },
+      "bunkerArgentina": {
+        "title": "Búnker en Argentina",
+        "description": "Protección y seguridad en ubicaciones estratégicas"
+      }
+    }
   },
   "home": {
     "title": "Recharge Retreat",
     "subtitle": "Refugio Autónomo Privado. Sin vecinos. 9 hectáreas de médanos verdes y el océano.",
     "description": "Esto no es un hotel. Ni una cabaña. Es un refugio autosuficiente, escondido entre médanos, en una chacra privada de 9 hectáreas cerca del mar.",
     "exploreButton": "Explorar el Refugio",
+    "special": {
+      "title": "Lo Que Nos Hace Especiales",
+      "detox": {
+        "title": "Desintoxicación Digital",
+        "description": "Sin WiFi, sin distracciones. Solo vos y la naturaleza. Una oportunidad para desconectarte y recargar energías lejos de las pantallas."
+      },
+      "reserve": {
+        "title": "Amplia Reserva Privada",
+        "description": "9 hectáreas de médanos vírgenes y naturaleza intacta, todo para que explores. Sin multitudes, sin ruido, solo pura tranquilidad."
+      },
+      "comfort": {
+        "title": "Confort Sencillo",
+        "description": "Todo lo que necesitás, nada de lo que no. Un espacio acogedor y bien equipado para una estadía cómoda en medio de la naturaleza."
+      }
+    },
     "zone": {
       "title": "La Zona",
       "description": "Ubicado en una zona de propiedades costosas — con <strong>barrios cerrados, hoteles boutique y propiedades de siete cifras</strong>."
@@ -57,8 +91,8 @@
         "description": "Hay <strong>señal de celular</strong>"
       },
       "proximity": {
-        "title": "Proximidad", 
-        "description": "Hay <strong>ciudad a 5 km</strong>"
+        "title": "Proximidad",
+        "description": "Hay <strong>ciudad a 5 km</strong> o podés alquilar nuestra <a href=\"/es/alquiler-cabana-mar-azul\" class=\"text-blue-600 hover:underline\">cabaña en Mar Azul</a>"
       }
     },
     "whatIf": {
@@ -69,7 +103,7 @@
       },
       "proximity": {
         "title": "Proximidad",
-        "description": "Hay <strong>ciudad a 5 km</strong>"
+        "description": "Hay <strong>ciudad a solo 5 km</strong> o podés alquilar nuestra <a href=\"/es/alquiler-cabana-mar-azul\" class=\"text-blue-600 hover:underline\">cabaña en Mar Azul</a>"
       },
       "alternative": {
         "title": "Alternativa",
@@ -245,6 +279,337 @@
       "noWifi": "<strong>Sin WiFi</strong> - Presentamos esto como un lugar para desconectarse. Sin embargo, hay buena recepción de internet móvil de todas las compañías para cuando lo necesites.",
       "linens": "<strong>Traé tus propias sábanas y toallas</strong> - Recomendamos traer tu propia ropa de cama para mayor comodidad.",
       "electricity": "<strong>Electricidad limitada</strong> - La energía solar es suficiente para luces y cargar dispositivos, pero no para electrodomésticos de alto consumo."
+    }
+  },
+  "bunker": {
+    "hero": {
+      "title": "Búnker en Argentina",
+      "subtitle": "Tu refugio seguro en la Patagonia Argentina",
+      "description": "Un refugio autosuficiente diseñado para la seguridad y comodidad en cualquier situación.",
+      "cta": "Reservar Ahora"
+    },
+    "features": {
+      "title": "Características del Búnker",
+      "security": {
+        "title": "Seguridad Máxima",
+        "description": "Diseño discreto y características de seguridad avanzadas para tu tranquilidad."
+      },
+      "selfSufficient": {
+        "title": "Autosuficiencia",
+        "description": "Sistemas independientes de agua, energía y alimentos para largas estancias."
+      },
+      "location": {
+        "title": "Ubicación Estratégica",
+        "description": "Situado en una zona remota pero accesible de la Patagonia Argentina."
+      }
+    },
+    "images": {
+      "main": {
+        "alt": "Búnker de supervivencia en las dunas de Argentina",
+        "caption": "Refugio seguro en la naturaleza"
+      },
+      "entrance": {
+        "alt": "Entrada segura al búnker",
+        "caption": "Acceso seguro y discreto"
+      },
+      "front": {
+        "alt": "Vista frontal del búnker",
+        "caption": "Diseño integrado con el entorno"
+      },
+      "landscape": {
+        "alt": "Búnker en el paisaje patagónico",
+        "caption": "Integración con la naturaleza"
+      },
+      "side": {
+        "alt": "Vista lateral del búnker",
+        "caption": "Construcción robusta"
+      },
+      "outdoor": {
+        "alt": "Área exterior del búnker",
+        "caption": "Espacio para actividades al aire libre"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para tu Próximo Refugio Seguro?",
+      "description": "Experimenta la seguridad de un búnker autosuficiente en una de las ubicaciones más estratégicas de la Patagonia.",
+      "button": "Reservar Ahora"
+    }
+  },
+  "survivalShelters": {
+    "hero": {
+      "title": "Refugios de Supervivencia en Argentina",
+      "subtitle": "Tu hogar seguro en la naturaleza salvaje",
+      "description": "Refugios autosuficientes diseñados para la supervivencia y comodidad en cualquier situación.",
+      "cta": "Explorar Refugios"
+    },
+    "features": {
+      "title": "Características de Nuestros Refugios",
+      "security": {
+        "title": "Seguridad",
+        "description": "Diseño discreto y características de seguridad para tu tranquilidad."
+      },
+      "water": {
+        "title": "Agua Potable",
+        "description": "Sistemas de captación y purificación de agua de lluvia."
+      },
+      "energy": {
+        "title": "Energía Solar",
+        "description": "Sistemas fotovoltaicos para energía eléctrica autónoma."
+      },
+      "climate": {
+        "title": "Control de Clima",
+        "description": "Aislamiento térmico para protección contra temperaturas extremas."
+      },
+      "connectivity": {
+        "title": "Conectividad",
+        "description": "Señal de celular disponible para emergencias."
+      },
+      "location": {
+        "title": "Ubicación",
+        "description": "Cerca de la ciudad pero lo suficientemente alejado para la privacidad."
+      }
+    },
+    "gallery": {
+      "title": "Galería de Refugios"
+    },
+    "cta": {
+      "title": "¿Listo para tu Próximo Refugio?",
+      "description": "Descubre la libertad de un refugio autosuficiente en la naturaleza salvaje de Argentina.",
+      "button": "Reservar Ahora"
+    }
+  },
+  "survivalBunker": {
+    "title": "Refugio de Supervivencia en Argentina",
+    "subtitle": "Tu refugio seguro en la Patagonia Argentina",
+    "hero": {
+      "title": "Refugio de Supervivencia en Argentina",
+      "subtitle": "Tu refugio seguro en medio de la naturaleza salvaje",
+      "alt": "Refugio de supervivencia en las dunas de Argentina"
+    },
+    "whyArgentina": {
+      "title": "¿Por qué Argentina?",
+      "description": "Argentina ofrece condiciones únicas para la supervivencia a largo plazo:",
+      "points": {
+        "neutral": {
+          "title": "País Neutral",
+          "description": "Fuera de los principales conflictos geopolíticos globales"
+        },
+        "disaster": {
+          "title": "Bajo Riesgo de Desastres",
+          "description": "Sin huracanes, pocos terremotos y baja actividad volcánica"
+        },
+        "resources": {
+          "title": "Recursos Naturales",
+          "description": "Tierras fértiles, agua dulce abundante y clima templado"
+        },
+        "population": {
+          "title": "Baja Densidad",
+          "description": "Amplios espacios con muy baja densidad de población"
+        },
+        "offGrid": {
+          "title": "Autosuficiencia",
+          "description": "Tradición de vida autosuficiente en áreas rurales"
+        }
+      }
+    },
+    "whyRecharge": {
+      "title": "¿Por qué Recharge Retreat?",
+      "description": "Nuestro refugio ofrece características únicas:",
+      "points": {
+        "wilderness": {
+          "title": "Ubicación Remota",
+          "description": "Escondido en 9 hectáreas de dunas vírgenes"
+        },
+        "safety": {
+          "title": "Seguridad",
+          "description": "Diseño discreto y bajo perfil"
+        },
+        "selfSufficient": {
+          "title": "Autosuficiencia",
+          "description": "Sistemas independientes de agua y energía"
+        },
+        "abundance": {
+          "title": "Recursos Naturales",
+          "description": "Acceso a agua dulce y tierras cultivables"
+        },
+        "location": {
+          "title": "Ubicación Estratégica",
+          "description": "Cerca de la costa pero lo suficientemente alejado"
+        }
+      },
+      "tagline": "El lugar perfecto para tu plan de contingencia"
+    },
+    "construction": {
+      "title": "Diseño y Construcción",
+      "description": "Nuestro refugio está diseñado pensando en la durabilidad y el bajo mantenimiento:"
+    },
+    "approach": {
+      "title": "Enfoque de Construcción",
+      "construction": {
+        "title": "Calidad Superior",
+        "description": "Materiales de primera calidad y técnicas de construcción probadas"
+      },
+      "security": {
+        "title": "Seguridad Mejorada",
+        "description": "Diseño discreto y características de seguridad integradas"
+      },
+      "insulation": {
+        "title": "Aislamiento Térmico",
+        "description": "Protección contra temperaturas extremas todo el año"
+      }
+    },
+    "services": {
+      "title": "Servicios del Refugio",
+      "solar": {
+        "title": "Energía Solar",
+        "description": "Sistema fotovoltaico para energía eléctrica autónoma"
+      },
+      "water": {
+        "title": "Agua Potable",
+        "description": "Captación y purificación de agua de lluvia"
+      },
+      "offGrid": {
+        "title": "Vida Autónoma",
+        "description": "Diseñado para operar completamente fuera de la red"
+      }
+    },
+    "gallery": {
+      "title": "Galería del Refugio"
+    },
+    "cta": {
+      "title": "¿Listo para tu Próximo Refugio?",
+      "description": "Experimenta la libertad de un refugio autosuficiente en uno de los lugares más exclusivos de la costa atlántica.",
+      "button": "Reservar Ahora"
+    }
+  },
+  "marAzul": {
+    "seo": {
+      "title": "Alquiler de Cabaña en Mar Azul | Recharge Retreat",
+      "description": "Descubre la mejor opción de alquiler de cabaña en Mar Azul. Cómoda, acogedora y a solo pasos de la playa. ¡Reserva ahora tu escapada perfecta!",
+      "og": {
+        "title": "Alquiler de Cabaña en Mar&nbsp;Azul - Tu Refugio en la Costa",
+        "description": "Disfruta de unas vacaciones inolvidables en nuestra cabaña en Mar Azul. Playa virgen, privacidad y todas las comodidades para tu descanso.",
+        "imageAlt": "Cabaña de alquiler en Mar Azul a pocos metros de la playa"
+      }
+    },
+    "hero": {
+      "title": "Alquiler de Cabaña en Mar&nbsp;Azul",
+      "subtitle": "Tu refugio junto al mar",
+      "description": "Descubre la magia de Mar Azul en una cabaña única a solo pasos de la playa virgen. Privacidad, naturaleza y comodidad en un solo lugar.",
+      "ctaPrimary": "Consultar Disponibilidad",
+      "ctaSecondary": "Sobre la cabaña"
+    },
+    "features": {
+      "title": "Tu Refugio en Mar Azul",
+      "description": "Nuestra cabaña ofrece todo lo necesario para una estadía inolvidable en uno de los rincones más exclusivos de la costa atlántica argentina.",
+      "items": [
+        {
+          "title": "Cabaña Completamente Equipada",
+          "description": "Cocina completa, baño privado, ropa de cama y todo lo necesario para tu comodidad."
+        },
+        {
+          "title": "A Pasos de la Playa",
+          "description": "Ubicación privilegiada a solo 300 metros de la playa virgen de Mar Azul."
+        },
+        {
+          "title": "Patio con Fogon-Parrilla",
+          "description": "Disfruta de comidas al aire libre en nuestro acogedor patio con fogón-parrilla."
+        },
+        {
+          "title": "Entorno Natural",
+          "description": "Rodeado de médanos y vegetación autóctona para una experiencia de desconexión total."
+        },
+        {
+          "title": "Estacionamiento Privado",
+          "description": "Espacio seguro para estacionar tu vehículo dentro del predio."
+        },
+        {
+          "title": "Ubicación Privilegiada",
+          "description": "A solo 5 minutos del centro de Mar Azul y cerca de todos los servicios."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Nuestra Cabaña en Imágenes",
+      "description": "Conoce por dentro y por fuera el lugar donde pasarás tus vacaciones en Mar Azul.",
+      "images": [
+        {
+          "alt": "Vista exterior de la cabaña en Mar Azul"
+        },
+        {
+          "alt": "Sala de estar acogedora"
+        },
+        {
+          "alt": "Cocina completamente equipada"
+        },
+        {
+          "alt": "Dormitorio con cama matrimonial"
+        },
+        {
+          "alt": "Baño moderno y funcional"
+        },
+        {
+          "alt": "Patio con fogón-parrilla y muebles de exterior"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Lo Que Dicen Nuestros Huéspedes",
+      "description": "Experiencias reales de viajeros que ya se alojaron en nuestra cabaña.",
+      "items": [
+        {
+          "quote": "La mejor experiencia de alojamiento en Mar Azul. La cabaña es exactamente como en las fotos, impecable y con todo lo necesario.",
+          "author": "María G., Buenos Aires",
+          "rating": 5
+        },
+        {
+          "quote": "La ubicación es perfecta: cerca de todo pero lo suficientemente alejado para tener privacidad. Volveremos sin dudas.",
+          "author": "Carlos R., Córdoba",
+          "rating": 5
+        },
+        {
+          "quote": "La atención fue excelente y la cabaña tiene un encanto especial. Ideal para desconectar y disfrutar de la naturaleza.",
+          "author": "Laura M., Rosario",
+          "rating": 5
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para tu Escape a Mar Azul?",
+      "description": "Consultá disponibilidad y reservá tu estadía en la cabaña perfecta para tus próximas vacaciones.",
+      "primary": "Consultar Disponibilidad",
+      "secondary": "Llamar Ahora",
+      "note": "Atención personalizada para ayudarte a planificar tu estadía perfecta."
+    },
+    "location": {
+      "title": "Ubicación Privilegiada",
+      "description": "Nuestra cabaña se encuentra en una de las mejores zonas de Mar Azul, cerca de todo pero en un entorno tranquilo y privado.",
+      "sections": [
+        {
+          "title": "A Poca Distancia",
+          "items": [
+            "Playa virgen - 300 m",
+            "Centro de Mar Azul - 5 min en auto",
+            "Supermercado - 3 min en auto"
+          ]
+        },
+        {
+          "title": "Cercanías",
+          "items": [
+            "Restaurantes - 10 min en auto",
+            "Faro Querandí - 15 min en camioneta",
+            "Mar de las Pampas - 15 min en auto"
+          ]
+        },
+        {
+          "title": "Cómo Llegar",
+          "items": [
+            "Desde Buenos Aires: 4.5 horas en auto",
+            "Aeropuerto más cercano: Aeroparque (BUE)",
+            "Colectivos a Mar Azul desde Retiro"
+          ]
+        }
+      ]
     }
   },
   "footer": {
