@@ -25,18 +25,18 @@ export default function Navigation({ transparent = false }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-20 border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-between">
           <Link href={getLocalizedHref("/")} className="font-semibold text-lg">
             Recharge Retreat
           </Link>
 
           {/* Mobile menu button */}
-          <button className="md:hidden mt-2 text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
 
           {/* Desktop navigation - centered */}
-          <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
+          <nav className="hidden md:flex items-center justify-center flex-1 gap-8 mx-8">
             <Link
               href={getLocalizedHref("/shelter")}
               className={`text-base font-medium transition-colors ${
@@ -80,7 +80,7 @@ export default function Navigation({ transparent = false }) {
           </nav>
 
           {/* Language Switcher and Book button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4 ml-auto">
             <SimpleLanguageSwitcher />
             <Link
               href="https://book.recharge.com.ar/listing/110889"

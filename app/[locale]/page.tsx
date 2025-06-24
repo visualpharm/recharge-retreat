@@ -36,7 +36,7 @@ export default function Page() {
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <div className="space-y-8">
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
+              <h1 className="pt-6 text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg">
                 {t('home.title')}
               </h1>
               <h2 className="text-xl md:text-3xl font-medium tracking-tight text-white leading-tight drop-shadow-lg">
