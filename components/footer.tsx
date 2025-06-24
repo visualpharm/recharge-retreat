@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Instagram } from "lucide-react";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -27,7 +28,17 @@ export default function Footer() {
                 </>
               )}
             </p>
-
+            <div className="mt-4">
+              <Link 
+                href="https://www.instagram.com/retreat.querandi/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+                <span>@retreat.querandi</span>
+              </Link>
+            </div>
           </div>
 
           <div>
