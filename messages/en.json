@@ -254,5 +254,100 @@
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "argentinaShelter": {
+    "hero": {
+      "title": "Argentina Shelter: Your Off-Grid Refuge",
+      "subtitle": "Experience sustainable living in a self-sufficient shelter nestled in Argentina's pristine coastal dunes",
+      "alt": "Argentina shelter exterior view"
+    },
+    "images": {
+      "main": {
+        "alt": "Argentina shelter main view",
+        "caption": "Solar-powered shelter in the Argentine dunes"
+      },
+      "entrance": {
+        "alt": "Shelter entrance"
+      },
+      "front": {
+        "alt": "Front view of the shelter"
+      },
+      "landscape": {
+        "alt": "Shelter in natural landscape",
+        "caption": "Integrated with the natural dune environment"
+      },
+      "side": {
+        "alt": "Side view of the shelter"
+      },
+      "outdoor": {
+        "alt": "Outdoor living area"
+      }
+    },
+    "harmony": {
+      "title": "Building in Harmony with Nature",
+      "description": "Our Argentina shelter is designed to minimize environmental impact while maximizing comfort and self-sufficiency. Using sustainable materials and renewable energy, it provides a blueprint for resilient living."
+    },
+    "simpleLiving": {
+      "title": "Simple Living in Nature",
+      "description": "Discover how our off-grid shelter in Argentina combines modern comforts with sustainable practices, offering a unique retreat experience in one of South America's most pristine coastal regions."
+    },
+    "experience": {
+      "title": "Your Experience",
+      "bed": "Comfortable sleeping accommodations",
+      "kitchen": "Full kitchen with gas cooking",
+      "shower": "Hot shower with gas water heater",
+      "internet": "Cell signal available (no WiFi by design)"
+    },
+    "features": {
+      "title": "Shelter Features",
+      "solar": "Solar power system with 220V electricity",
+      "water": "Fresh water from local aquifer",
+      "heating": "Gas heating for cold nights",
+      "design": "Insulated design for year-round comfort"
+    },
+    "whyArgentina": {
+      "title": "🇦🇷 Why Argentina?",
+      "neutral": {
+        "title": "Geopolitically Neutral",
+        "description": "Argentina maintains neutrality in global conflicts"
+      },
+      "disaster": {
+        "title": "No Natural Disasters",
+        "description": "No hurricanes, tsunamis, or major earthquakes"
+      },
+      "resources": {
+        "title": "Abundant Resources",
+        "description": "Fresh water, fertile land, and year-round sunshine"
+      },
+      "space": {
+        "title": "Low Population Density",
+        "description": "Vast open spaces with minimal crowding"
+      },
+      "offGrid": {
+        "title": "Off-Grid Friendly",
+        "description": "Supportive regulations for sustainable living"
+      }
+    }
+  },
+  "survivalShelter": {
+    "hero": {
+      "title": "Survival Shelter Argentina: Resilient Living",
+      "subtitle": "Test your self-sufficiency in our autonomous shelter, designed for complete independence from modern infrastructure",
+      "alt": "Survival shelter in Argentina"
+    }
+  },
+  "survivalBunker": {
+    "hero": {
+      "title": "Survival Bunker Argentina: Ultimate Preparedness",
+      "subtitle": "Experience a fully self-sufficient bunker-style retreat in Argentina's remote coastal wilderness",
+      "alt": "Survival bunker Argentina"
+    }
+  },
+  "bunker": {
+    "hero": {
+      "title": "Bunker Argentina: Your Safe Haven",
+      "subtitle": "Discover autonomous living in our fortified shelter, built for resilience in Argentina's pristine dunes",
+      "alt": "Bunker shelter in Argentina"
+    }
   }
 }
