@@ -49,6 +49,22 @@
       "collapse": "Um ensaio geral para quando tudo colapsar",
       "collapseDescription": "Mas você está <strong>sozinho</strong>, cercado por <strong>dunas intocadas</strong>, sem vizinhos, sem trânsito, nada. Uma experiência de desconexão completa, como um ensaio para quando tudo colapsar."
     },
+    "movies": {
+      "mountainhead": "Mountainhead - O Último Refúgio",
+      "loveDeathRobots": "Love Death & Robots - Três Robôs",
+      "lastOfUs": "The Last of Us - Long Long Time"
+    },
+    "gallery": {
+      "images": {
+        "shelterFront": "Vista frontal do refúgio",
+        "outdoorSpace": "Espaço ao ar livre",
+        "bedroom": "Quarto confortável",
+        "naturalEnvironment": "Ambiente natural",
+        "nativeSpecies": "Espécies de plantas nativas",
+        "nursery": "Viveiro de plantas nativas",
+        "flora": "Flora local"
+      }
+    },
     "environment": {
       "title": "O Ambiente",
       "mainProperty": {

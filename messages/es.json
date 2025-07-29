@@ -68,6 +68,22 @@
       "collapse": "Un ensayo general para cuando todo colapse",
       "collapseDescription": "Pero estás <strong>solo</strong>, rodeado de <strong>médanos vírgenes</strong>, sin vecinos, sin tráfico, nada. Una experiencia de desconexión completa, como un ensayo para cuando todo colapse."
     },
+    "movies": {
+      "mountainhead": "Mountainhead - El Último Refugio",
+      "loveDeathRobots": "Love Death & Robots - Tres Robots",
+      "lastOfUs": "The Last of Us - Long Long Time"
+    },
+    "gallery": {
+      "images": {
+        "shelterFront": "Vista frontal del refugio",
+        "outdoorSpace": "Espacio exterior",
+        "bedroom": "Dormitorio cómodo",
+        "naturalEnvironment": "Entorno natural",
+        "nativeSpecies": "Especies de plantas nativas",
+        "nursery": "Vivero de plantas nativas",
+        "flora": "Flora local"
+      }
+    },
     "environment": {
       "title": "El Entorno",
       "mainProperty": {

@@ -19,6 +19,21 @@
     "subtitle": "Private Autonomous Shelter. No Neighbors. 9 Hectares of Green Dunes and the Ocean.",
     "description": "This is not a hotel. Not a cabin. It's a self-sufficient shelter, hidden among dunes, on a private 9-hectare property near the sea.",
     "exploreButton": "Explore the Shelter",
+    "special": {
+      "title": "What Makes Us Special",
+      "detox": {
+        "title": "Digital Detox",
+        "description": "No WiFi, no distractions. Just you and nature. An opportunity to disconnect and recharge far from screens."
+      },
+      "reserve": {
+        "title": "Vast Private Reserve",
+        "description": "9 hectares of pristine dunes and untouched nature, all for you to explore. No crowds, no noise, just pure tranquility."
+      },
+      "comfort": {
+        "title": "Simple Comfort",
+        "description": "Everything you need, nothing you don't. A cozy and well-equipped space for a comfortable stay in the middle of nature."
+      }
+    },
     "zone": {
       "title": "The Zone",
       "description": "Located in an area of expensive properties — with <strong>gated communities, boutique hotels and seven-figure homes</strong>."
@@ -33,6 +48,22 @@
       "description": "When everything collapses, you've got a spot in Argentina. Tour it, test it, check the airstrip for your jet. Want your own nearby? Let's talk.",
       "collapse": "A dry run for when it all collapses",
       "collapseDescription": "But you are <strong>alone</strong>, surrounded by <strong>pristine dunes</strong>, with no neighbors, no traffic, nothing. A complete disconnection experience, like a rehearsal for when everything collapses."
+    },
+    "movies": {
+      "mountainhead": "Mountainhead - The Last Stand",
+      "loveDeathRobots": "Love Death & Robots - Three Robots",
+      "lastOfUs": "The Last of Us - Long Long Time"
+    },
+    "gallery": {
+      "images": {
+        "shelterFront": "Shelter front view",
+        "outdoorSpace": "Outdoor living space",
+        "bedroom": "Comfortable bedroom",
+        "naturalEnvironment": "Natural environment",
+        "nativeSpecies": "Native plant species",
+        "nursery": "Native plant nursery",
+        "flora": "Local flora"
+      }
     },
     "environment": {
       "title": "The Environment",

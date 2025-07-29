@@ -32,10 +32,10 @@ export default function LocationPage() {
       <section className="pt-0 pb-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="-mt-8">
-              <div className="w-full h-[400px] rounded-xl overflow-hidden">
+            <div className="mt-4">
+              <div className="w-full h-[450px] rounded-xl overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.1234567890123!2d-57.0770374!3d-37.3756338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b5515744056f796!2sRecharge%20Retreat!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12604.494!2d-57.0770374!3d-37.3756338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b5515744056f796!2sRecharge%20Retreat!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&z=14"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
