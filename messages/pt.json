@@ -1,4 +1,9 @@
 {
+  "saleBanner": {
+    "text": "Esta propriedade está temporariamente indisponível para aluguel — está em processo de reestruturação.",
+    "forSale": "Está à venda por USD 400.000.",
+    "linkText": "Ver anúncio no MercadoLibre →"
+  },
   "nav": {
     "home": "Início",
     "shelter": "O Refúgio",

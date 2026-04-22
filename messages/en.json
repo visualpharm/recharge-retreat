@@ -1,4 +1,9 @@
 {
+  "saleBanner": {
+    "text": "This property is temporarily unavailable for rental — it is currently under restructuring.",
+    "forSale": "It is for sale at USD 400,000.",
+    "linkText": "View listing on MercadoLibre →"
+  },
   "nav": {
     "home": "Home",
     "shelter": "The Shelter",

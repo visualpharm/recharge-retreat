@@ -4,8 +4,10 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTranslation } from './translation-provider'
-import { Building2, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import SimpleLanguageSwitcher from "./simple-language-switcher"
+
+const MELI_LISTING_URL = "https://inmueble.mercadolibre.com.ar/MLA-PLACEHOLDER"
 
 export default function Navigation({ transparent = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,7 +25,23 @@ export default function Navigation({ transparent = false }) {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-20 border-b border-border bg-background/95 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-20">
+      {/* Sale announcement banner */}
+      <div className="bg-amber-500 text-amber-950 text-center py-2 px-4 text-sm font-medium">
+        <span>{t('saleBanner.text')}</span>
+        {' '}
+        <span className="font-bold">{t('saleBanner.forSale')}</span>
+        {' '}
+        <a
+          href={MELI_LISTING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:no-underline font-bold"
+        >
+          {t('saleBanner.linkText')}
+        </a>
+      </div>
+      <div className="border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-row items-center justify-between">
           <Link href={getLocalizedHref("/")} className="font-semibold text-lg">
@@ -79,18 +97,9 @@ export default function Navigation({ transparent = false }) {
             </Link>
           </nav>
 
-          {/* Language Switcher and Book button */}
+          {/* Language Switcher */}
           <div className="hidden md:flex items-center gap-4 ml-auto">
             <SimpleLanguageSwitcher />
-            <Link
-              href="https://book.recharge.com.ar/listing/110889"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors"
-            >
-              <Building2 className="h-4 w-4" />
-              {t('nav.book')}
-            </Link>
           </div>
         </div>
 
@@ -133,33 +142,22 @@ export default function Navigation({ transparent = false }) {
             <Link
               href={getLocalizedHref("/location")}
               className={`block py-2 text-base font-medium transition-colors ${
-                isActive('/location') 
-                  ? 'text-primary font-semibold' 
+                isActive('/location')
+                  ? 'text-primary font-semibold'
                   : 'text-foreground/80 hover:text-foreground'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.location')}
             </Link>
-            
-            {/* Language Switcher for Mobile */}
+
             {/* Language Switcher for Mobile */}
             <div className="flex justify-center py-2">
               <SimpleLanguageSwitcher />
             </div>
-            
-            <Link
-              href="https://book.recharge.com.ar/listing/110889"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg font-medium text-sm transition-colors mt-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <Building2 className="h-4 w-4" />
-              {t('nav.book')}
-            </Link>
           </div>
         )}
+      </div>
       </div>
     </header>
   )
