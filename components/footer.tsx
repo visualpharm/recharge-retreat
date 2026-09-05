@@ -95,9 +95,16 @@ export default function Footer() {
           </div>
         </div>
 
+        {!pathname?.endsWith('/book') && <nav aria-label={es ? "Otros proyectos" : "Other projects"} className="project-links flex flex-wrap gap-x-6 gap-y-4 border-t mt-8 pt-6 text-base text-blue-700 dark:text-blue-300">
+          <a href="https://usabruno.com">Bruno</a>
+          <a href="https://lira-voice.app">Lira</a>
+          <a href="https://humanrounds.org">Human Rounds</a>
+          <a href="https://inglesconjenny.vercel.app">Inglés con Jenny</a>
+          <a href="https://finda-capital.com">Finda Capital</a>
+        </nav>}
+
         <div className="border-t mt-8 pt-6 text-center">
-          <p className="text-xs text-muted-foreground">
-            {es ? "Copyright" : "Copyright"} {new Date().getFullYear()} Recharge Retreat. {es ? "Todos los derechos reservados." : "All rights reserved."}
+          <p className="text-base text-foreground">
             © {new Date().getFullYear()} Recharge Retreat. {es ? "Todos los derechos reservados." : "All rights reserved."}
           </p>
         </div>
