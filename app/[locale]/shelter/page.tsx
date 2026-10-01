@@ -93,9 +93,7 @@ export default function ShelterPage() {
                   <Sun className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-2">{t('shelter.exterior.solarPowered.title')}</h3>
-                    <p className="text-muted-foreground">
-                      {t('shelter.exterior.solarPowered.description')}
-                    </p>
+                    <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: t('shelter.exterior.solarPowered.description')}} />
                   </div>
                 </div>
               </CardContent>

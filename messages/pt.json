@@ -243,7 +243,7 @@
     "exterior": {
       "solarPowered": {
         "title": "Energia Solar",
-        "description": "Completamente autossuficiente com painéis solares fornecendo toda a eletricidade que você precisa."
+        "description": "Completamente autossuficiente com <a href=\"https://usabruno.com/locations/mar-azul/\" class=\"text-blue-600 hover:underline\">energia solar em Mar Azul</a>: os painéis fornecem toda a eletricidade que você precisa."
       },
       "insulated": {
         "title": "Bem Isolado",
