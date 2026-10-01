@@ -21,9 +21,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: 'https://recharge.com.ar/book',
-  },
   keywords: [
     'book beach cabin Argentina',
     'Faro Querandí accommodation',

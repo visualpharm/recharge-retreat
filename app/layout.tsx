@@ -34,13 +34,9 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: 'https://recharge.com.ar',
-    languages: {
-      'es-AR': 'https://recharge.com.ar/es',
-      'en-US': 'https://recharge.com.ar/en',
-    },
-  },
+  // Canonical and hreflang are per page: middleware.ts sends them as a
+  // Link header, because most pages are client components and a canonical
+  // here would point every page at the home page.
   openGraph: {
     type: 'website',
     locale: 'es_AR',
