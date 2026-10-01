@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Disfruta de unas vacaciones inolvidables en nuestra cabaña en Mar Azul. Playa virgen, privacidad y todas las comodidades para tu descanso.',
     type: 'website',
     locale: 'es_AR',
-    url: 'https://recharge-retreat.com/es/alquiler-cabana-mar-azul',
+    url: 'https://recharge.com.ar/es/alquiler-cabana-mar-azul',
     siteName: 'Recharge Retreat',
     images: [{
       url: '/images/shelter/cabin-exterior-1.jpg',
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     images: ['/images/shelter/cabin-exterior-1.jpg']
   },
   alternates: {
-    canonical: 'https://recharge-retreat.com/es/alquiler-cabana-mar-azul',
+    canonical: 'https://recharge.com.ar/es/alquiler-cabana-mar-azul',
     languages: {
-      'es-AR': 'https://recharge-retreat.com/es/alquiler-cabana-mar-azul',
-      'en-US': 'https://recharge-retreat.com/en/rental-mar-azul'
+      'es-AR': 'https://recharge.com.ar/es/alquiler-cabana-mar-azul',
+      'en-US': 'https://recharge.com.ar/en/alquiler-cabana-mar-azul'
     }
   }
 };

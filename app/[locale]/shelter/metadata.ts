@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Vive la experiencia de un refugio autosuficiente en medio de la naturaleza virgen. 9 hectáreas de médanos privados frente al mar en la costa atlántica argentina.',
     type: 'website',
     locale: 'es_AR',
-    url: 'https://recharge-retreat.com/es/refugio',
+    url: 'https://recharge.com.ar/es/shelter',
     siteName: 'Recharge Retreat',
     images: [{
       url: '/images/shelter/hero.jpg',
@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     images: ['/images/shelter/hero.jpg']
   },
   alternates: {
-    canonical: 'https://recharge-retreat.com/es/refugio',
+    canonical: 'https://recharge.com.ar/es/shelter',
     languages: {
-      'es-AR': 'https://recharge-retreat.com/es/refugio',
-      'en-US': 'https://recharge-retreat.com/en/shelter'
+      'es-AR': 'https://recharge.com.ar/es/shelter',
+      'en-US': 'https://recharge.com.ar/en/shelter'
     }
   }
 };

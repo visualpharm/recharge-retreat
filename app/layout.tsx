@@ -35,16 +35,16 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://recharge-retreat.com',
+    canonical: 'https://recharge.com.ar',
     languages: {
-      'es-AR': 'https://recharge-retreat.com/es',
-      'en-US': 'https://recharge-retreat.com/en',
+      'es-AR': 'https://recharge.com.ar/es',
+      'en-US': 'https://recharge.com.ar/en',
     },
   },
   openGraph: {
     type: 'website',
     locale: 'es_AR',
-    url: 'https://recharge-retreat.com',
+    url: 'https://recharge.com.ar',
     siteName: 'Recharge Retreat',
     title: 'Recharge Retreat | Refugio Privado en Argentina',
     description: 'Refugio autónomo privado. Sin vecinos. 9 hectáreas de médanos verdes y el océano cerca de Faro Querandí, Argentina.',

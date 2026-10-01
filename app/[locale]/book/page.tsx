@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://recharge-retreat.com/book',
+    canonical: 'https://recharge.com.ar/book',
   },
   keywords: [
     'book beach cabin Argentina',
