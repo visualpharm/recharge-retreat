@@ -22,8 +22,8 @@ Marketing site for the Recharge Retreat shelter: a self-sufficient cabin on 9 pr
 ## Work
 
 - Dev: `npm run dev` → http://localhost:3010 (port fixed in package.json).
-- Build: `npm run build` · Lint: `npm run lint`.
-- Test: no automated suite — the gate is lint + build, then rendered review of every touched page in all three locales (commands in README.md).
+- Build: `npm run build`. No lint: `npm run lint` has no ESLint config and stops at an interactive prompt.
+- Test: `~/.claude/bin/local-ci` (= `scripts/local_ci.sh`) before every commit: production build, then all 12 pages x es/en/pt must answer 200 from `next start`. Then rendered review of every touched page in all three locales (commands in README.md).
 - Deploy: Vercel builds `main` (github.com/visualpharm/recharge-retreat); done = verified on the live recharge.com.ar URL.
 - Decisions: append to `docs/decisions.md`; grep it before changing logged behavior — contradicting a logged Ivan decision needs his Yes.
 

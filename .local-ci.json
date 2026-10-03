@@ -1,0 +1,4 @@
+{
+  "version": 1,
+  "command": ["sh", "scripts/local_ci.sh"]
+}

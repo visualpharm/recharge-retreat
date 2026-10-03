@@ -29,14 +29,13 @@ Production build: `npm run build`, then `npm start`.
 
 ## How to test
 
-No automated test suite. The gate for every change:
-
 ```bash
-npm run lint
-npm run build
+~/.claude/bin/local-ci      # = sh scripts/local_ci.sh
 ```
 
-then review the rendered pages of everything you touched at http://localhost:3010, in all three locales. Vercel builds `main` on push — a change is done when verified on the live recharge.com.ar URL.
+Builds for production, starts `next start` on a free port and requests every page in `es`, `en` and `pt` (36 requests); each must return 200 with a `<title>`. Routes come from `app/[locale]/**/page.tsx`, so a new page is covered automatically. No hosted CI. `npm run lint` is not part of the gate: there is no ESLint config and it stops at an interactive prompt. `tsc --noEmit` is not either: it reports 4 existing errors (missing `masonry-layout` / `imagesloaded` types, next-intl request config) that the build ignores.
+
+Then review the rendered pages of everything you touched at http://localhost:3010, in all three locales. Vercel builds `main` on push — a change is done when verified on the live recharge.com.ar URL.
 
 ## About
 
